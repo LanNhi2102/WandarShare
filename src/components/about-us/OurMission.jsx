@@ -28,24 +28,13 @@ const OurMission = () => {
       <div className="col-lg-8 col-xl-7">
         <div className="about_content">
           <p className="large">
-            Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet
-            eleifend dapibus. Cras sagittis, ex euismod lacinia tempor.
+            Start with a compelling narrative that introduces your timeshare exchange platform. Explain what motivated the inception of the platform and the core problem it aims to solve for timeshare owners. This section should encapsulate your mission and set the tone for the rest of the page.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris
-            ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend
-            dapibus. Cras sagittis, ex euismod lacinia tempor, lectus orci
-            elementum augue, eget auctor metus ante sit amet velit.
+            Clearly articulate your mission statement. This could focus on providing timeshare owners with unparalleled flexibility, variety, and value in their vacation experiences. Highlight your commitment to creating a trusted community of like-minded individuals who can explore the world through timeshare exchanging.
           </p>
           <p>
-            Maecenas quis viverra metus, et efficitur ligula. Nam congue augue
-            et ex congue, sed luctus lectus congue. Integer convallis
-            condimentum sem. Duis elementum tortor eget condimentum tempor.
-            Praesent sollicitudin lectus ut pharetra pulvinar. Donec et libero
-            ligula. Vivamus semper at orci at placerat.Placeat Lorem ipsum dolor
-            sit amet, consectetur adipisicing elit. Quod libero amet, laborum
-            qui nulla quae alias tempora.
+            Describe the services your platform offers in detail. Explain how users can list their properties, search for exchanges, and finalize swaps. Highlight any unique features or benefits, such as a wide selection of properties, user-friendly interface, or dedicated customer support.Outline the core values that guide your operations and decision-making process. Whether it's transparency, innovation, customer satisfaction, or sustainability, sharing your values helps align your platform with users who share similar principles.
           </p>
 
           <ul className="ab_counting">
