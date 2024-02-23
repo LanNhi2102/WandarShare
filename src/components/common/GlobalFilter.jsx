@@ -8,10 +8,10 @@ import PricingRangeSlider from "./PricingRangeSlider";
 import CheckBoxFilter from "./CheckBoxFilter";
 import GlobalSelectBox from "./GlobalSelectBox";
 
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const GlobalFilter = ({ className = "" }) => {
   const navigate = useNavigate();
-    
+
   // submit handler
   const submitHandler = () => {
     navigate("/listing-grid-v1");
@@ -25,7 +25,7 @@ const GlobalFilter = ({ className = "" }) => {
             <input
               type="text"
               className="form-control"
-              placeholder="Enter keyword..."
+              placeholder="Enter keyword "
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>

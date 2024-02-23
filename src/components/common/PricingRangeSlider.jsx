@@ -29,14 +29,14 @@ const RangeSlider = () => {
       <div className="nft__filter-price-inner d-flex align-items-center justify-content-between">
         <div className="nft__filter-price-box">
           <div className="d-flex align-items-center">
-            <span>VND </span>
-            <span>{price.value.min}</span>
+            <span>{price.value.min} </span>
+            <span> VND</span>
           </div>
         </div>
         <div className="nft__filter-price-box">
           <div className="d-flex align-items-center">
-            <span>VND </span>
-            <span>{price.value.max}</span>
+            <span>{price.value.max} </span>
+            <span> VND</span>
           </div>
         </div>
       </div>

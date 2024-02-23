@@ -5,14 +5,13 @@ const AddressSidebar = () => {
     <div className="contact_localtion">
       <h4>Contact Us</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis
-        libero eleifend ornare. habitasse platea dictumst.
+        We Find Your Best TimeShares
       </p>
       <div className="content_list">
         <h5>Address</h5>
         <p>
-          2301 Ravenswood Rd Madison, <br />
-          WI 53711
+          FPT University, <br />
+          Ho Chi Minh City
         </p>
       </div>
       <div className="content_list">
