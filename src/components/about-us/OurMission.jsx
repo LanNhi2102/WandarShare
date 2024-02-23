@@ -12,13 +12,13 @@ const OurMission = () => {
     {
       id: 2,
       icon: "flaticon-home",
-      number: "$74 Billion",
+      number: "74 Million VND",
       meta: "In home sales",
     },
     {
       id: 3,
       icon: "flaticon-transfer",
-      number: "$468 Million",
+      number: "468 Million VND",
       meta: "In Savings",
     },
   ];
