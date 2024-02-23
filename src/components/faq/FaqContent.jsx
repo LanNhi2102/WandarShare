@@ -12,7 +12,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseOne"
             >
-              Contrary to popular belief, Lorem Ipsum is not simply
+              What is a timeshare exchange platform?
             </button>
           </div>
           <div
@@ -23,13 +23,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                A timeshare exchange platform is an online service that allows timeshare owners to trade vacation stays at their properties with other owners, providing access to diverse locations and accommodations without the need for additional purchases.
               </p>
             </div>
           </div>
@@ -46,7 +40,7 @@ const FaqContent = () => {
               aria-expanded="true"
               aria-controls="collapseTwo"
             >
-              There are many variations of passages of Lorem
+              How does timeshare exchanging work?
             </button>
           </div>
           <div
@@ -57,13 +51,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                Timeshare owners list their available properties and desired exchange destinations. They can then browse listings and request exchanges with other owners for properties that match their interests and travel dates.
               </p>
             </div>
           </div>
@@ -80,7 +68,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Model sentence structures, to generate
+              How do I list my timeshare for exchange?
             </button>
           </div>
           <div
@@ -91,13 +79,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                After registering and buying package, creating a profile, you can list your timeshare by providing details about the property, available dates, and preferred exchange destinations.
               </p>
             </div>
           </div>
@@ -114,7 +96,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              The first line of Lorem Ipsum
+              What happens if an exchange is canceled?
             </button>
           </div>
           <div
@@ -125,13 +107,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                Cancellation policies vary, but generally, you may be able to reschedule your exchange or receive credit for a future exchange, subject to certain conditions and fees.
               </p>
             </div>
           </div>
@@ -148,7 +124,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              Finibus Bonorum et Malorum by Cicero are also
+              How do you ensure the quality and accuracy of listed properties?
             </button>
           </div>
           <div
@@ -159,13 +135,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                The platform conducts verifications and encourages user reviews to ensure that property listings are accurate and meet quality standards.
               </p>
             </div>
           </div>
@@ -182,7 +152,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              Letraset sheets containing Lorem Ipsum passages
+              What support is available if I encounter issues during my exchange?
             </button>
           </div>
           <div
@@ -193,13 +163,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                Customer support is available to assist with issues, disputes, and questions before, during, and after your exchange.
               </p>
             </div>
           </div>
@@ -216,7 +180,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseSeven"
             >
-              Model sentence structures, to generate
+              Can I leave a review after my exchange?
             </button>
           </div>
           <div
@@ -227,13 +191,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                Yes, we encourage users to leave reviews about their experiences and the properties they've stayed in to help inform future exchanges.
               </p>
             </div>
           </div>
@@ -250,7 +208,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseEight"
             >
-              The first line of Lorem Ipsum
+              Is there a community forum or group for members?
             </button>
           </div>
           <div
@@ -261,13 +219,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                Many platforms offer community forums or groups where members can share tips, ask for advice, and discuss their travel experiences.
               </p>
             </div>
           </div>
@@ -284,7 +236,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseNine"
             >
-              Finibus Bonorum et Malorum by Cicero are also
+              How are exchange matches made on the platform?
             </button>
           </div>
           <div
@@ -295,13 +247,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                Exchange matches are made based on the preferences and availability dates provided by the users. Our platform uses an algorithm to suggest potential matches, but users have the final say in accepting exchange requests.
               </p>
             </div>
           </div>
@@ -318,7 +264,7 @@ const FaqContent = () => {
               aria-expanded="false"
               aria-controls="collapseTen"
             >
-              Letraset sheets containing Lorem Ipsum passages
+              What if I can't find an exchange that suits my needs?
             </button>
           </div>
           <div
@@ -329,13 +275,7 @@ const FaqContent = () => {
           >
             <div className="card-body">
               <p>
-                Maecenas quis viverra metus, et efficitur ligula. Nam congue
-                augue et ex congue, sed luctus lectus congue. Integer convallis
-                condimentum sem. Duis elementum tortor eget condimentum tempor.
-                Praesent sollicitudin lectus ut pharetra pulvinar. Donec et
-                libero ligula. Vivamus semper at orci at placerat.Placeat Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-                amet, laborum qui nulla quae alias tempora.
+                If you're unable to find a suitable exchange immediately, we recommend keeping your listing updated and checking back regularly as new properties are added daily. You can also utilize our alert system to be notified when matching properties become available.
               </p>
             </div>
           </div>
