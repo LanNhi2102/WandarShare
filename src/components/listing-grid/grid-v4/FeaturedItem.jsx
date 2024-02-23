@@ -138,19 +138,17 @@ const FeaturedItem = () => {
     ?.filter(featuredHandler)
     .map((item) => (
       <div
-        className={`${
-          isGridOrList ? "col-12 feature-list" : "col-md-6 col-lg-6"
-        } `}
+        className={`${isGridOrList ? "col-12 feature-list" : "col-md-6 col-lg-6"
+          } `}
         key={item.id}
       >
         <div
-          className={`feat_property home7 style3 bdrrn ${
-            isGridOrList && "d-flex align-items-center gap-4"
-          }`}
+          className={`feat_property home7 style3 bdrrn ${isGridOrList && "d-flex align-items-center gap-4"
+            }`}
         >
           <div className="thumb">
             <img
-              
+
               className="img-whp w-100 h-100 cover"
               src={item.img}
               alt="fp1.jpg"
@@ -180,8 +178,8 @@ const FeaturedItem = () => {
                 to={`/listing-details-v1/${item.id}`}
                 className="fp_price"
               >
-                ${item.price}
-                <small>/mo</small>
+                {item.price} VND
+                <small>/week</small>
               </Link>
             </div>
           </div>

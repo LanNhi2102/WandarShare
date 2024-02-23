@@ -14,13 +14,13 @@ const ComparePricing = () => {
                     <span className="flaticon-close"></span>
                   </a>
                   <img
-                    
+
                     className="img-fluid w100 h-100 cover"
                     src={item.img}
                     alt="1.jpg"
                   />
                   <div className="price">
-                    ${item.price}
+                    {item.price} VND
                     <span className="mnth">/mo</span>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ const HotProperties = () => {
             <div className="feat_property home7 style2">
               <div className="thumb">
                 <img
-                 
+
                   className="img-whp w-100 h-100 cover"
                   src={item.img}
                   alt="fp1.jpg"
@@ -37,8 +37,8 @@ const HotProperties = () => {
                     </li>
                   </ul>
                   <a className="fp_price" href="#">
-                    ${item.price}
-                    <small>/mo</small>
+                    {item.price} VND
+                    <small>/week</small>
                   </a>
                 </div>
               </div>

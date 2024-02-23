@@ -10,7 +10,7 @@ const Listings = () => {
           <div className="feat_property list style2 hvr-bxshd bdrrn mb10 mt20">
             <div className="thumb">
               <img
-                
+
                 className="img-whp w-100 cover"
                 src={item.img}
                 alt={item.img}
@@ -47,8 +47,8 @@ const Listings = () => {
                     to={`/listing-details-v1/${item.id}`}
                     className="fp_price"
                   >
-                    ${item.price}
-                    <small>/mo</small>
+                    {item.price} VND
+                    <small>/week</small>
                   </Link>
                 </div>
                 <p className="text-thm">{item.type}</p>
@@ -80,7 +80,7 @@ const Listings = () => {
                   <li className="list-inline-item">
                     <a href="#">
                       <img
-                       
+
                         src={item.posterAvatar}
                         alt="pposter1.png"
                       />

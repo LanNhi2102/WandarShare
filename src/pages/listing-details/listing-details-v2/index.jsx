@@ -9,7 +9,7 @@ import properties from "@/data/properties";
 import DetailsContent from "@/components/listing-details-v1/DetailsContent";
 import Sidebar from "@/components/listing-details-v1/Sidebar";
 import ListingTwo from "@/components/listing-single/ListingTwo";
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
@@ -28,7 +28,7 @@ const ListingDynamicDetailsV2 = () => {
 
   return (
     <>
-        <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       {/* <!-- Main Header Nav --> */}
       <Header />
 
@@ -41,7 +41,7 @@ const ListingDynamicDetailsV2 = () => {
       {/* <!-- Listing Single Property --> */}
 
       <ListingTwo property={property} />
-      
+
 
       {/* <!-- Agent Single Grid View --> */}
       <section className="our-agent-single bgc-f7 pb30-991">
@@ -57,7 +57,7 @@ const ListingDynamicDetailsV2 = () => {
                   <div className="price">
                     <h2>
                       ${property.price}
-                      <small>/mo</small>
+                      <small>/week</small>
                     </h2>
                   </div>
                 </div>

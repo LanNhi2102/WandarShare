@@ -39,7 +39,7 @@ const FeaturedProperties = () => {
             <div className="feat_property">
               <div className="thumb">
                 <img
-                 
+
                   className="img-whp w-100 h-100 cover"
                   src={item.img}
                   alt="fp1.jpg"
@@ -69,8 +69,8 @@ const FeaturedProperties = () => {
                     to={`/listing-details-v1/${item.id}`}
                     className="fp_price"
                   >
-                    ${item.price}
-                    <small>/mo</small>
+                    {item.price} VND
+                    <small>/week</small>
                   </Link>
                 </div>
               </div>
@@ -102,7 +102,7 @@ const FeaturedProperties = () => {
                     <li className="list-inline-item">
                       <a href="#">
                         <img
-                         
+
                           src={item.posterAvatar}
                           alt="pposter1.png"
                         />

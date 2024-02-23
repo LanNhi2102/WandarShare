@@ -9,7 +9,7 @@ const FeaturedListings = () => {
         <div className="media d-flex" key={item.id}>
           <Link to={`/listing-details-v1/${item.id}`}>
             <img
-             
+
               className="align-self-start me-3 w-100 h-100 cover"
               src={item.img}
               alt="featured listing image"
@@ -21,7 +21,7 @@ const FeaturedListings = () => {
               <Link to={`/listing-details-v1/${item.id}`}>{item.title}</Link>
             </h5>
             <Link to={`/listing-details-v1/${item.id}`}>
-              ${item.price}/<small>/mo</small>
+              {item.price} VND/<small>/week</small>
             </Link>
 
             <ul className="mb0">

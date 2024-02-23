@@ -23,7 +23,7 @@ const ListingGallery = () => {
                   <div className="price float-start fn-400">
                     <h2>
                       ${singleItem.price}
-                      <small>/mo</small>
+                      <small>/week</small>
                     </h2>
                   </div>
 
@@ -71,7 +71,7 @@ const ListingGallery = () => {
                         {({ ref, open }) => (
                           <div role="button" ref={ref} onClick={open}>
                             <img
-                             
+
                               className="img-fluid w100 lds-1 cover h-100"
                               src={singleItem.img}
                               alt="1.jpg"
@@ -99,7 +99,7 @@ const ListingGallery = () => {
                           {({ ref, open }) => (
                             <div role="button" ref={ref} onClick={open}>
                               <img
-                               
+
                                 className="img-fluid w100  cover"
                                 src={val}
                                 alt="2.jpg"

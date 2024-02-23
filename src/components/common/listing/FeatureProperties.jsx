@@ -23,7 +23,7 @@ const FeatureProperties = () => {
             <div className="feat_property home7">
               <div className="thumb">
                 <img
-                
+
                   className="img-whp w-100 h-100 cover"
                   src={item.img}
                   alt="properties identity"
@@ -38,8 +38,8 @@ const FeatureProperties = () => {
                     ))}
                   </ul>
                   <a className="fp_price" href="#">
-                    ${item.price}
-                    <small>/mo</small>
+                    {item.price} VND
+                    <small>/week</small>
                   </a>
                   <h4 className="posr color-white">{item.title}</h4>
                 </div>

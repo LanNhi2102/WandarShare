@@ -213,7 +213,7 @@ export default function ListingMap1() {
         <p>Loading...</p>
       ) : (
         <GoogleMap
-        mapContainerStyle={containerStyle}
+          mapContainerStyle={containerStyle}
           center={center}
           zoom={6}
           options={option}
@@ -224,8 +224,8 @@ export default function ListingMap1() {
                 <Marker
                   key={marker.id}
                   position={
-                    {lat: 23.685, lng: 90.3563 }
-                    }
+                    { lat: 23.685, lng: 90.3563 }
+                  }
                   clusterer={clusterer}
                   onClick={() => locationHandler(marker)}
                 ></Marker>
@@ -240,92 +240,92 @@ export default function ListingMap1() {
               }}
               onCloseClick={closeCardHandler}
             >
-               <div className="item" >
-      <div className="feat_property">
-        <div className="thumb">
-          <img
-        
-            className="img-whp w-100 h-100 cover"
-            src={getLocation.img}
-            alt="fp1.jpg"
-          />
-          <div className="thmb_cntnt">
-            <ul className="tag mb0">
-              {getLocation.saleTag.map((val, i) => (
-                <li className="list-inline-item" key={i}>
-                  <a href="#">{val}</a>
-                </li>
-              ))}
-            </ul>
-            {/* End .tag */}
+              <div className="item" >
+                <div className="feat_property">
+                  <div className="thumb">
+                    <img
 
-            <ul className="icon mb0">
-              <li className="list-inline-item">
-                <a href="#">
-                  <span className="flaticon-transfer-1"></span>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#">
-                  <span className="flaticon-heart"></span>
-                </a>
-              </li>
-            </ul>
-            {/* End .icon */}
+                      className="img-whp w-100 h-100 cover"
+                      src={getLocation.img}
+                      alt="fp1.jpg"
+                    />
+                    <div className="thmb_cntnt">
+                      <ul className="tag mb0">
+                        {getLocation.saleTag.map((val, i) => (
+                          <li className="list-inline-item" key={i}>
+                            <a href="#">{val}</a>
+                          </li>
+                        ))}
+                      </ul>
+                      {/* End .tag */}
 
-            <Link to={`/listing-details-v1/${getLocation.id}`} className="fp_price">
-              ${getLocation.price}
-              <small>/mo</small>
-            </Link>
-          </div>
-        </div>
-        {/* End .thumb */}
+                      <ul className="icon mb0">
+                        <li className="list-inline-item">
+                          <a href="#">
+                            <span className="flaticon-transfer-1"></span>
+                          </a>
+                        </li>
+                        <li className="list-inline-item">
+                          <a href="#">
+                            <span className="flaticon-heart"></span>
+                          </a>
+                        </li>
+                      </ul>
+                      {/* End .icon */}
 
-        <div className="details">
-          <div className="tc_content">
-            <p className="text-thm">{getLocation.type}</p>
-            <h4>
-              <Link to={`/listing-details-v1/${getLocation.id}`}>{getLocation.title}</Link>
-            </h4>
-            <p>
-              <span className="flaticon-placeholder"></span>
-              {getLocation.location}
-            </p>
+                      <Link to={`/listing-details-v1/${getLocation.id}`} className="fp_price">
+                        ${getLocation.price}
+                        <small>/week</small>
+                      </Link>
+                    </div>
+                  </div>
+                  {/* End .thumb */}
 
-            <ul className="prop_details mb0">
-              {getLocation.itemDetails.map((val, i) => (
-                <li className="list-inline-item" key={i}>
-                  <a href="#">
-                    {val.name}: {val.number}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* End .tc_content */}
+                  <div className="details">
+                    <div className="tc_content">
+                      <p className="text-thm">{getLocation.type}</p>
+                      <h4>
+                        <Link to={`/listing-details-v1/${getLocation.id}`}>{getLocation.title}</Link>
+                      </h4>
+                      <p>
+                        <span className="flaticon-placeholder"></span>
+                        {getLocation.location}
+                      </p>
 
-          <div className="fp_footer">
-            <ul className="fp_meta float-start mb0">
-              <li className="list-inline-item">
-                <Link to="/agent-v2">
-                  <img
-                 
-                    src={getLocation.posterAvatar}
-                    alt="pposter1.png"
-                  />
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/agent-v2">{getLocation.posterName}</Link>
-              </li>
-            </ul>
-            <div className="fp_pdate float-end">{getLocation.postedYear}</div>
-          </div>
-          {/* End .fp_footer */}
-        </div>
-        {/* End .details */}
-      </div>
-    </div>
+                      <ul className="prop_details mb0">
+                        {getLocation.itemDetails.map((val, i) => (
+                          <li className="list-inline-item" key={i}>
+                            <a href="#">
+                              {val.name}: {val.number}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {/* End .tc_content */}
+
+                    <div className="fp_footer">
+                      <ul className="fp_meta float-start mb0">
+                        <li className="list-inline-item">
+                          <Link to="/agent-v2">
+                            <img
+
+                              src={getLocation.posterAvatar}
+                              alt="pposter1.png"
+                            />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item">
+                          <Link to="/agent-v2">{getLocation.posterName}</Link>
+                        </li>
+                      </ul>
+                      <div className="fp_pdate float-end">{getLocation.postedYear}</div>
+                    </div>
+                    {/* End .fp_footer */}
+                  </div>
+                  {/* End .details */}
+                </div>
+              </div>
             </InfoWindow>
           )}
         </GoogleMap>

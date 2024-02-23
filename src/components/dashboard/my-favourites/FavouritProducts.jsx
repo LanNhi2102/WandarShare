@@ -32,8 +32,8 @@ const FavouritProducts = () => {
             <span className="flaticon-placeholder"></span> {item.location}
           </p>
           <a className="fp_price text-thm" href="#">
-            ${item.price}
-            <small>/mo</small>
+            {item.price} VND
+            <small>/week</small>
           </a>
         </div>
       </div>

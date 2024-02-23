@@ -46,7 +46,7 @@ const FeaturedProperties = () => {
             <div className="feat_property home3">
               <div className="thumb">
                 <img
-                 
+
                   className="img-whp w-100 h-100 cover"
                   src={item.img}
                   alt="fp1.jpg"
@@ -77,8 +77,8 @@ const FeaturedProperties = () => {
                     to={`/listing-details-v1/${item.id}`}
                     className="fp_price"
                   >
-                    ${item.price}
-                    <small>/mo</small>
+                    {item.price} VND
+                    <small>/week</small>
                   </Link>
                 </div>
               </div>

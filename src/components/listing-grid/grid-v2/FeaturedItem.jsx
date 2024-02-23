@@ -141,7 +141,7 @@ const FeaturedItem = () => {
         <div className="properti_city home6">
           <div className="thumb">
             <img
-             
+
               className="img-whp w-100  cover"
               src={item.img}
               alt="fp1.jpg"
@@ -162,8 +162,8 @@ const FeaturedItem = () => {
                 to={`/listing-details-v1/${item.id}`}
                 className="fp_price"
               >
-                ${item.price}
-                <small>/mo</small>
+                {item.price} VND
+                <small>/week</small>
               </Link>
               <h4>
                 <Link to={`/listing-details-v2/${item.id}`}>

@@ -15,7 +15,7 @@ const TableData = () => {
         <div className="feat_property list favorite_page style2">
           <div className="thumb">
             <img
-         
+
               className="img-whp cover"
               src={item.img}
               alt="fp1.jpg"
@@ -36,8 +36,8 @@ const TableData = () => {
                 {item.location}
               </p>
               <a className="fp_price text-thm" href="#">
-                ${item.price}
-                <small>/mo</small>
+                {item.price} VND
+                <small>/week</small>
               </a>
             </div>
           </div>

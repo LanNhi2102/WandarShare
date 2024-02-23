@@ -165,8 +165,8 @@ const HeroSlider = () => {
                                 to={`/listing-details-v1/${item.id}`}
                                 className="fp_price"
                               >
-                                ${item.price}
-                                <small>/mo</small>
+                                {item.price} VND
+                                <small>/week</small>
                               </Link>
                             </div>
                             <div className="fp_footer">
