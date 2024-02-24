@@ -22,7 +22,7 @@ const agent = [
     office: "134 456 3210",
     mobile: "891 456 9874",
     fax: "342 654 1258",
-    email: "pakulla@findhouse.com",
+    email: "pakulla@wandarshare.com",
     city: "Atlanta",
   },
   {
@@ -48,7 +48,7 @@ const agent = [
     office: "134 456 3210",
     mobile: "891 456 9874",
     fax: "342 654 1258",
-    email: "pakulla@findhouse.com",
+    email: "pakulla@wandarshare.com",
     city: "Florida",
   },
   {
@@ -100,7 +100,7 @@ const agent = [
     office: "134 456 3210",
     mobile: "891 456 9874",
     fax: "342 654 1258",
-    email: "pakulla@findhouse.com",
+    email: "pakulla@wandarshare.com",
     city: "Miami",
   },
   {
@@ -126,7 +126,7 @@ const agent = [
     office: "134 456 3210",
     mobile: "891 456 9874",
     fax: "342 654 1258",
-    email: "pakulla@findhouse.com",
+    email: "pakulla@wandarshare.com",
     city: "New York",
   },
   {

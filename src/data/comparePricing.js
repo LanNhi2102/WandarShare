@@ -2,7 +2,7 @@ const comparePricing = [
   {
     id: 1,
     img: "/assets/images/pricing/1.jpg",
-    price: "13,000",
+    price: "1,300,000",
     propertyName: "Renovated Apartment",
     propertyType: "Apartment",
     city: "New York",
@@ -16,7 +16,7 @@ const comparePricing = [
   {
     id: 2,
     img: "/assets/images/pricing/2.jpg",
-    price: "16,000",
+    price: "1,600,000",
     propertyName: "Luxury Family Home",
     propertyType: "Apartment",
     city: "Buffalo",
@@ -30,7 +30,7 @@ const comparePricing = [
   {
     id: 3,
     img: "/assets/images/pricing/3.jpg",
-    price: "17,000",
+    price: "1,700,000",
     propertyName: "Ample Penthouse",
     propertyType: "Apartment",
     city: "Yonkers",
