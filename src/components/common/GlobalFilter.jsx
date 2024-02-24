@@ -25,8 +25,8 @@ const GlobalFilter = ({ className = "" }) => {
             <input
               type="text"
               className="form-control"
-              placeholder="Enter key "
-              onChange={(e) => dispatch(addKey(e.target.value))}
+              placeholder="Enter keyword "
+              onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>
         </li>
