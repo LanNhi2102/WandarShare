@@ -100,17 +100,7 @@ const Form = () => {
       {/* devider */}
 
       <div className="row mt25">
-        <div className="col-lg-6">
-          <button
-            type="submit"
-            className="btn btn-block color-white bgc-fb mb0 w-100"
-          >
-            <i className="fa fa-facebook float-start mt5"></i> Facebook
-          </button>
-        </div>
-        {/* End .col */}
-
-        <div className="col-lg-6">
+        <div className="col-lg-12">
           <button
             type="submit"
             className="btn btn-block color-white bgc-gogle mb0 w-100"
