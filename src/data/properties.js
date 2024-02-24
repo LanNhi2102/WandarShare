@@ -2,7 +2,7 @@ const properties = [
   {
     id: 1,
     img: "/assets/images/property/fp1.jpg",
-    price: "1,300,000",
+    price: "1300000",
     lat: 40.7279707552121,
     long: -74.07152705896405,
     type: "Apartment",
