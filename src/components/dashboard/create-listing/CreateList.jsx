@@ -55,7 +55,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExamplePrice">Price</label>
+          <label htmlFor="formGroupExamplePrice">Price (VND)</label>
           <input
             type="number"
             className="form-control"
@@ -67,14 +67,25 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExampleArea">Area</label>
+          <label htmlFor="startDay">Start Day</label>
           <input
-            type="text"
+            type="date"
             className="form-control"
-            id="formGroupExampleArea"
+            id="startDay"
           />
         </div>
       </div>
+      <div className="col-lg-4 col-xl-4">
+        <div className="my_profile_setting_input form-group">
+          <label htmlFor="endDay">End Day</label>
+          <input
+            type="date"
+            className="form-control"
+            id="endDay"
+          />
+        </div>
+      </div>
+
       {/* End .col */}
 
       <div className="col-lg-4 col-xl-4">
