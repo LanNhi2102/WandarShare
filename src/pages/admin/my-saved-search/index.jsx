@@ -4,15 +4,15 @@ import MySavedSearch from "@/components/dashboard/my-saved-search";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'My Saved Search || FindHouse - Real Estate React Template',
+  title: 'My Saved Search || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const MySavedSearchPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <MySavedSearch />
     </>
   );

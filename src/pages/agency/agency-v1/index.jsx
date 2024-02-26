@@ -4,15 +4,15 @@ import AgencyV1 from "@/components/agency-view/agency-v1";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Simple Listing – AgencyV1 || FindHouse - Real Estate React Template',
+  title: 'Simple Listing – AgencyV1 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const AgencyV1Page = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <AgencyV1 />
     </>
   );

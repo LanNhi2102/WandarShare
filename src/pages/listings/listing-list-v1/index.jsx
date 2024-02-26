@@ -4,15 +4,15 @@ import ListV1 from "@/components/listing-list/list-v1";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Simple Listing – List V1 || FindHouse - Real Estate React Template',
+  title: 'Simple Listing – List V1 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const ListingPage1 = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <ListV1 />
     </>
   );

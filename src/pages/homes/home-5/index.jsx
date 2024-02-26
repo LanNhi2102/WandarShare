@@ -4,15 +4,15 @@ import HomeMain from "@/components/home-5";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Home-5 || FindHouse - Real Estate React Template',
+  title: 'Home-5 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const HomePage5 = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <HomeMain />
     </>
   );

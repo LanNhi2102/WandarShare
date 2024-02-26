@@ -4,15 +4,15 @@ import BlogV3 from "@/components/blog-list-3";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Blog Gid 3 || FindHouse - Real Estate React Template',
+  title: 'Blog Gid 3 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const Blog3Page = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <BlogV3 />
     </>
   );

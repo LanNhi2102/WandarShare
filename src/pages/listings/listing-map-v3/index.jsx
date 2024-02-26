@@ -4,15 +4,15 @@ import ListingMapV3 from "@/components/listing-half-map/listing-map-v3";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Listing - Map V3 || FindHouse - Real Estate React Template',
+  title: 'Listing - Map V3 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const ListingMapPage3 = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <ListingMapV3 />
     </>
   );

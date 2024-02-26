@@ -16,7 +16,7 @@ const FavouritProducts = () => {
         <div className="thmb_cntnt">
           <ul className="tag mb0">
             <li className="list-inline-item">
-              <a href="#">For Booking</a>
+              <a href="#">For Rent</a>
             </li>
           </ul>
         </div>

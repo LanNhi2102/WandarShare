@@ -4,15 +4,15 @@ import Compare from "@/components/compare";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Compare || FindHouse - Real Estate React Template',
+  title: 'Compare || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const ComparePage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Compare />
     </>
   );

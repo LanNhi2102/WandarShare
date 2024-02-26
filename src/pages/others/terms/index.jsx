@@ -4,15 +4,15 @@ import Terms from "@/components/terms-conditions";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Terms & Conditions || FindHouse - Real Estate React Template',
+  title: 'Terms & Conditions || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const TermsPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Terms />
     </>
   );

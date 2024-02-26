@@ -4,15 +4,15 @@ import Contact from "@/components/contact";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Contact || FindHouse - Real Estate React Template',
+  title: 'Contact || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const ContactPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Contact />
     </>
   );

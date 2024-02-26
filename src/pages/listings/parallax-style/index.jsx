@@ -4,15 +4,15 @@ import ParallaxStyle from "@/components/listing-style/parallax-style";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Listing - Parallax Style || FindHouse - Real Estate React Template',
+  title: 'Listing - Parallax Style || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const ParallaxStylePage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <ParallaxStyle />
     </>
   );

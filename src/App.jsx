@@ -36,6 +36,9 @@ import MyPackagepage from "./pages/admin/my-package";
 import MyPropertiesPage from "./pages/admin/my-properties";
 import MyReviewPage from "./pages/admin/my-review";
 import MySavedSearchPage from "./pages/admin/my-saved-search";
+import MyHistoryPage from "./pages/admin/my-history";
+import MyWaitlistPage from "./pages/admin/my-waitlist";
+import MyProfilePage from "./pages/admin/my-profile";
 import Blog1Page from "./pages/blogs/blog-list-1";
 import Blog2Page from "./pages/blogs/blog-list-2";
 import Blog3Page from "./pages/blogs/blog-list-3";
@@ -125,10 +128,12 @@ function App() {
               <Route path="my-favourites" element={<MyFavouritePage />} />
               <Route path="my-message" element={<MyMessagePage />} />
               <Route path="my-package" element={<MyPackagepage />} />
-              <Route path="my-profile" element={<MyPropertiesPage />} />
+              <Route path="my-profile" element={<MyProfilePage />} />
               <Route path="my-properties" element={<MyPropertiesPage />} />
               <Route path="my-review" element={<MyReviewPage />} />
               <Route path="my-saved-search" element={<MySavedSearchPage />} />
+              <Route path="my-history" element={<MyHistoryPage />} />
+              <Route path="my-waitlist" element={<MyWaitlistPage />} />
 
               <Route path="blog-list-1" element={<Blog1Page />} />
               <Route path="blog-list-2" element={<Blog2Page />} />

@@ -4,15 +4,15 @@ import MapHeader from "@/components/listing-style/map-header";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Listing - Map Header || FindHouse - Real Estate React Template',
+  title: 'Listing - Map Header || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const MapHeaderPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <MapHeader />
     </>
   );

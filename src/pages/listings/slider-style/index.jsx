@@ -4,15 +4,15 @@ import SliderStyle from "@/components/listing-style/slider-style";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Listing - Slider Style || FindHouse - Real Estate React Template',
+  title: 'Listing - Slider Style || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const SliderStylePage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <SliderStyle />
     </>
   );

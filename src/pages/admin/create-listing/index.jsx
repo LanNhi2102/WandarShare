@@ -4,15 +4,15 @@ import CreateListing from "@/components/dashboard/create-listing";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Create Listing || FindHouse - Real Estate React Template',
+  title: 'Add New TimeShare || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const CreateListingPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <CreateListing />
     </>
   );

@@ -4,15 +4,15 @@ import GridV5 from "@/components/listing-grid/grid-v5";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Simple Listing – Grid V5 || FindHouse - Real Estate React Template',
+  title: 'Simple Listing – Grid V5 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const ListingGridPage5 = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <GridV5 />
     </>
   );
