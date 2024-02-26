@@ -55,7 +55,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExamplePrice">Price (VND)</label>
+          <label htmlFor="formGroupExamplePrice">Price per week (VND)</label>
           <input
             type="number"
             className="form-control"
@@ -107,12 +107,7 @@ const CreateList = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-xl-12">
-        <div className="my_profile_setting_input">
-          <button className="btn btn1 float-start">Back</button>
-          <button className="btn btn2 float-end">Next</button>
-        </div>
-      </div>
+
     </>
   );
 };
