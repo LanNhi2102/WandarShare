@@ -6,7 +6,7 @@ import MobileMenu from "../common/header/MobileMenu";
 import Partners from "../common/Partners";
 import PopupSignInUp from "../common/PopupSignInUp";
 import WhyChoose from "../common/WhyChoose";
-import Testimonial from "../home-7/Testimonial";
+// import Testimonial from "../home-7/Testimonial";
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import Team from "./Team";
 import OurMission from "./OurMission";
@@ -92,13 +92,13 @@ const index = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="testimonial_grid_slider style2 gutter-x15">
                 <Testimonial />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

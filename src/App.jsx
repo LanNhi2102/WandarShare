@@ -16,15 +16,15 @@ import Home from "./pages";
 // import HomePage2 from "./pages/homes/home-2";
 import ScrollTopBehaviour from "./components/common/ScrollTopBehaviour";
 import ListingGridPage1 from "./pages/listings/listing-grid-v1";
-import ListingGridPage2 from "./pages/listings/listing-grid-v2";
-import ListingGridPage3 from "./pages/listings/listing-grid-v3";
-import ListingGridPage4 from "./pages/listings/listing-grid-v4";
-import ListingGridPage5 from "./pages/listings/listing-grid-v5";
-import ListingGridPage6 from "./pages/listings/listing-grid-v6";
-import ListingMapPage1 from "./pages/listings/listing-map-v1";
-import ListingMapPage2 from "./pages/listings/listing-map-v2";
-import ListingMapPage3 from "./pages/listings/listing-map-v3";
-import ListingMapPage4 from "./pages/listings/listing-map-v4";
+import ListingExchange from "./pages/listings/listing-exchange";
+// import ListingGridPage3 from "./pages/listings/listing-grid-v3";
+// import ListingGridPage4 from "./pages/listings/listing-grid-v4";
+// import ListingGridPage5 from "./pages/listings/listing-grid-v5";
+// import ListingGridPage6 from "./pages/listings/listing-grid-v6";
+// import ListingMapPage1 from "./pages/listings/listing-map-v1";
+// import ListingMapPage2 from "./pages/listings/listing-map-v2";
+// import ListingMapPage3 from "./pages/listings/listing-map-v3";
+// import ListingMapPage4 from "./pages/listings/listing-map-v4";
 import MapHeaderPage from "./pages/listings/map-header";
 import ParallaxStylePage from "./pages/listings/parallax-style";
 import SliderStylePage from "./pages/listings/slider-style";
@@ -61,7 +61,7 @@ import ListingDynamicDetailsV1 from "./pages/listing-details/listing-details-v1"
 import ListingDynamicDetailsV2 from "./pages/listing-details/listing-details-v2";
 import ListingDetailsPage3 from "./pages/listing-details/listing-details-v3";
 import ListingDetailsPage4 from "./pages/listing-details/listing-details-v4";
-import ListingPage1 from "./pages/listings/listing-list-v1";
+// import ListingPage1 from "./pages/listings/listing-list-v1";
 
 if (typeof window !== "undefined") {
   import("bootstrap");
@@ -86,18 +86,18 @@ function App() {
               <Route path="home-10" element={<HomePage10 />} /> */}
 
               <Route path="listing-grid-v1" element={<ListingGridPage1 />} />
-              <Route path="listing-grid-v2" element={<ListingGridPage2 />} />
-              <Route path="listing-grid-v3" element={<ListingGridPage3 />} />
+              <Route path="listing-exchange" element={<ListingExchange />} />
+              {/* <Route path="listing-grid-v3" element={<ListingGridPage3 />} />
               <Route path="listing-grid-v4" element={<ListingGridPage4 />} />
               <Route path="listing-grid-v5" element={<ListingGridPage5 />} />
-              <Route path="listing-grid-v6" element={<ListingGridPage6 />} />
-
+              <Route path="listing-grid-v6" element={<ListingGridPage6 />} /> */}
+{/* 
               <Route path="listing-list-v1" element={<ListingPage1 />} />
 
               <Route path="listing-map-v1" element={<ListingMapPage1 />} />
               <Route path="listing-map-v2" element={<ListingMapPage2 />} />
               <Route path="listing-map-v3" element={<ListingMapPage3 />} />
-              <Route path="listing-map-v4" element={<ListingMapPage4 />} />
+              <Route path="listing-map-v4" element={<ListingMapPage4 />} /> */}
 
               <Route
                 path="listing-details-v1/:id"

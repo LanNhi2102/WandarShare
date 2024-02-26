@@ -147,6 +147,7 @@ St, Los Angeles, CA 900015`,
     id: 4,
     img: "/assets/images/property/fp15.jpg",
     price: "1,100,000",
+    date: "21 Jan, 2024 - 21 Oct, 2024" ,
     type: "House",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro

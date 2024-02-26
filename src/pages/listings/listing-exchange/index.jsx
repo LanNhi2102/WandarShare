@@ -9,7 +9,7 @@ const metadata = {
     'FindHouse - Real Estate React Template',
 }
 
-const ListingGridPage2 = () => {
+const ListingExchange = () => {
   return (
     <>
     <MetaComponent meta={metadata} />
@@ -18,4 +18,4 @@ const ListingGridPage2 = () => {
   );
 };
 
-export default ListingGridPage2
+export default ListingExchange

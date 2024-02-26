@@ -1,12 +1,8 @@
-
-
-
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addLength } from "../../../features/properties/propertiesSlice";
 import properties from "../../../data/properties";
-
 
 const FeaturedItem = () => {
   const {
@@ -22,7 +18,7 @@ const FeaturedItem = () => {
     area,
     amenities,
   } = useSelector((state) => state.properties);
-  const { statusType, featured, isGridOrList } = useSelector(
+  const { statusType, featured } = useSelector(
     (state) => state.filter
   );
 
@@ -141,7 +137,6 @@ const FeaturedItem = () => {
         <div className="properti_city home6">
           <div className="thumb">
             <img
-
               className="img-whp w-100  cover"
               src={item.img}
               alt="fp1.jpg"
@@ -158,24 +153,20 @@ const FeaturedItem = () => {
           </div>
           <div className="overlay">
             <div className="details">
-              <Link
-                to={`/listing-details-v1/${item.id}`}
-                className="fp_price"
-              >
-                {item.price} VND
-                <small>/week</small>
+              <Link to={`/listing-details-v1/${item.id}`} className="fp_price">
+                {item.title}
               </Link>
               <h4>
-                <Link to={`/listing-details-v2/${item.id}`}>
-                  {item.title}
+                <Link to={`/listing-details-v1/${item.id}`}>
+                  {item.date}21 Jan, 2024 - 21 Oct, 2024
                 </Link>
               </h4>
               <ul className="prop_details mb0">
                 {item.itemDetails.map((val, i) => (
                   <li className="list-inline-item" key={i}>
-                    <a href="#">
-                      {val.name}: {val.number}
-                    </a>
+                    <Link to={`/listing-details-v1/${item.id}`}>
+                    {val.name}: {val.number}
+                    </Link>
                   </li>
                 ))}
               </ul>
