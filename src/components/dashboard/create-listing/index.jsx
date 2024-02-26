@@ -53,7 +53,7 @@ const index = () => {
 
                 <div className="col-lg-12 mb10">
                   <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Add New Property</h2>
+                    <h2 className="breadcrumb_title">Add New TimeShare</h2>
                     <p>We are glad to see you again!</p>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const index = () => {
                   <div className="my_dashboard_review">
                     <div className="row">
                       <div className="col-lg-12">
-                        <h3 className="mb30">Create Listing</h3>
+                        <h3 className="mb30">Add New TimeShare</h3>
                       </div>
 
                       <CreateList />

@@ -1,298 +1,83 @@
-const SearchData = () => {
+import React from 'react';
+
+const SearchData = ({ accountBalance = "3,600,000 VND" }) => {
   return (
-    <table className="table">
-      <thead className="thead-light">
-        <tr>
-          <th scope="col">Search</th>
-          <th className="dn-lg" scope="col"></th>
-          <th className="dn-lg" scope="col"></th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-          <th scope="col">Created</th>
-          <th scope="col">Action</th>
-        </tr>
-      </thead>
-      {/* End thead */}
+    <>
+      {/* Khung hiển thị số dư tài khoản */}
+      <div className="account-balance-container" style={{ marginBottom: '20px', textAlign: 'center' }}>
+        <h3>Account balance: {accountBalance}</h3>
+      </div>
 
-      <tbody>
-        <tr>
-          <th className="title" scope="row">
-            List London
-          </th>
-          <td className="dn-lg"></td>
-          <td className="dn-lg"></td>
-          <td></td>
-          <td></td>
-          <td className="para">December 30, 2019</td>
-          <td>
-            <ul className="view_edit_delete_list mb0">
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="View"
-              >
-                <a href="#">
-                  <span className="flaticon-view"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Edit"
-              >
-                <a href="#">
-                  <span className="flaticon-edit"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Delete"
-              >
-                <a href="#">
-                  <span className="flaticon-garbage"></span>
-                </a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        {/* End tr */}
-
-        <tr>
-          <th className="title" scope="row">
-            Property List New York
-          </th>
-          <td className="dn-lg"></td>
-          <td className="dn-lg"></td>
-          <td></td>
-          <td></td>
-          <td className="para">December 30, 2019</td>
-          <td>
-            <ul className="view_edit_delete_list mb0">
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="View"
-              >
-                <a href="#">
-                  <span className="flaticon-view"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Edit"
-              >
-                <a href="#">
-                  <span className="flaticon-edit"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Delete"
-              >
-                <a href="#">
-                  <span className="flaticon-garbage"></span>
-                </a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        {/* End tr */}
-
-        <tr>
-          <th className="title active" scope="row">
-            London 3 beds
-          </th>
-          <td className="dn-lg"></td>
-          <td className="dn-lg"></td>
-          <td></td>
-          <td></td>
-          <td className="para">December 30, 2019</td>
-          <td>
-            <ul className="view_edit_delete_list mb0">
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="View"
-              >
-                <a href="#">
-                  <span className="flaticon-view"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Edit"
-              >
-                <a href="#">
-                  <span className="flaticon-edit"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Delete"
-              >
-                <a href="#">
-                  <span className="flaticon-garbage"></span>
-                </a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        {/* End tr */}
-
-        <tr>
-          <th className="title" scope="row">
-            Paris $100-$100
-          </th>
-          <td className="dn-lg"></td>
-          <td className="dn-lg"></td>
-          <td></td>
-          <td></td>
-          <td className="para">December 30, 2019</td>
-          <td>
-            <ul className="view_edit_delete_list mb0">
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="View"
-              >
-                <a href="#">
-                  <span className="flaticon-view"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Edit"
-              >
-                <a href="#">
-                  <span className="flaticon-edit"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Delete"
-              >
-                <a href="#">
-                  <span className="flaticon-garbage"></span>
-                </a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        {/* End tr */}
-
-        <tr>
-          <th className="title" scope="row">
-            Free
-          </th>
-          <td className="dn-lg"></td>
-          <td className="dn-lg"></td>
-          <td></td>
-          <td></td>
-          <td className="para">December 30, 2019</td>
-          <td>
-            <ul className="view_edit_delete_list mb0">
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="View"
-              >
-                <a href="#">
-                  <span className="flaticon-view"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Edit"
-              >
-                <a href="#">
-                  <span className="flaticon-edit"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Delete"
-              >
-                <a href="#">
-                  <span className="flaticon-garbage"></span>
-                </a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        {/* End tr */}
-
-        <tr>
-          <th className="title" scope="row">
-            $300-$900
-          </th>
-          <td className="dn-lg"></td>
-          <td className="dn-lg"></td>
-          <td></td>
-          <td></td>
-          <td className="para">December 30, 2019</td>
-          <td>
-            <ul className="view_edit_delete_list mb0">
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="View"
-              >
-                <a href="#">
-                  <span className="flaticon-view"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Edit"
-              >
-                <a href="#">
-                  <span className="flaticon-edit"></span>
-                </a>
-              </li>
-              <li
-                className="list-inline-item"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Delete"
-              >
-                <a href="#">
-                  <span className="flaticon-garbage"></span>
-                </a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        {/* End tr */}
-      </tbody>
-      {/* End tbody */}
-    </table>
+      <table className="table">
+        <thead className="thead-light">
+          <tr>
+            <th scope="col">Classify</th>
+            <th className="dn-lg" scope="col"></th>
+            <th className="dn-lg" scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">Date</th>
+            <th scope="col">Money</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th className="title" scope="row">Deposit</th>
+            <td className="dn-lg"></td>
+            <td className="dn-lg"></td>
+            <td></td>
+            <td></td>
+            <td className="para">March 22, 2023</td>
+            <td className="para">+1,000,000 VND</td>
+          </tr>
+          <tr>
+            <th className="title" scope="row">Deposit</th>
+            <td className="dn-lg"></td>
+            <td className="dn-lg"></td>
+            <td></td>
+            <td></td>
+            <td className="para">January 12, 2023</td>
+            <td className="para">+1,000,000 VND</td>
+          </tr>
+          <tr>
+            <th className="title active" scope="row">Withdraw</th>
+            <td className="dn-lg"></td>
+            <td className="dn-lg"></td>
+            <td></td>
+            <td></td>
+            <td className="para">December 30, 2022</td>
+            <td className="para">-700,000 VND</td>
+          </tr>
+          <tr>
+            <th className="title" scope="row">Deposit</th>
+            <td className="dn-lg"></td>
+            <td className="dn-lg"></td>
+            <td></td>
+            <td></td>
+            <td className="para">September 15, 2022</td>
+            <td className="para">+1,600,000 VND</td>
+          </tr>
+          <tr>
+            <th className="title" scope="row">Withdraw</th>
+            <td className="dn-lg"></td>
+            <td className="dn-lg"></td>
+            <td></td>
+            <td></td>
+            <td className="para">December 30, 2019</td>
+            <td className="para">-300,000 VND</td>
+          </tr>
+          <tr>
+            <th className="title" scope="row">Deposit</th>
+            <td className="dn-lg"></td>
+            <td className="dn-lg"></td>
+            <td></td>
+            <td></td>
+            <td className="para">December 30, 2019</td>
+            <td className="para">+1,000,000 VND</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 };
 

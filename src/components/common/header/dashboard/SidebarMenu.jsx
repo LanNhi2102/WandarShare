@@ -10,9 +10,9 @@ const SidebarMenu = () => {
   const { pathname } = useLocation()
 
   const myProperties = [
-    { id: 1, name: "General Elements", route: "/my-properties" },
-    { id: 2, name: "Advanced Elements", route: "/my-properties" },
-    { id: 3, name: "Editors", route: "/my-properties" },
+    { id: 1, name: "List TimeShares", route: "/my-properties" },
+    { id: 2, name: "Rent/Exchange History", route: "/my-properties" },
+    { id: 3, name: "Waitlist Requests", route: "/my-properties" },
   ];
   const reviews = [
     { id: 1, name: "My Reviews", route: "/my-review" },
@@ -44,7 +44,7 @@ const SidebarMenu = () => {
               src="/assets/images/header-logo2.png"
               alt="header-logo2.png"
             />
-            <span>FindHouse</span>
+            <span>WandarShare</span>
           </Link>
         </li>
         {/* End header */}
@@ -54,8 +54,8 @@ const SidebarMenu = () => {
           <ul>
             <li
               className={`treeview ${isSinglePageActive("/my-dashboard", pathname)
-                  ? "active"
-                  : ""
+                ? "active"
+                : ""
                 }`}
             >
               <Link to="/my-dashboard">
@@ -65,8 +65,8 @@ const SidebarMenu = () => {
             </li>
             <li
               className={`treeview ${isSinglePageActive("/create-listing", pathname)
-                  ? "active"
-                  : ""
+                ? "active"
+                : ""
                 }`}
             >
               <Link to="/create-listing">
@@ -76,8 +76,8 @@ const SidebarMenu = () => {
             </li>
             <li
               className={`treeview ${isSinglePageActive("/my-message", pathname)
-                  ? "active"
-                  : ""
+                ? "active"
+                : ""
                 }`}
             >
               <Link to="/my-message">
@@ -90,14 +90,14 @@ const SidebarMenu = () => {
         {/* End Main */}
 
         <li className="title">
-          <span>Manage Listings</span>
+          <span>Manage TimeShares</span>
           <ul>
             <li
               className={`treeview ${isParentPageActive(myProperties, pathname) ? "active" : ""
                 }`}
             >
               <a data-bs-toggle="collapse" href="#my-property">
-                <i className="flaticon-home"></i> <span>My Properties</span>
+                <i className="flaticon-home"></i> <span>My TimeShares</span>
                 <i className="fa fa-angle-down pull-right"></i>
               </a>
               <ul className="treeview-menu collapse" id="my-property">
@@ -135,8 +135,8 @@ const SidebarMenu = () => {
 
             <li
               className={`treeview ${isSinglePageActive("/my-favourites", pathname)
-                  ? "active"
-                  : ""
+                ? "active"
+                : ""
                 }`}
             >
               <Link to="/my-favourites">
@@ -146,13 +146,13 @@ const SidebarMenu = () => {
             </li>
             <li
               className={`treeview ${isSinglePageActive("/my-saved-search", pathname)
-                  ? "active"
-                  : ""
+                ? "active"
+                : ""
                 }`}
             >
               <Link to="/my-saved-search">
                 <i className="flaticon-magnifying-glass"></i>
-                <span> Saved Search</span>
+                <span> My Wallet</span>
               </Link>
             </li>
           </ul>
