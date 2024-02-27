@@ -159,13 +159,7 @@ const ProfileInfo = () => {
             </div>
             {/* End .col */}
 
-            <div className="col-xl-12 text-right">
-                <div className="my_profile_setting_input">
-                    <button className="btn btn1">View Public Profile</button>
-                    <button className="btn btn2">Update Profile</button>
-                </div>
-            </div>
-            {/* End .col */}
+
         </div>
     );
 };

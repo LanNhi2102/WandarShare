@@ -117,12 +117,28 @@ const GlobalFilter = ({ className = "" }) => {
                   </div>
                 </div>
                 {/* End .row */}
+
               </div>
               {/* End .dropdown-menu */}
             </div>
           </div>
         </li>
         {/* End li */}
+        <div class="row">
+          <div class="col-lg-4 col-xl-4">
+            <div class="my_profile_setting_input form-group">
+              <label for="startDay">Start Day</label>
+              <input type="date" class="form-control" id="startDay" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-4">
+            <div class="my_profile_setting_input form-group">
+              <label for="endDay">End Day</label>
+              <input type="date" class="form-control" id="endDay" />
+            </div>
+          </div>
+        </div>
+
 
         <li className="list-inline-item">
           <div className="search_option_button">

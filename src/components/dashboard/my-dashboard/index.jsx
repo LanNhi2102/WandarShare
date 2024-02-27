@@ -74,7 +74,7 @@ const index = () => {
 
                 <div className="col-xl-5">
                   <div className="recent_job_activity">
-                    <h4 className="title mb-4">Recent Activities</h4>
+                    <h4 className="title mb-4">Notification</h4>
                     <Activities />
                   </div>
                 </div>
