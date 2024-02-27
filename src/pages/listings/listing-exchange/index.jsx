@@ -1,21 +1,21 @@
 
-import HomeMain from "@/components/home-2";
+import GridV2 from "@/components/listing-grid/grid-v2";
 
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Home-2 || FindHouse - Real Estate React Template',
+  title: 'Simple Listing – Grid V2 || FindHouse - Real Estate React Template',
   description:
     'FindHouse - Real Estate React Template',
 }
 
-const HomePage2 = () => {
+const ListingExchange = () => {
   return (
     <>
     <MetaComponent meta={metadata} />
-      <HomeMain />
+      <GridV2 />
     </>
   );
 };
 
-export default HomePage2
+export default ListingExchange

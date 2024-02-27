@@ -1,4 +1,5 @@
 import GlobalFilter from "./GlobalFilter";
+import ExchangeFilter from "./ExchangeFilter";
 
 const GlobalHeroFilter = ({ className = "" }) => {
   return (
@@ -28,7 +29,7 @@ const GlobalHeroFilter = ({ className = "" }) => {
             aria-controls="pills-profile"
             aria-selected="false"
           >
-            Rent
+            Book
           </a>
         </li>
       </ul>
@@ -41,7 +42,7 @@ const GlobalHeroFilter = ({ className = "" }) => {
           role="tabpanel"
           aria-labelledby="pills-home-tab"
         >
-          <GlobalFilter />
+          <ExchangeFilter />
         </div>
         <div
           className="tab-pane fade"

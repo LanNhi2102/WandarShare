@@ -1,5 +1,3 @@
-
-
 import {
   addKeyword,
   addLocation,
@@ -13,7 +11,7 @@ const GlobalFilter = ({ className = "" }) => {
   const navigate = useNavigate();
 
   // submit handler
-  const submitHandler = () => {
+  const submitBook = () => {
     navigate("/listing-grid-v1");
   };
 
@@ -127,7 +125,7 @@ const GlobalFilter = ({ className = "" }) => {
         <li className="list-inline-item">
           <div className="search_option_button">
             <button
-              onClick={submitHandler}
+              onClick={submitBook}
               type="submit"
               className="btn btn-thm"
             >

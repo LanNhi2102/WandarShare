@@ -9,7 +9,7 @@ const properties = [
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Exchange"],
+    saleTag: ["Featured", "Exchange"],
     garages: "yes",
     itemDetails: [
       {
@@ -57,7 +57,7 @@ St, Los Angeles, CA 900015`,
 St, Los Angeles, CA 900015`,
     lat: 34.1738017565271,
     long: -118.34227408812067,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     garages: "no",
     itemDetails: [
       {
@@ -92,7 +92,7 @@ St, Los Angeles, CA 900015`,
     ],
     built: "2014",
     amenities: "barbeque",
-    featured: "rent",
+    featured: "book",
     created_at: 1667181256361,
   },
   {
@@ -105,7 +105,7 @@ St, Los Angeles, CA 900015`,
     St, Los Angeles, CA 900015`,
     lat: 29.38690953884771,
     long: -94.91651439187791,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     garages: "others",
     itemDetails: [
       {
@@ -147,13 +147,14 @@ St, Los Angeles, CA 900015`,
     id: 4,
     img: "/assets/images/property/fp15.jpg",
     price: "1,100,000",
+    date: "21 Jan, 2024 - 21 Oct, 2024" ,
     type: "House",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
     lat: 41.62158564223682,
     long: -82.15625432727268,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -188,7 +189,7 @@ St, Los Angeles, CA 900015`,
 
     amenities: "microwave",
     built: "2016",
-    featured: "rent",
+    featured: "book",
     created_at: 1667181237171,
   },
   {
@@ -201,7 +202,7 @@ St, Los Angeles, CA 900015`,
     long: -80.15625432727268,
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -235,7 +236,7 @@ St, Los Angeles, CA 900015`,
     ],
     amenities: "tv-cable",
     built: "2017",
-    featured: "rent",
+    featured: "book",
     created_at: 1667181227087,
   },
   {
@@ -248,7 +249,7 @@ St, Los Angeles, CA 900015`,
 St, Los Angeles, CA 900015`,
     lat: 40.7279707552121,
     long: -74.07152705896405,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -293,7 +294,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -327,7 +328,7 @@ St, Los Angeles, CA 900015`,
     ],
     amenities: "refrigerator",
     built: "2019",
-    featured: "rent",
+    featured: "book",
     created_at: 1667181198782,
   },
   {
@@ -338,7 +339,7 @@ St, Los Angeles, CA 900015`,
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -383,7 +384,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -417,7 +418,7 @@ St, Los Angeles, CA 900015`,
     ],
     amenities: "wifi",
     built: "2015",
-    featured: "rent",
+    featured: "book",
     created_at: 1667181163727,
   },
   {
@@ -428,7 +429,7 @@ St, Los Angeles, CA 900015`,
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -473,7 +474,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -507,7 +508,7 @@ St, Los Angeles, CA 900015`,
     ],
     built: "2014",
     amenities: "barbeque",
-    featured: "rent",
+    featured: "book",
     garages: "yes",
     created_at: 1667181146379,
   },
@@ -519,7 +520,7 @@ St, Los Angeles, CA 900015`,
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -565,7 +566,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -599,7 +600,7 @@ St, Los Angeles, CA 900015`,
     ],
     built: "2016",
     amenities: "microwave",
-    featured: "rent",
+    featured: "book",
     garages: "others",
     created_at: 1667181125210,
   },
@@ -611,7 +612,7 @@ St, Los Angeles, CA 900015`,
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -657,7 +658,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -691,7 +692,7 @@ St, Los Angeles, CA 900015`,
     ],
     built: "2018",
     amenities: "lawn",
-    featured: "rent",
+    featured: "book",
     garages: "no",
     created_at: 1667181101258,
   },
@@ -703,7 +704,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -749,7 +750,7 @@ St, Los Angeles, CA 900015`,
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -783,7 +784,7 @@ St, Los Angeles, CA 900015`,
     ],
     garages: "others",
     amenities: "window coverings",
-    featured: "rent",
+    featured: "book",
     created_at: 1667181077261,
   },
   {
@@ -794,7 +795,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -839,7 +840,7 @@ St, Los Angeles, CA 900015`,
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -871,7 +872,7 @@ St, Los Angeles, CA 900015`,
       "/assets/images/property/ls4.jpg",
       "/assets/images/property/ls5.jpg",
     ],
-    featured: "rent",
+    featured: "book",
     amenities: "laundry",
     created_at: 1667181056952,
   },
@@ -883,7 +884,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -928,7 +929,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -961,7 +962,7 @@ St, Los Angeles, CA 900015`,
       "/assets/images/property/ls5.jpg",
     ],
 
-    featured: "rent",
+    featured: "book",
     created_at: 1667181029933,
   },
   {
@@ -972,7 +973,7 @@ St, Los Angeles, CA 900015`,
     title: "Sweet Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1017,7 +1018,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1050,7 +1051,7 @@ St, Los Angeles, CA 900015`,
       "/assets/images/property/ls5.jpg",
     ],
 
-    featured: "rent",
+    featured: " ",
     amenities: "wifi",
     created_at: 1667181005044,
   },
@@ -1062,7 +1063,7 @@ St, Los Angeles, CA 900015`,
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1106,7 +1107,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1151,7 +1152,7 @@ St, Los Angeles, CA 900015`,
     title: "Luxury Family Home",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1184,7 +1185,7 @@ St, Los Angeles, CA 900015`,
       "/assets/images/property/ls5.jpg",
     ],
 
-    featured: "rent",
+    featured: " ",
     amenities: "lawn",
     created_at: 1667180970308,
   },
@@ -1196,7 +1197,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1272,7 +1273,7 @@ St, Los Angeles, CA 900015`,
       "/assets/images/property/ls4.jpg",
       "/assets/images/property/ls5.jpg",
     ],
-    featured: "rent",
+    featured: " ",
     amenities: "microwave",
     created_at: 1667180944839,
   },
@@ -1361,7 +1362,7 @@ St, Los Angeles, CA 900015`,
     ],
     built: "2014",
     amenities: "air-conditioning",
-    featured: "rent",
+    featured: " ",
     created_at: 1667180920571,
   },
   {
@@ -1372,7 +1373,7 @@ St, Los Angeles, CA 900015`,
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1418,7 +1419,7 @@ St, Los Angeles, CA 900015`,
     title: "Renovated Apartment",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1453,7 +1454,7 @@ St, Los Angeles, CA 900015`,
     built: "2015",
     amenities: "barbeque",
     garages: "no",
-    featured: "rent",
+    featured: " ",
     created_at: 1667180896056,
   },
   {
@@ -1464,7 +1465,7 @@ St, Los Angeles, CA 900015`,
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
 St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "For Rent"],
+    saleTag: ["Featured", "For Book"],
     itemDetails: [
       {
         name: "Beds",
@@ -1589,7 +1590,7 @@ St, Los Angeles, CA 900015`,
     built: "2016",
     amenities: "tv-cable",
     garages: "no",
-    featured: "rent",
+    featured: " ",
     created_at: 1667180858318,
   },
   {
@@ -1677,7 +1678,7 @@ St, Los Angeles, CA 900015`,
       "/assets/images/property/ls4.jpg",
       "/assets/images/property/ls5.jpg",
     ],
-    imgList2: [
+    imgList3: [
       "/assets/images/property/ls2.jpg",
       "/assets/images/property/ls3.jpg",
       "/assets/images/property/ls4.jpg",
@@ -1686,7 +1687,7 @@ St, Los Angeles, CA 900015`,
     built: "2018",
     amenities: "air-conditioning",
     garages: "yes",
-    featured: "rent",
+    featured: " ",
     created_at: 1667180834746,
   },
   {

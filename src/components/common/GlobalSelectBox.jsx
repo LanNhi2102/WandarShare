@@ -39,14 +39,14 @@ const GlobalSelectBox = () => {
         <div className="candidate_revew_select">
           <select className="selectpicker w100 show-tick form-select">
             <option>Year built</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-            <option>2016</option>
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-            <option>2020</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
           </select>
         </div>
       </li>
@@ -55,16 +55,16 @@ const GlobalSelectBox = () => {
       <li className="list-inline-item">
         <div className="candidate_revew_select">
           <select className="selectpicker w100 show-tick form-select">
-            <option>Built-up Area</option>
-            <option>Adana</option>
-            <option>Ankara</option>
-            <option>Antalya</option>
-            <option>Bursa</option>
-            <option>Bodrum</option>
-            <option>Gaziantep</option>
-            <option>İstanbul</option>
-            <option>İzmir</option>
-            <option>Konya</option>
+            <option>Built-up State</option>
+            <option>Ha Noi</option>
+            <option>TP Ho Chi Minh</option>
+            <option>Da Nang</option>
+            <option>Da Lat</option>
+            <option>Nha Trang</option>
+            <option>Sa Pa</option>
+            <option>Thua Thien Hue</option>
+            <option>Quang Nam</option>
+            <option>Ha Giang</option>
           </select>
         </div>
       </li>
