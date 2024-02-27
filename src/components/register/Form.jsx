@@ -2,16 +2,46 @@ import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
-
 const Form = () => {
   const [showModal, setShowModal] = useState(false);
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleRegister = () => {
-    // Gửi yêu cầu đăng ký và xác nhận email ở đây
-    // Sau khi gửi thành công, mở modal hiển thị thông báo
-    setShowModal(true);
+  const handleRegister = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    // Assuming your API endpoint for registration is '/register'
+    const registerEndpoint = '/register';
+
+    try {
+      const response = await fetch(registerEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username,
+          email,
+          password,
+          confirmPassword,
+        }),
+      });
+
+      if (response.ok) {
+        // Assuming the backend sends a response on successful registration
+        setShowModal(true); // Show the modal on success
+      } else {
+        // Handle unsuccessful registration or errors
+        alert('Registration failed. Please try again.');
+      }
+    } catch (error) {
+      console.error('Registration error:', error);
+      alert('There was an error during registration.');
+    }
   };
+
   return (
     <form onSubmit={handleRegister} action="#">
       <div className="heading text-center">
@@ -46,6 +76,8 @@ const Form = () => {
           className="form-control"
           required
           placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
@@ -76,6 +108,8 @@ const Form = () => {
           className="form-control"
           required
           placeholder="Re-enter password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
         />
         <div className="input-group-prepend">
           <div className="input-group-text">
