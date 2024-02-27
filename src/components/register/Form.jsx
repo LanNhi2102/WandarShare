@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const initFormValue = {
-  username: '',
-  email: '',
-  password: '',
-  confirmPassword: '',
-  phone: '',
+  username: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+  phone: "",
 };
 //xu li chuoi rong
 const isEmptyValue = (value) => {
@@ -15,7 +15,7 @@ const isEmptyValue = (value) => {
 };
 //xu li mail
 const isUsernameValid = (username) => {
-  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(username);
+  return /^[a-zA-Z][a-zA-Z0-9._]{2,15}$/.test(username);
 };
 //xu li phone
 const isPhoneValid = (phone) => {
@@ -24,13 +24,13 @@ const isPhoneValid = (phone) => {
 
 const Form = () => {
   const [formValue, setFormValue] = useState(initFormValue);
-  const [formError, setFormError] = useState({});
-  const [registrationSuccess, setRegistrationSuccess] = useState(false); // State for success message
-  const [registrationFail, setRegistrationFail] = useState(false); // State for fail message
-    const loginUser = async (username, email, password, phone) => {
+  const [setFormError] = useState({});
+  const [setRegistrationSuccess] = useState(false); // State for success message
+  const [setRegistrationFail] = useState(false); // State for fail message
+  const loginUser = async (username, email, password, phone) => {
     try {
       const response = await axios.post(
-        'http://localhost:8080/api/v1/auth/register',
+        "http://localhost:8080/api/v1/auth/register",
         // "http://localhost:3000/users",
 
         {
@@ -39,15 +39,18 @@ const Form = () => {
           password,
           phone,
           // confirmPassword,
-        },
+        }
       );
       // Lưu thông tin người dùng đã đăng nhập vào localStorage
-      if (response.data.statusCodeValue === 200 && response.data.statusCode === 'OK') {
+      if (
+        response.data.statusCodeValue === 200 &&
+        response.data.statusCode === "OK"
+      ) {
         // Registration is successful
         setRegistrationSuccess(true);
         setRegistrationFail(false); // Reset fail message
         // Nếu phản hồi thành công, điều hướng người dùng đến trang /home
-        window.location.href = '/login';
+        window.location.href = "/login";
       } else {
         setRegistrationFail(true);
         setRegistrationSuccess(false);
@@ -67,28 +70,28 @@ const Form = () => {
     const errors = {};
 
     if (isEmptyValue(formValue.username)) {
-      errors.username = 'username is required';
+      errors.username = "username is required";
     }
     //-
     if (isEmptyValue(formValue.email)) {
-      errors.email = 'Email is required';
+      errors.email = "Email is required";
     } else if (!isUsernameValid(formValue.email)) {
-      errors.email = 'Email is invalid';
+      errors.email = "Email is invalid";
     }
     //-
     if (isEmptyValue(formValue.password)) {
-      errors.password = 'Password is required';
+      errors.password = "Password is required";
     }
     //-
     if (isEmptyValue(formValue.confirmPassword)) {
-      errors.confirmPassword = 'Confirm password is required';
+      errors.confirmPassword = "Confirm password is required";
     } else if (formValue.confirmPassword !== formValue.password) {
-      errors.confirmPassword = 'Confirm password is not match';
+      errors.confirmPassword = "Confirm password is not match";
     }
     if (isEmptyValue(formValue.phone)) {
-      errors.phone = 'Phone number is required';
+      errors.phone = "Phone number is required";
     } else if (!isPhoneValid(formValue.phone)) {
-      errors.phone = 'Phone number is invalid';
+      errors.phone = "Phone number is invalid";
     }
     setFormError(errors);
 
@@ -99,16 +102,21 @@ const Form = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      loginUser(formValue.username, formValue.email, formValue.password, formValue.phone);
+      loginUser(
+        formValue.username,
+        formValue.email,
+        formValue.password,
+        formValue.phone
+      );
     } else {
-      console.log('form invalid');
+      console.log("form invalid");
     }
   };
   const handleChange = (event) => {
     const { value, name } = event.target;
     setFormValue({
       ...formValue,
-      [name]: name === 'phone' ? String(value) : value,
+      [name]: name === "phone" ? String(value) : value,
     });
   };
   return (
@@ -146,7 +154,7 @@ const Form = () => {
         <input
           type="email"
           className="form-control"
-          value={formValue.email} 
+          value={formValue.email}
           onChange={handleChange}
           name="email"
           required
@@ -155,6 +163,24 @@ const Form = () => {
         <div className="input-group-prepend">
           <div className="input-group-text">
             <i className="fa fa-envelope-o"></i>
+          </div>
+        </div>
+      </div>
+      {/* End .form-group */}
+
+      <div className="form-group input-group  ">
+        <input
+          type="phone"
+          className="form-control"
+          value={formValue.phone}
+          onChange={handleChange}
+          name="phone"
+          required
+          placeholder="Phone"
+        />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <i className="fa fa-phone"></i>
           </div>
         </div>
       </div>
@@ -196,33 +222,9 @@ const Form = () => {
       </div>
       {/* End .form-group */}
 
-      <div className="form-group input-group ">
-        <input
-          type="text"
-          className="form-control"
-          value={formValue.phone}
-          onChange={handleChange}
-          name="phone"
-          required
-          placeholder="Phone"
-        />
-        <div className="input-group-prepend">
-          <div className="input-group-text">
-            <i className="flaticon-user"></i>
-          </div>
-        </div>
-      </div>
-      {/* End .form-group */}
-
       <div className="form-group form-check custom-checkbox mb-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          required
-
-        />
-        <label className="form-check-label form-check-label" >
+        <input className="form-check-input" type="checkbox" value="" required />
+        <label className="form-check-label form-check-label">
           I have read and accept the Terms and Privacy Policy?
         </label>
       </div>
@@ -231,7 +233,7 @@ const Form = () => {
       <button type="submit" className="btn btn-log w-100 btn-thm">
         Register
       </button>
-      {/* login button */}
+      {/* Register button */}
 
       <div className="divide">
         <span className="lf_divider">Or</span>
@@ -240,27 +242,13 @@ const Form = () => {
       {/* devider */}
 
       <div className="row mt25">
-        <div className="col-lg-6">
-          <button
-            type="submit"
-            className="btn btn-block color-white bgc-fb mb0 w-100"
-          >
-            <i className="fa fa-facebook float-start mt5"></i> Facebook
-          </button>
+        <div className="col-lg-12">
+          <Link to="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=openid%20email&access_type=offline" className="btn btn-block color-white bgc-gogle mb0 w-100">
+            <i className="fa fa-google float-start mt5"></i> Login with Google
+          </Link>
         </div>
-        {/* End .col */}
-
-        <div className="col-lg-6">
-          <button
-            type="submit"
-            className="btn btn-block color-white bgc-gogle mb0 w-100"
-          >
-            <i className="fa fa-google float-start mt5"></i> Google
-          </button>
-        </div>
-        {/* End .col */}
+        {/* End login with google*/}
       </div>
-      {/* more signin options */}
     </form>
   );
 };

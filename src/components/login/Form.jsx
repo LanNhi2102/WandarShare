@@ -30,14 +30,14 @@ function parseJwt(token) {
 
 // Check email
 const isEmailValid = (email) => {
-  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+  return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
 };
 
 const Form = () => {
   const [formValue, setFormValue] = useState(initFormValue);
-  const [formError, setFormError] = useState({});
+  const [setFormError] = useState({});
   const [rememberMe, setRememberMe] = useState(false);
-  const [loginFail, setLoginFail] = useState(false);
+  const [setLoginFail] = useState(false);
   // xử lí remember me
   useEffect(() => {
     const savedUser = localStorage.getItem('user');
@@ -218,27 +218,13 @@ const Form = () => {
       {/* devider */}
 
       <div className="row mt25">
-        <div className="col-lg-6">
-          <button
-            type="submit"
-            className="btn btn-block color-white bgc-fb mb0 w-100"
-          >
-            <i className="fa fa-facebook float-start mt5"></i> Facebook
-          </button>
+        <div className="col-lg-12">
+        <Link to="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=openid%20email&access_type=offline" className="btn btn-block color-white bgc-gogle mb0 w-100">
+            <i className="fa fa-google float-start mt5"></i> Login with Google
+          </Link>
         </div>
-        {/* End .col */}
-
-        <div className="col-lg-6">
-          <button
-            type="submit"
-            className="btn btn2 btn-block color-white bgc-gogle mb0 w-100"
-          >
-            <i className="fa fa-google float-start mt5"></i> Google
-          </button>
-        </div>
-        {/* End .col */}
+        {/* End login with google */}
       </div>
-      {/* more signin options */}
     </form>
     // </div>
   );
