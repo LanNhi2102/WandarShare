@@ -139,12 +139,42 @@ const HeaderMenuContent = ({ float = "" }) => {
       id: 1,
       title: "User Admin",
       items: [
-
+        {
+          name: "Dashboard",
+          routerPath: "/my-dashboard",
+        },
         {
           name: "My Properties",
           routerPath: "/my-properties",
         },
-
+        {
+          name: "My Message",
+          routerPath: "/my-message",
+        },
+        {
+          name: "My Review",
+          routerPath: "/my-review",
+        },
+        {
+          name: "My Favourites",
+          routerPath: "/my-favourites",
+        },
+        {
+          name: "My Profile",
+          routerPath: "/my-profile",
+        },
+        {
+          name: "My Package",
+          routerPath: "/my-package",
+        },
+        {
+          name: "My Wallet",
+          routerPath: "/my-wallet",
+        },
+        {
+          name: "Add Property",
+          routerPath: "/create-listing",
+        },
       ],
     },
     {

@@ -13,7 +13,7 @@
 @import "./responsive.css";
 @import "node_modules/react-modal-video/scss/modal-video.scss";
 
-.parent-menu-active > .pro-inner-item > .pro-item-content {
+.parent-menu-active>.pro-inner-item>.pro-item-content {
     color: var(--color-primary) !important;
 }
 
@@ -24,27 +24,34 @@
         color: #484848 !important;
     }
 }
-// .inactive-mobile-menu{
-//     color: #484848 !important;
 
-// }
+.inactive-mobile-menu {
+    color: #484848 !important;
+
+}
+
 .footerInput {
     &::placeholder {
         color: #fff;
     }
 }
+
 .margin0 {
     margin-bottom: 0 !important;
 }
+
 .gm-style-iw-d img {
     margin-bottom: 0 !important;
 }
+
 .gm-style-iw-d p {
     line-height: 26px !important;
 }
-// .gm-style .gm-style-iw-tc{
-//     display: none !important;
-// }
-// .gm-ui-hover-effect{
-//     display: none !important;
-// }
+
+.gm-style .gm-style-iw-tc {
+    display: none !important;
+}
+
+.gm-ui-hover-effect {
+    display: none !important;
+}

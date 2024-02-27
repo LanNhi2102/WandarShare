@@ -1,8 +1,19 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+
 
 const Form = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleRegister = () => {
+    // Gửi yêu cầu đăng ký và xác nhận email ở đây
+    // Sau khi gửi thành công, mở modal hiển thị thông báo
+    setShowModal(true);
+  };
   return (
-    <form action="#">
+    <form onSubmit={handleRegister} action="#">
       <div className="heading text-center">
         <h3>Register to your account</h3>
         <p className="text-center">
@@ -80,7 +91,7 @@ const Form = () => {
           type="checkbox"
           value=""
           required
-        
+
         />
         <label className="form-check-label form-check-label" >
           I have read and accept the Terms and Privacy Policy?
@@ -92,6 +103,20 @@ const Form = () => {
         Register
       </button>
       {/* login button */}
+      {/* Modal hiển thị thông báo */}
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Registration Confirmation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          A confirmation code has been sent to your email. Please check your email.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
       <div className="divide">
         <span className="lf_divider">Or</span>

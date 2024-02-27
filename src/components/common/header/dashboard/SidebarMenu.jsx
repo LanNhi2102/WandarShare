@@ -145,7 +145,7 @@ const SidebarMenu = () => {
                 }`}
             >
               <Link to="/my-favourites">
-                <i className="flaticon-magnifying-glass"></i>
+                <i className="flaticon-heart"></i>
                 <span> My Favorites</span>
               </Link>
             </li>
@@ -156,7 +156,7 @@ const SidebarMenu = () => {
                 }`}
             >
               <Link to="/my-wallet">
-                <i className="flaticon-magnifying-glass"></i>
+                <i className="flaticon-money-bag"></i>
                 <span> My Wallet</span>
               </Link>
             </li>
