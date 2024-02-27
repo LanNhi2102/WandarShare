@@ -31,6 +31,7 @@ const CreateList = () => {
           >
             <option data-tokens="type1">Exchange</option>
             <option data-tokens="Type2">Rent</option>
+            <option data-tokens="Type3">Rent & Exchange</option>
 
           </select>
         </div>
@@ -55,7 +56,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExamplePrice">Price per week (VND)</label>
+          <label htmlFor="formGroupExamplePrice">Price for rent (VND)</label>
           <input
             type="number"
             className="form-control"
@@ -90,7 +91,7 @@ const CreateList = () => {
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Rooms</label>
+          <label>Unit Size</label>
           <select
             className="selectpicker form-select"
             data-live-search="true"

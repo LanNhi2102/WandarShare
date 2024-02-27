@@ -44,40 +44,8 @@ const LocationField = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="googleMapLat">Latitude (for Google Maps)</label>
-          <input type="text" className="form-control" id="googleMapLat" />
-        </div>
-      </div>
-      {/* End .col */}
 
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="googleMapLong">Longitude (for Google Maps)</label>
-          <input type="text" className="form-control" id="googleMapLong" />
-        </div>
-      </div>
-      {/* End .col */}
 
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Google Map Street View</label>
-          <select
-            className="selectpicker form-select"
-            data-live-search="true"
-            data-width="100%"
-          >
-            <option data-tokens="Turkey">Street View v1</option>
-            <option data-tokens="Iran">Street View v2</option>
-            <option data-tokens="Iraq">Street View v3</option>
-            <option data-tokens="Spain">Street View v4</option>
-            <option data-tokens="Greece">Street View v5</option>
-            <option data-tokens="Portugal">Street View v6</option>
-          </select>
-        </div>
-      </div>
-      {/* End .col */}
 
       {/* End .col */}
     </>
