@@ -13,7 +13,7 @@ const Form = () => {
     event.preventDefault(); // Prevent default form submission
 
     // Assuming your API endpoint for registration is '/register'
-    const registerEndpoint = '/register';
+    const registerEndpoint = 'https://jsonplaceholder.typicode.com/posts';
 
     try {
       const response = await fetch(registerEndpoint, {
