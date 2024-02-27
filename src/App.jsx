@@ -35,7 +35,7 @@ import MyMessagePage from "./pages/admin/my-message";
 import MyPackagepage from "./pages/admin/my-package";
 import MyPropertiesPage from "./pages/admin/my-properties";
 import MyReviewPage from "./pages/admin/my-review";
-import MySavedSearchPage from "./pages/admin/my-saved-search";
+import MySavedSearchPage from "./pages/admin/my-wallet";
 import MyHistoryPage from "./pages/admin/my-history";
 import MyWaitlistPage from "./pages/admin/my-waitlist";
 import MyProfilePage from "./pages/admin/my-profile";
@@ -131,7 +131,7 @@ function App() {
               <Route path="my-profile" element={<MyProfilePage />} />
               <Route path="my-properties" element={<MyPropertiesPage />} />
               <Route path="my-review" element={<MyReviewPage />} />
-              <Route path="my-saved-search" element={<MySavedSearchPage />} />
+              <Route path="my-wallet" element={<MySavedSearchPage />} />
               <Route path="my-history" element={<MyHistoryPage />} />
               <Route path="my-waitlist" element={<MyWaitlistPage />} />
 

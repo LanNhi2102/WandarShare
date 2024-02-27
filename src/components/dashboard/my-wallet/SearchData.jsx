@@ -5,7 +5,8 @@ const SearchData = ({ accountBalance = "3,600,000 VND" }) => {
     <>
       {/* Khung hiển thị số dư tài khoản */}
       <div className="account-balance-container" style={{ marginBottom: '20px', textAlign: 'center' }}>
-        <h3>Account balance: {accountBalance}</h3>
+        <h3>Account balance:</h3>
+        <h1> {accountBalance} </h1>
       </div>
 
       <table className="table">

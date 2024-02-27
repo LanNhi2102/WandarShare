@@ -1,10 +1,10 @@
 
-import MySavedSearch from "@/components/dashboard/my-saved-search";
+import MySavedSearch from "@/components/dashboard/my-wallet";
 
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'My Saved Search || WandarShare',
+  title: 'My Wallet || WandarShare',
   description:
     'WandarShare',
 }

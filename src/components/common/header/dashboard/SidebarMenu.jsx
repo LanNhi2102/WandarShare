@@ -33,7 +33,12 @@ const SidebarMenu = () => {
     },
     { id: 3, name: "Logout", route: "/login", icon: "flaticon-logout" },
   ];
+  const myWallet = [
+    {
+      id: 1, name: "My Card", route: "/my-wallet"
+    },
 
+  ]
   return (
     <>
       <ul className="sidebar-menu">
@@ -145,12 +150,12 @@ const SidebarMenu = () => {
               </Link>
             </li>
             <li
-              className={`treeview ${isSinglePageActive("/my-saved-search", pathname)
+              className={`treeview ${isSinglePageActive("/my-wallet", pathname)
                 ? "active"
                 : ""
                 }`}
             >
-              <Link to="/my-saved-search">
+              <Link to="/my-wallet">
                 <i className="flaticon-magnifying-glass"></i>
                 <span> My Wallet</span>
               </Link>
