@@ -13,6 +13,7 @@
     "@faker-js/faker": "^8.2.0",
     "@react-google-maps/api": "^2.19.2",
     "@reduxjs/toolkit": "^1.9.7",
+    "axios": "^1.6.7",
     "bootstrap": "^5.2.1",
     "chart.js": "^4.4.0",
     "photoswipe": "^5.4.2",
