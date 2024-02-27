@@ -2,6 +2,12 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+const handleGoogleLogin = () => {
+  // Redirect the user to Google OAuth URL
+  window.location.href =
+    "https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=openid%20email&access_type=offline";
+};
+
 const initFormValue = {
   username: "",
   email: "",
@@ -132,7 +138,7 @@ const Form = () => {
       </div>
       {/* End .heading */}
 
-      <div className="form-group input-group ">
+      <div className="form-group input-group mb-2">
         <input
           type="text"
           className="form-control"
@@ -150,7 +156,7 @@ const Form = () => {
       </div>
       {/* End .form-group */}
 
-      <div className="form-group input-group  ">
+      <div className="form-group input-group mb-2">
         <input
           type="email"
           className="form-control"
@@ -168,7 +174,7 @@ const Form = () => {
       </div>
       {/* End .form-group */}
 
-      <div className="form-group input-group  ">
+      <div className="form-group input-group mb-2">
         <input
           type="phone"
           className="form-control"
@@ -186,7 +192,7 @@ const Form = () => {
       </div>
       {/* End .form-group */}
 
-      <div className="form-group input-group  ">
+      <div className="form-group input-group mb-2">
         <input
           type="password"
           className="form-control"
@@ -204,7 +210,7 @@ const Form = () => {
       </div>
       {/* End .form-group */}
 
-      <div className="form-group input-group  ">
+      <div className="form-group input-group mb-2">
         <input
           type="password"
           className="form-control"
@@ -243,9 +249,9 @@ const Form = () => {
 
       <div className="row mt25">
         <div className="col-lg-12">
-          <Link to="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=openid%20email&access_type=offline" className="btn btn-block color-white bgc-gogle mb0 w-100">
+        <button className="btn btn-googl w-100" onClick={handleGoogleLogin}>
             <i className="fa fa-google float-start mt5"></i> Login with Google
-          </Link>
+          </button>
         </div>
         {/* End login with google*/}
       </div>
