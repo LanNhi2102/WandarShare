@@ -5,6 +5,7 @@ const TableData = () => {
   let theadConent = [
     "Listing Title",
     "Date",
+    "Type",
     "Status",
 
   ];
@@ -46,6 +47,7 @@ const TableData = () => {
 
       <td>30 December, 2020</td>
       {/* End td */}
+      <td>Rent </td>
 
       <td>
         {/* Kiểm tra trạng thái và hiển thị tương ứng, thêm nút Cancel nếu Pending */}
