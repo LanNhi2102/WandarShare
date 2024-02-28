@@ -8,7 +8,28 @@ const ContactWithAgent = () => {
         <li className="search_area">
           <div className="form-group mb-3">
           </div>
-          <CalendarComponent/>
+          
+<div className="col-lg-8 col-xl-8">
+        <div className="my_profile_setting_input form-group">
+          <input
+            type="date"
+            className="form-control"
+            id="startDay"
+          />
+          <p>Check in</p>
+        </div>
+      </div>
+
+      <div className="col-lg-8 col-xl-8">
+        <div className="my_profile_setting_input form-group">
+          <input
+            type="date"
+            className="form-control"
+            id="endDay"
+          />
+          <p>Check out</p>
+        </div>
+      </div>
         </li>{" "}
         {/* End li */}
        
