@@ -41,13 +41,15 @@ const ContactWithAgent = () => {
               id="form_message"
               name="form_message"
               className="form-control "
-              rows="5"
+              rows="1"
               required
-              placeholder="Your Message"
+              placeholder="Choose Days"
+              
             ></textarea>
           </div>
         </li>{" "}
         {/* End li */}
+       
         <li>
           <div className="search_option_button">
             <button type="submit" className="btn btn-block btn-thm w-100">
