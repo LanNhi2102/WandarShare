@@ -32,7 +32,7 @@ const LocationField = () => {
 
 
       {/* End .col */}
-
+      {/* 
       <div className="col-lg-12">
         <div className="my_profile_setting_input form-group">
           <div className="h400 bdrs8" id="map-canvas">
@@ -41,7 +41,7 @@ const LocationField = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End .col */}
 
 

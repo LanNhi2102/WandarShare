@@ -73,45 +73,49 @@ const CreateList = () => {
         </div>
       </div>
       {/* End .col */}
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="startDay">Start Day</label>
-          <input
-            type="date"
-            className="form-control"
-            id="startDay"
-          />
-          <p>For Exchange, please make sure the total days are less than 7</p>
+      <div className="row">
+        <div className="col-lg-4 col-xl-4">
+          <div className="my_profile_setting_input form-group">
+            <label htmlFor="startDay">Start Day</label>
+            <input
+              type="date"
+              className="form-control"
+              id="startDay"
+            />
+            <p>For Exchange, please make sure the total days are less than 7</p>
+          </div>
+        </div>
+
+        <div className="col-lg-4 col-xl-4">
+          <div className="my_profile_setting_input form-group">
+            <label htmlFor="endDay">End Day</label>
+            <input
+              type="date"
+              className="form-control"
+              id="endDay"
+            />
+            <p>For Exchange, please make sure the total days are less than 7</p>
+          </div>
+        </div>
+
+        <div className="col-lg-4 col-xl-4">
+          <div className="my_profile_setting_input form-group">
+            <label htmlFor="formGroupExamplePrice">Price for rent (VND)</label>
+            <input
+              type="number"
+              className="form-control"
+              id="formGroupExamplePrice"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="endDay">End Day</label>
-          <input
-            type="date"
-            className="form-control"
-            id="endDay"
-          />
-          <p>For Exchange, please make sure the total days are less than 7</p>
-        </div>
-      </div>
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExamplePrice">Price for rent (VND)</label>
-          <input
-            type="number"
-            className="form-control"
-            id="formGroupExamplePrice"
-          />
-        </div>
-      </div>
       {/* End .col */}
+
+
+      {/* End .col */}
+
       <button className="btn admore_btn mb30">Add More Days And Price</button>
-
-      {/* End .col */}
-
-
 
 
     </>
