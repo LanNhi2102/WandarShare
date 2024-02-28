@@ -7,6 +7,7 @@ import CheckBoxFilter from "./CheckBoxFilter";
 import GlobalSelectBox from "./GlobalSelectBox";
 
 import { useNavigate } from 'react-router-dom';
+// eslint-disable-next-line react/prop-types
 const GlobalFilter = ({ className = "" }) => {
   const navigate = useNavigate();
 
@@ -24,6 +25,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Enter keyword "
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>
@@ -53,6 +55,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Location"
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addLocation(e.target.value))}
             />
             <label>

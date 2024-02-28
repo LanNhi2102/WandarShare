@@ -28,14 +28,12 @@ const OurMission = () => {
       <div className="col-lg-8 col-xl-7">
         <div className="about_content">
           <p className="large">
-            Start with a compelling narrative that introduces your timeshare exchange platform. Explain what motivated the inception of the platform and the core problem it aims to solve for timeshare owners. This section should encapsulate your mission and set the tone for the rest of the page.
-          </p>
+
+          Welcome to WandarShare, where we make timeshare exchange easy. With a global network of top resorts and personalized service, we are here to help you unlock the perfect vacation. Join us and start exploring today!</p>
           <p>
-            Clearly articulate your mission statement. This could focus on providing timeshare owners with unparalleled flexibility, variety, and value in their vacation experiences. Highlight your commitment to creating a trusted community of like-minded individuals who can explore the world through timeshare exchanging.
-          </p>
+          Our mission at WandarShare is simple: to provide seamless and rewarding timeshare exchanges for our members. We strive to exceed expectations by offering a diverse selection of destinations and unparalleled customer service.</p>
           <p>
-            Describe the services your platform offers in detail. Explain how users can list their properties, search for exchanges, and finalize swaps. Highlight any unique features or benefits, such as a wide selection of properties, user-friendly interface, or dedicated customer support.Outline the core values that guide your operations and decision-making process. Whether it's transparency, innovation, customer satisfaction, or sustainability, sharing your values helps align your platform with users who share similar principles.
-          </p>
+          We have developed a user-friendly platform that streamlines the exchange process, making it easier than ever to swap your timeshare week for a dream getaway. Our extensive network of resorts ensures that you will find the perfect destination, every time.</p>
 
           <ul className="ab_counting">
             {missionContent.map((item) => (

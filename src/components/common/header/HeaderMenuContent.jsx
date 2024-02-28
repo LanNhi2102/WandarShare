@@ -65,6 +65,17 @@ const HeaderMenuContent = ({ float = "" }) => {
     },
   ];
 
+  const timeshareInfo = [
+    {
+      id: 1,
+      name: "Exchange",
+      routerPath: "/",
+    },
+    { id: 2, 
+      name: "Book", 
+      routerPath: "/" },
+  ];
+
   return (
     <ul
       id="respMenu"
@@ -81,13 +92,32 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-      <li className="last">
-        <Link
-          to="/about-us"
-          className={pathname === "/about-us" ? "ui-active" : undefined}
+      <li className="dropitem">
+        <a
+          href="#"
+          className={
+            timeshareInfo.some((page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1])
+          }
         >
-          About Us
-        </Link>
+          <span className="title">Timeshare Information</span>
+          <span className="arrow"></span>
+        </a>
+        {/* <!-- Level Two--> */}
+
+        <ul className="sub-menu ">
+          {timeshareInfo.map((item) => (
+            <li key={item.id}>
+              <Link
+                to={item.routerPath}
+                className={
+                  pathname?.split('/')[1] === item.routerPath?.split('/')[1]
+                }
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </li>
       {/* End .dropitem */}
 
@@ -147,6 +177,16 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
+      </li>
+      {/* End .dropitem */}
+      
+      <li className="last">
+        <Link
+          to="/about-us"
+          className={pathname === "/about-us" ? "ui-active" : undefined}
+        >
+          About Us
+        </Link>
       </li>
       {/* End .dropitem */}
 

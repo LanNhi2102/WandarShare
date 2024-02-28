@@ -3,12 +3,9 @@ import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
 import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
-import Partners from "../common/Partners";
 import PopupSignInUp from "../common/PopupSignInUp";
 import WhyChoose from "../common/WhyChoose";
-// import Testimonial from "../home-7/Testimonial";
 import BreadCrumbBanner from "./BreadCrumbBanner";
-import Team from "./Team";
 import OurMission from "./OurMission";
 
 const index = () => {
@@ -60,27 +57,6 @@ const index = () => {
         </div>
       </section>
 
-      {/* <!-- Our Team --> */}
-      <section className="our-team bgc-f7">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Our Team</h2>
-
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="team_slider gutter-x15">
-                <Team />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* <!-- Our Testimonials --> */}
       <section className="our-testimonials">
         <div className="container">
@@ -99,23 +75,6 @@ const index = () => {
               </div>
             </div>
           </div> */}
-        </div>
-      </section>
-
-      {/* <!-- Our Partners --> */}
-      <section id="our-partners" className="our-partners">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Our Partners</h2>
-                <p>We only work with the best companies around the globe</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <Partners />
-          </div>
         </div>
       </section>
 

@@ -5,29 +5,11 @@ import "../public/assets/scss/index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages";
-// import HomePage3 from "./pages/homes/home-3";
-// import HomePage4 from "./pages/homes/home-4";
-// import HomePage5 from "./pages/homes/home-5";
-// import HomePage6 from "./pages/homes/home-6";
-// import HomePage7 from "./pages/homes/home-7";
-// import HomePage8 from "./pages/homes/home-8";
-// import HomePage9 from "./pages/homes/home-9";
-// import HomePage10 from "./pages/homes/home-10";
-// import HomePage2 from "./pages/homes/home-2";
+
 import ScrollTopBehaviour from "./components/common/ScrollTopBehaviour";
 import ListingGridPage1 from "./pages/listings/listing-grid-v1";
 import ListingExchange from "./pages/listings/listing-exchange";
-// import ListingGridPage3 from "./pages/listings/listing-grid-v3";
-// import ListingGridPage4 from "./pages/listings/listing-grid-v4";
-// import ListingGridPage5 from "./pages/listings/listing-grid-v5";
-// import ListingGridPage6 from "./pages/listings/listing-grid-v6";
-// import ListingMapPage1 from "./pages/listings/listing-map-v1";
-// import ListingMapPage2 from "./pages/listings/listing-map-v2";
-// import ListingMapPage3 from "./pages/listings/listing-map-v3";
-// import ListingMapPage4 from "./pages/listings/listing-map-v4";
-import MapHeaderPage from "./pages/listings/map-header";
-import ParallaxStylePage from "./pages/listings/parallax-style";
-import SliderStylePage from "./pages/listings/slider-style";
+
 import CreateListingPage from "./pages/admin/create-listing";
 import MyDashboardPage from "./pages/admin/my-dashboard";
 import MyFavouritePage from "./pages/admin/my-favourites";
@@ -75,29 +57,9 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<Home />} />
-              {/* <Route path="home-2" element={<HomePage2 />} />
-              <Route path="home-3" element={<HomePage3 />} />
-              <Route path="home-4" element={<HomePage4 />} />
-              <Route path="home-5" element={<HomePage5 />} />
-              <Route path="home-6" element={<HomePage6 />} />
-              <Route path="home-7" element={<HomePage7 />} />
-              <Route path="home-8" element={<HomePage8 />} />
-              <Route path="home-9" element={<HomePage9 />} />
-              <Route path="home-10" element={<HomePage10 />} /> */}
 
               <Route path="listing-grid-v1" element={<ListingGridPage1 />} />
               <Route path="listing-exchange" element={<ListingExchange />} />
-              {/* <Route path="listing-grid-v3" element={<ListingGridPage3 />} />
-              <Route path="listing-grid-v4" element={<ListingGridPage4 />} />
-              <Route path="listing-grid-v5" element={<ListingGridPage5 />} />
-              <Route path="listing-grid-v6" element={<ListingGridPage6 />} /> */}
-{/* 
-              <Route path="listing-list-v1" element={<ListingPage1 />} />
-
-              <Route path="listing-map-v1" element={<ListingMapPage1 />} />
-              <Route path="listing-map-v2" element={<ListingMapPage2 />} />
-              <Route path="listing-map-v3" element={<ListingMapPage3 />} />
-              <Route path="listing-map-v4" element={<ListingMapPage4 />} /> */}
 
               <Route
                 path="listing-details-v1/:id"
@@ -115,10 +77,6 @@ function App() {
                 path="listing-details-v4"
                 element={<ListingDetailsPage4 />}
               />
-
-              <Route path="map-header" element={<MapHeaderPage />} />
-              <Route path="parallax-style" element={<ParallaxStylePage />} />
-              <Route path="slider-style" element={<SliderStylePage />} />
 
               <Route path="create-listing" element={<CreateListingPage />} />
               <Route path="my-dashboard" element={<MyDashboardPage />} />
