@@ -1,18 +1,21 @@
+import React, { useState } from "react";
+import "react-datepicker/dist/react-datepicker.css";
 import {
   addKeyword,
-  addLocation,
 } from "../../features/properties/propertiesSlice";
 import { useNavigate } from "react-router-dom";
+import DatePicker from "react-datepicker";
 
 // eslint-disable-next-line react/prop-types
 const ExchangeFilter = ({ className = "" }) => {
   const navigate = useNavigate();
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
 
   // submit handler
   const submitExchange = () => {
     navigate("/listing-exchange");
   };
-
 
   return (
     <div className={`home1-advnc-search ${className}`}>
@@ -22,13 +25,11 @@ const ExchangeFilter = ({ className = "" }) => {
             <input
               type="text"
               className="form-control"
-              placeholder="Enter keyword "
-              // eslint-disable-next-line no-undef
+              placeholder="Enter Timeshare or Location"
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>
         </li>
-        {/* End li */}
 
         <li className="list-inline-item">
           <div className="search_option_two">
@@ -45,39 +46,35 @@ const ExchangeFilter = ({ className = "" }) => {
             </div>
           </div>
         </li>
-        {/* End li */}
 
         <li className="list-inline-item">
           <div className="form-group">
-            <input
-              type="text"
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              selectsStart
+              startDate={startDate}
+              endDate={endDate}
+              placeholderText="Start Date"
               className="form-control"
-              placeholder="Location"
-              // eslint-disable-next-line no-undef
-              onChange={(e) => dispatch(addLocation(e.target.value))}
             />
-            <label>
-              <span className="flaticon-maps-and-flags"></span>
-            </label>
           </div>
         </li>
-        {/* End li */}
 
         <li className="list-inline-item">
-          <div className="small_dropdown2">
-            <div
-              id="date"
-              className="btn dd_btn"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              <span>Date</span>
-            </div>
-
+          <div className="form-group">
+            <DatePicker
+              selected={endDate}
+              onChange={(date) => setEndDate(date)}
+              selectsEnd
+              startDate={startDate}
+              endDate={endDate}
+              minDate={startDate}
+              placeholderText="End Date"
+              className="form-control"
+            />
           </div>
         </li>
-        {/* End li */}
 
         <li className="list-inline-item">
           <div className="search_option_button">
@@ -90,7 +87,6 @@ const ExchangeFilter = ({ className = "" }) => {
             </button>
           </div>
         </li>
-        {/* End li */}
       </ul>
     </div>
   );
