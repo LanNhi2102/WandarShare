@@ -5,12 +5,12 @@ const PropertyDetails = () => {
         <ul className="list-inline-item">
           <li>
             <p>
-              Property ID : <span>HZ27</span>
+              Property ID : <span>HCM210</span>
             </p>
           </li>
           <li>
             <p>
-              Price : <span>$130,000</span>
+              Price : <span>$1300000</span>
             </p>
           </li>
           <li>
@@ -62,7 +62,7 @@ const PropertyDetails = () => {
           </li>
           <li>
             <p>
-              Property Status : <span>For Exchange</span>
+              Property Status : <span>For Booking</span>
             </p>
           </li>
         </ul>
