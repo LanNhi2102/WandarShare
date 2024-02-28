@@ -45,6 +45,7 @@ const properties = [
     amenities: "air-conditioning",
     featured: "sale",
     created_at: 1667181268893,
+    locationIcon: "/assets/icons/location.png",
   },
   {
     id: 2,
@@ -96,7 +97,7 @@ const properties = [
   {
     id: 3,
     img: "/assets/images/property/fp3.jpg",
-    price: "1,300,000",
+    price: "130000",
     type: "Bungalow",
     title: "Single Family Home",
     location: `1421 San Pedro
@@ -108,20 +109,20 @@ const properties = [
     itemDetails: [
       {
         name: "Beds",
-        number: "3",
+        number: "6",
       },
       {
         name: "Baths",
-        number: "2",
+        number: "3",
       },
       {
-        name: "SqFt",
-        number: "3280",
+        name: "Room",
+        number: "3",
       },
     ],
     posterAvatar: "/assets/images/property/pposter3.png",
-    posterName: "Ali Tufan",
-    postedYear: "1 year ago",
+    posterName: "6 people",
+    postedYear: "",
     imgList: [
       "/assets/images/property/2.jpg",
       "/assets/images/property/3.jpg",
