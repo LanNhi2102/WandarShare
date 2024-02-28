@@ -10,8 +10,7 @@ const Sidebar = () => {
       <div className="sidebar_listing_list">
         <div className="sidebar_advanced_search_widget">
           <div className="sl_creator">
-            <h4 className="mb25">Listed By</h4>
-            <ListingCreator />
+            <h4 className="mb25">Booking</h4>
           </div>
           {/* End .sl_creator */}
           <ContactWithAgent />
