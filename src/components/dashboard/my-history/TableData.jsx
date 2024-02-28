@@ -48,8 +48,30 @@ const TableData = () => {
       {/* End td */}
 
       <td>
-        <span className="status_tag badge">Finished</span>
+        {/* Kiểm tra trạng thái và hiển thị tương ứng, thêm nút Cancel nếu Pending */}
+        {item.status === "Finished" ? (
+          <span className="status_tag badge">Finished</span>
+        ) : (
+          <>
+            <span className="status_tag badge">Pending</span>
+            {/* Thêm nút Cancel */}
+            <button
+              type="button"
+              className="btn btn-danger btn-sm"
+              style={{
+                padding: '0.25rem 0.5rem',
+                fontSize: '0.875rem',
+                lineHeight: 1.5,
+                verticalAlign: 'middle',
+                marginLeft: '5px',
+              }}
+            >
+              <i className="fa fa-times"></i> Cancel
+            </button>
 
+
+          </>
+        )}
       </td>
       {/* End td */}
     </tr>

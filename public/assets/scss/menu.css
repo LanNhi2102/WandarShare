@@ -868,6 +868,26 @@ header.stylehome1.home4 a {
   .stylehome1.home3 .header.stylehome1 {
     border-bottom: none !important;
   }
+
+  .status_tag.badge {
+    display: inline-block;
+    margin-right: 5px;
+    /* Khoảng cách giữa badge và nút */
+  }
+
+  .custom-cancel-btn {
+    padding: 0.25rem 0.5rem;
+    /* Điều chỉnh padding để phù hợp với kích thước của badge */
+    font-size: 0.875rem;
+    /* Đảm bảo kích thước font tương đương với badge */
+    line-height: 1.5;
+    /* Điều chỉnh line-height để phù hợp */
+    vertical-align: middle;
+    /* Đảm bảo nút và badge cùng một đường baseline */
+    margin-left: 5px;
+    /* Khoảng cách giữa badge và nút */
+  }
+
 }
 
 /* Small devices (min-width: 576px) (max-width: 767.98px) // (landscape phones, less than 768px) */

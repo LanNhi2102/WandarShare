@@ -137,21 +137,22 @@ const GlobalFilter = ({ className = "" }) => {
               <input type="date" class="form-control" id="endDay" />
             </div>
           </div>
+          <li className="list-inline-item">
+            <div className="search_option_button">
+              <button
+                onClick={submitHandler}
+                type="submit"
+                className="btn btn-thm"
+              >
+                Search
+              </button>
+            </div>
+          </li>
+          {/* End li */}
         </div>
 
 
-        <li className="list-inline-item">
-          <div className="search_option_button">
-            <button
-              onClick={submitHandler}
-              type="submit"
-              className="btn btn-thm"
-            >
-              Search
-            </button>
-          </div>
-        </li>
-        {/* End li */}
+
       </ul>
     </div>
   );
