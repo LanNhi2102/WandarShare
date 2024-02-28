@@ -2,6 +2,7 @@
 import { Link, useLocation } from "react-router-dom";
 import MyAccount from "./MyAccount";
 
+// eslint-disable-next-line react/prop-types
 const HeaderMenuContent = ({ float = "" }) => {
 
   const { pathname } = useLocation()
