@@ -40,7 +40,7 @@ const DetailsContent = () => {
       <div className="additional_details">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb15">Additional details</h4>
+            <h4 className="mb15">Additional details</h4>  
           </div>
           <AdditionalDetails />
         </div>
