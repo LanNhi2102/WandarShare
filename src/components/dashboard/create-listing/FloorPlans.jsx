@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Modal, Button } from 'react-bootstrap';
 const FloorPlans = () => {
   // State for each input field
   const [planDescription, setPlanDescription] = useState('');
@@ -170,21 +170,33 @@ const FloorPlans = () => {
           </div>
         </div>
       </form>
+      <Modal show={showConfirmModal} onHide={() => setShowConfirmModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirm</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure to create a new Timeshare with this information?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowConfirmModal(false)}>
+            Refuse
+          </Button>
+          <Button variant="primary" onClick={handleAccept}>
+            Accept
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
-      {showConfirmModal && (
-        <div className="modal">
-          <p>Are you sure to create a new Timeshare with this information?</p>
-          <button onClick={handleAccept}>Accept</button>
-          <button onClick={handleRefuse}>Refuse</button>
-        </div>
-      )}
-
-      {showSuccessModal && (
-        <div className="modal">
-          <p>The request to create a new Timeshare has been sent successfully. Please wait for review.</p>
-          <button onClick={handleCloseSuccessModal}>OK</button>
-        </div>
-      )}
+      {/* Modal thông báo thành công sau khi người dùng nhấn "Accept" */}
+      <Modal show={showSuccessModal} onHide={() => setShowSuccessModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Success</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>The request to create a new Timeshare has been sent successfully. Please wait for review.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowSuccessModal(false)}>
+            OK
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };

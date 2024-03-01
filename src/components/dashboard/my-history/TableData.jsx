@@ -1,6 +1,7 @@
 
 import properties from "../../../data/properties";
 
+
 const TableData = () => {
   let theadConent = [
     "Listing Title",
@@ -9,6 +10,7 @@ const TableData = () => {
     "Status",
 
   ];
+
   let tbodyContent = properties?.slice(0, 4)?.map((item) => (
     <tr key={item.id}>
       <td scope="row">
@@ -67,6 +69,7 @@ const TableData = () => {
                 verticalAlign: 'middle',
                 marginLeft: '5px',
               }}
+
             >
               <i className="fa fa-times"></i> Cancel
             </button>

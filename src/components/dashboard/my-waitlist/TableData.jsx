@@ -1,4 +1,5 @@
-
+import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 import properties from "../../../data/properties";
 
 const TableData = () => {
@@ -8,6 +9,23 @@ const TableData = () => {
     "Status",
     "Action",
   ];
+  const [showModal, setShowModal] = useState(false); // Trạng thái kiểm soát việc hiển thị modal
+  const [selectedPropertyId, setSelectedPropertyId] = useState(null); // Lưu ID của property được chọn để thực hiện exchange
+
+  const handleAcceptClick = (propertyId) => {
+    setShowModal(true);
+    setSelectedPropertyId(propertyId); // Lưu lại ID của property khi người dùng nhấn Accept
+  };
+  const handleRefuseClick = () => {
+    setShowRefuseModal(true);
+  };
+
+  const handleConfirmExchange = () => {
+    console.log('Exchange confirmed for property ID:', selectedPropertyId);
+    // Thực hiện logic exchange tại đây...
+    setShowModal(false); // Đóng modal sau khi đã xác nhận
+  };
+
   let tbodyContent = properties?.slice(0, 4)?.map((item) => (
     <tr key={item.id}>
       <td scope="row">
@@ -58,7 +76,7 @@ const TableData = () => {
         <ul className="action_list mb0" style={{ listStyle: 'none', padding: 0 }}>
           <li className="list-inline-item" data-toggle="tooltip" data-placement="top" title="Accept" style={{ marginRight: '10px' }}>
             <button
-              onClick={() => console.log('Accepted')}
+              onClick={() => handleAcceptClick(item.id)}
               style={{
                 backgroundColor: '#4CAF50', // Màu xanh lá
                 color: 'white',
@@ -79,7 +97,7 @@ const TableData = () => {
           </li>
           <li className="list-inline-item" data-toggle="tooltip" data-placement="top" title="Refuse">
             <button
-              onClick={() => console.log('Refused')}
+              onClick={handleRefuseClick(item.id)}
               style={{
                 backgroundColor: '#f44336', // Màu đỏ
                 color: 'white',
@@ -122,7 +140,40 @@ const TableData = () => {
 
         <tbody>{tbodyContent}</tbody>
       </table>
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Exchange Confirmation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure you want to exchange this Timeshare?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleConfirmExchange}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      <Modal show={showRefuseModal} onHide={() => setShowRefuseModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Refuse Confirmation</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure you want to refuse this Timeshare?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowRefuseModal(false)}>
+            No
+          </Button>
+          <Button variant="primary" onClick={() => {
+            // Thêm logic khi người dùng chọn "Yes" (ví dụ: cập nhật trạng thái hoặc thông báo cho server)
+            setShowRefuseModal(false);
+          }}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
     </>
+
   );
 };
 

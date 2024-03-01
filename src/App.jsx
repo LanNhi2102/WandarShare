@@ -135,6 +135,7 @@ function App() {
               <Route path="my-history" element={<MyHistoryPage />} />
               <Route path="my-waitlist" element={<MyWaitlistPage />} />
 
+
               <Route path="blog-list-1" element={<Blog1Page />} />
               <Route path="blog-list-2" element={<Blog2Page />} />
               <Route path="blog-list-3" element={<Blog3Page />} />
