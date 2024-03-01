@@ -97,7 +97,7 @@ const TableData = () => {
           </li>
           <li className="list-inline-item" data-toggle="tooltip" data-placement="top" title="Refuse">
             <button
-              onClick={handleRefuseClick(item.id)}
+              onClick={handleRefuseClick}
               style={{
                 backgroundColor: '#f44336', // Màu đỏ
                 color: 'white',
@@ -150,23 +150,6 @@ const TableData = () => {
             No
           </Button>
           <Button variant="primary" onClick={handleConfirmExchange}>
-            Yes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-      <Modal show={showRefuseModal} onHide={() => setShowRefuseModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>Refuse Confirmation</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Are you sure you want to refuse this Timeshare?</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowRefuseModal(false)}>
-            No
-          </Button>
-          <Button variant="primary" onClick={() => {
-            // Thêm logic khi người dùng chọn "Yes" (ví dụ: cập nhật trạng thái hoặc thông báo cho server)
-            setShowRefuseModal(false);
-          }}>
             Yes
           </Button>
         </Modal.Footer>
