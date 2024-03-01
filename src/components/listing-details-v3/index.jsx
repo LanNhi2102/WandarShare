@@ -20,7 +20,17 @@ const index = () => {
       <PopupSignInUp />
 
       {/* <!-- Listing Single Property --> */}
-
+      <section className="listing-title-area mt85 pb0 md-mt0">
+        <div className="container pb50">
+          <div className="row">
+            <div className="col-lg-7 col-xl-8 d-flex justify-content-center align-items-center">
+              <div className="single_property_title ">
+                <h10>Booking details</h10>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* <!-- Agent Single Grid View --> */}
       <section className="our-agent-single bgc-f7 pb30-991">
