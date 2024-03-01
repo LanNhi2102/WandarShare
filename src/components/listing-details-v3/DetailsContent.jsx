@@ -11,7 +11,7 @@ const DetailsContent = () => {
         </div>
         {/* End .lsd_list */}
 
-        <h4 className="mb30">YourInfomation</h4>
+        <h4 className="mb30">Your Infomation</h4>
         <PropertyDescriptions />
       </div>
       {/* End .listing_single_description */}
