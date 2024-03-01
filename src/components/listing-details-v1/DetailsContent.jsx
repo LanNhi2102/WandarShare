@@ -71,7 +71,7 @@ const DetailsContent = () => {
         <h4 className="mb30">
           Location{" "}
           <small className="float-end">
-            1421 San Pedro St, Los Angeles, CA 90015
+          425/2 Nguyễn Cừ P10 Q1 TPHCM
           </small>
         </h4>
         <div className="property_video p0">
