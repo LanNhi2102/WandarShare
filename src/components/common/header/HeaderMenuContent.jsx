@@ -276,7 +276,7 @@ const HeaderMenuContent = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Listing</span>
+          <span className="title">Book</span>
           <span className="arrow"></span>
         </a>
         {/* <!-- Level Two--> */}
