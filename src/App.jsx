@@ -65,7 +65,7 @@ import ListingDynamicDetailsV2 from "./pages/listing-details/listing-details-v2"
 import ListingDetailsPage3 from "./pages/listing-details/listing-details-v3";
 import ListingDetailsPage4 from "./pages/listing-details/listing-details-v4";
 import ListingPage1 from "./pages/listings/listing-list-v1";
-
+import MyCancelPage from "./pages/admin/my-cancel";
 if (typeof window !== "undefined") {
   import("bootstrap");
 }
@@ -134,6 +134,7 @@ function App() {
               <Route path="my-wallet" element={<MySavedSearchPage />} />
               <Route path="my-history" element={<MyHistoryPage />} />
               <Route path="my-waitlist" element={<MyWaitlistPage />} />
+              <Route path="my-cancel" element={<MyCancelPage />} />
 
 
               <Route path="blog-list-1" element={<Blog1Page />} />

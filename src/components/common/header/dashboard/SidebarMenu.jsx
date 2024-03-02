@@ -14,6 +14,7 @@ const SidebarMenu = () => {
     { id: 2, name: "Rent/Exchange History", route: "/my-history" },
     { id: 3, name: "Waitlist Requests", route: "/my-waitlist" },
   ];
+
   const reviews = [
     { id: 1, name: "My Reviews", route: "/my-review" },
     { id: 2, name: "Visitor Reviews", route: "/my-review" },
