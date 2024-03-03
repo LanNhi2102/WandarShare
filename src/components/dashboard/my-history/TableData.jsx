@@ -1,8 +1,18 @@
-
+import { Modal, Button } from 'react-bootstrap';
+import { useState } from 'react';
 import properties from "../../../data/properties";
-
+import { useNavigate } from 'react-router-dom';
 
 const TableData = () => {
+
+  const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const handleConfirm = () => {
+    navigate('/my-cancel');
+  };
   let theadConent = [
     "Listing Title",
     "Date",
@@ -70,11 +80,25 @@ const TableData = () => {
                 marginLeft: '5px',
               }}
 
-            >
-              <i className="fa fa-times"></i> Cancel
+              onClick={handleShow}>
+              Cancel
             </button>
 
-
+            {/* Modal */}
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Cancel Confirmation</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>Are you sure you want to cancel?</Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  No
+                </Button>
+                <Button variant="primary" onClick={handleConfirm}>
+                  Yes
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </>
         )}
       </td>

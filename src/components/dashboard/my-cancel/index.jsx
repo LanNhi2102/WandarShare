@@ -4,8 +4,81 @@ import MobileMenu from "../../common/header/MobileMenu";
 import ChangePassword from "./ChangePassword";
 import ProfileInfo from "./ProfileInfo";
 import SocialMedia from "./SocialMedia";
+import React, { useState } from 'react';
 
 const index = () => {
+  const [currentStep, setCurrentStep] = useState(1);
+  const [agreeToRefundPolicy, setAgreeToRefundPolicy] = useState(false);
+  const goToStep = (stepNumber) => {
+    if (currentStep === 2 && !agreeToRefundPolicy) {
+      alert("You must agree to the refund policy to proceed.");
+      return;
+    }
+    setCurrentStep(stepNumber);
+  };
+
+  // Inline styles for the progress indicator
+  const progressIndicatorStyles = {
+    container: {
+      display: 'flex',
+      justifyContent: 'center',
+      margin: '20px 0',
+    },
+    step: {
+      width: '60px',
+      height: '60px',
+      borderRadius: '50%',
+      background: '#ddd',
+      color: '#fff',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: '0 10px',
+    },
+    activeStep: {
+      background: 'green',
+    },
+    line: {
+      height: '2px',
+      flex: 1,
+      background: '#ddd',
+      position: 'relative',
+      top: '29px',
+    },
+    activeLine: {
+      background: 'green',
+    },
+  };
+  const titleStyle = {
+    textAlign: 'center',
+    marginBottom: '-150px',
+    marginTop: '120px',
+    marginLeft: '300px', // Adjusting top margin to bring title closer to progress indicator
+    fontSize: '32px', // Size of the title
+    fontWeight: 'bold', // Bold text
+  };
+  const stepContent = {
+    1: (
+      <>
+        <p>Fill in your information</p>
+        <ProfileInfo />
+      </>
+    ),
+    2: (
+      <>
+        <p>Read cancel policy</p>
+        <SocialMedia />
+      </>
+    ),
+    3: (
+      <>
+        <p>Review your info</p>
+        <ChangePassword />
+      </>
+    ),
+  };
+
+
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -25,87 +98,59 @@ const index = () => {
         </div>
       </div>
       {/* End sidebar_menu */}
-
+      <h2 style={titleStyle}>Cancellation and refund process</h2>
       {/* <!-- Our Dashbord --> */}
-      <section className="our-dashbord dashbord bgc-f7 pb50">
-        <div className="container-fluid ovh">
+      <section className="our-dashbord dashbord">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-12 maxw100flex-992">
-              <div className="row">
-                {/* Start Menu */}
-                <div className="col-lg-12">
-                  <div className="dashboard_navigationbar dn db-1024">
-                    <div className="dropdown">
-                      <button
-                        className="dropbtn"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#DashboardOffcanvasMenu"
-                        aria-controls="DashboardOffcanvasMenu"
-                      >
-                        <i className="fa fa-bars pr10"></i> Menu
-                      </button>
+            <div className="col-lg-12">
+              {/* Progress Indicator */}
+              <div style={progressIndicatorStyles.container}>
+                {[1, 2, 3].map((step) => (
+                  <React.Fragment key={step}>
+                    <div
+                      style={{
+                        ...progressIndicatorStyles.step,
+                        ...(currentStep >= step ? progressIndicatorStyles.activeStep : {}),
+                      }}
+                    >
+                      {step}
                     </div>
-                  </div>
-                </div>
-                {/* End Menu */}
+                    {step < 3 && (
+                      <div
+                        style={{
+                          ...progressIndicatorStyles.line,
+                          ...(currentStep > step ? progressIndicatorStyles.activeLine : {}),
+                        }}
+                      />
+                    )}
 
-                <div className="col-lg-12 mb10">
-                  <div className="breadcrumb_content style2">
-                    <h2 className="breadcrumb_title">Cancellation and refund process</h2>
-                    <p>We are glad to see you again!</p>
-                  </div>
-                </div>
-                {/* End .col */}
-
-                <div className="col-lg-12">
-                  <div className="my_dashboard_review">
-                    <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Profile Information</h4>
-                      </div>
-                      <div className="col-xl-10">
-                        <ProfileInfo />
-                      </div>
-                    </div>
-                  </div>
-                  {/* End prifle info wrapper end */}
-
-                  <div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Social Media</h4>
-                      </div>
-                      <div className="col-xl-10">
-                        <SocialMedia />
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .SocialMedia */}
-
-                  <div className="my_dashboard_review mt30">
-                    <div className="row">
-                      <div className="col-xl-2">
-                        <h4>Change password</h4>
-                      </div>
-                      <div className="col-xl-10">
-                        <ChangePassword />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  </React.Fragment>
+                ))}
               </div>
-              {/* End .row */}
 
-              <div className="row mt50">
-                <div className="col-lg-12">
-                  <div className="copyright-widget text-center">
-                    <p>© 2024 Wandar Share. Made with love.</p>
-                  </div>
-                </div>
+              {/* Dynamic Content Based on Step */}
+              {currentStep === 1 && <ProfileInfo />}
+              {currentStep === 2 && (
+                <>
+                  <SocialMedia />
+                  <label>
+                    <input type="checkbox" checked={agreeToRefundPolicy} onChange={() => setAgreeToRefundPolicy(!agreeToRefundPolicy)} /> I agree to the refund policy
+                  </label>
+                </>
+              )}
+              {currentStep === 3 && <ChangePassword />}
+
+              {/* Navigation Buttons */}
+              <div className="navigation-buttons">
+                {currentStep > 1 && (
+                  <button onClick={() => goToStep(currentStep - 1)}>Previous</button>
+                )}
+                {currentStep < 3 && (
+                  <button onClick={() => goToStep(currentStep + 1)}>Next</button>
+                )}
               </div>
-              {/* End .row */}
             </div>
-            {/* End .col */}
           </div>
         </div>
       </section>
