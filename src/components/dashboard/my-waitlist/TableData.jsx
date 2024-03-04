@@ -5,7 +5,9 @@ import properties from "../../../data/properties";
 const TableData = () => {
   let theadConent = [
     "Listing Title",
-    "Date Exchange",
+    "Date of request submission",
+    "Start Day",
+    "End Day",
     "Status",
     "Action",
   ];
@@ -62,6 +64,8 @@ const TableData = () => {
       </td>
       {/* End td */}
 
+      <td>30 December, 2020</td>
+      <td>30 December, 2020</td>
       <td>30 December, 2020</td>
       {/* End td */}
 

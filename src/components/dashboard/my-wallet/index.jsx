@@ -3,8 +3,12 @@ import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
 import SearchData from "./SearchData";
 import SearchBox from "./SearchBox";
-
+import { useNavigate } from 'react-router-dom';
 const index = () => {
+  const navigate = useNavigate();
+  const handleShow = () => {
+    navigate('./momo');
+  };
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -84,15 +88,15 @@ const index = () => {
                 </div>
               </div>
               {/* End .row */}
-              <div className="pck_chng_btn text-end">
+              {/* <div className="pck_chng_btn text-end">
                 <button className="btn btn-lg btn-thm">
                   Deposit
                 </button>
                 <button className="btn btn-lg btn-thm">
                   Withdraw
                 </button>
-              </div>
-
+              </div> */}
+              <button type="submit" class="btn btn-danger" onClick={handleShow}>Top up your wallet with MOMO</button>
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">

@@ -7,8 +7,50 @@ import SocialMedia from "./SocialMedia";
 import React, { useState } from 'react';
 
 const index = () => {
+  const buttonStyle = {
+    padding: '10px 15px',
+    margin: '5px',
+    borderRadius: '5px',
+    border: 'none',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  };
+
+  // Styles cho nút "Agree to Cancel" có một số điều chỉnh so với các nút khác
+  const agreeButtonStyle = {
+    ...buttonStyle,
+    backgroundColor: '#4CAF50',
+    color: 'white',
+  };
+
+  // Styles cho nút "Yes" và "No" trong modal
+  const modalButtonStyle = {
+    ...buttonStyle,
+    backgroundColor: '#007bff',
+    color: 'white',
+  };
+
+  // Style cho nút "Next" và "Previous"
+  const navigationButtonStyle = {
+    ...buttonStyle,
+    backgroundColor: '#007bff',
+    color: 'white',
+  };
+  const [showModal, setShowModal] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [agreeToRefundPolicy, setAgreeToRefundPolicy] = useState(false);
+  const [userInfo, setUserInfo] = useState({ // Khởi tạo trạng thái để lưu thông tin người dùng
+    username: '',
+    email: '',
+    firstName: '',
+    lastName: '',
+    phoneNumber: '', // Thêm trường số điện thoại
+    country: '', // Thêm trường quốc gia
+    companyName: '', // Thêm trường tên công ty
+    address: '',
+    cancellationReason: '',
+    // Thêm các trường khác tương tự
+  });
   const goToStep = (stepNumber) => {
     if (currentStep === 2 && !agreeToRefundPolicy) {
       alert("You must agree to the refund policy to proceed.");
@@ -16,7 +58,27 @@ const index = () => {
     }
     setCurrentStep(stepNumber);
   };
+  const modalStyle = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#fff',
+    padding: '20px',
+    zIndex: 1000,
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+  };
 
+  const overlayStyle = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    zIndex: 1000
+  };
   // Inline styles for the progress indicator
   const progressIndicatorStyles = {
     container: {
@@ -77,6 +139,11 @@ const index = () => {
       </>
     ),
   };
+  const handleModalConfirm = () => {
+    alert("Successfully canceled, refund (if any) will be transferred to your wallet, please wait.");
+    setShowModal(false);
+    // Thêm logic xử lý hủy bỏ tại đây
+  };
 
 
   return (
@@ -130,7 +197,7 @@ const index = () => {
               </div>
 
               {/* Dynamic Content Based on Step */}
-              {currentStep === 1 && <ProfileInfo />}
+              {currentStep === 1 && <ProfileInfo userInfo={userInfo} setUserInfo={setUserInfo} />}
               {currentStep === 2 && (
                 <>
                   <SocialMedia />
@@ -139,20 +206,40 @@ const index = () => {
                   </label>
                 </>
               )}
-              {currentStep === 3 && <ChangePassword />}
+              {currentStep === 3 && (
+                <>
+                  <ChangePassword userInfo={userInfo} />
+                  <button
+                    style={agreeButtonStyle}
+                    onClick={() => setShowModal(true)}
+                  >
+                    Agree to Cancel
+                  </button>
+                </>
+              )}
 
               {/* Navigation Buttons */}
               <div className="navigation-buttons">
                 {currentStep > 1 && (
-                  <button onClick={() => goToStep(currentStep - 1)}>Previous</button>
+                  <button style={navigationButtonStyle} onClick={() => goToStep(currentStep - 1)}>Previous</button>
                 )}
                 {currentStep < 3 && (
-                  <button onClick={() => goToStep(currentStep + 1)}>Next</button>
+                  <button style={navigationButtonStyle} onClick={() => goToStep(currentStep + 1)}>Next</button>
                 )}
               </div>
             </div>
           </div>
         </div>
+        {showModal && (
+          <>
+            <div style={overlayStyle} onClick={() => setShowModal(false)} />
+            <div style={modalStyle}>
+              <p>Do you agree with the information above and accept the cancellation?</p>
+              <button style={modalButtonStyle} onClick={handleModalConfirm}>Yes</button>
+              <button style={modalButtonStyle} onClick={() => setShowModal(false)}>No</button>
+            </div>
+          </>
+        )}
       </section>
     </>
   );

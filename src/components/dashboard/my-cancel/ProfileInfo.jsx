@@ -1,143 +1,144 @@
+import React from 'react';
 
-
-import { useState } from "react";
-
-const ProfileInfo = () => {
-    const [profile, setProfile] = useState(null);
-    const [cancellationReason, setCancellationReason] = useState('');
-    const [otherReason, setOtherReason] = useState('');
-
-    // upload profile
-    const uploadProfile = (e) => {
-        setProfile(e.target.files[0]);
-    };
-    const handleCancellationReasonChange = (event) => {
-        const selectedReason = event.target.value;
-        if (selectedReason !== 'Others') {
-            // Clear otherReason state if the selected reason is not "Others"
-            setOtherReason('');
-        }
-        setCancellationReason(selectedReason);
+const ProfileInfo = ({ userInfo, setUserInfo }) => {
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setUserInfo(prevState => ({
+            ...prevState,
+            [name]: value,
+        }));
     };
 
     return (
         <div className="row">
-
-            {/* End .col */}
-
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput1">Username</label>
+                    <label htmlFor="username">Username</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput1"
-                        placeholder="alitfn"
+                        id="username"
+                        name="username"
+                        placeholder="Username"
+                        value={userInfo.username}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleEmail">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="email"
                         className="form-control"
-                        id="formGroupExampleEmail"
-                        placeholder="creativelayers@gmail.com"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        value={userInfo.email}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput3">First Name</label>
+                    <label htmlFor="firstName">First Name</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput3"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First Name"
+                        value={userInfo.firstName}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput4">Last Name</label>
+                    <label htmlFor="lastName">Last Name</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput4"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last Name"
+                        value={userInfo.lastName}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
-
-
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput8">Phone Number</label>
+                    <label htmlFor="phoneNumber">Phone Number</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput8"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Phone Number"
+                        value={userInfo.phoneNumber}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
-
-
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput11">Country</label>
+                    <label htmlFor="country">Country</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput11"
+                        id="country"
+                        name="country"
+                        placeholder="Country"
+                        value={userInfo.country}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-lg-6 col-xl-6">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput12">
-                        Company Name (if have)
-                    </label>
+                    <label htmlFor="companyName">Company Name (if any)</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput12"
+                        id="companyName"
+                        name="companyName"
+                        placeholder="Company Name"
+                        value={userInfo.companyName}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
 
             <div className="col-xl-12">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="formGroupExampleInput13">Address</label>
+                    <label htmlFor="address">Address</label>
                     <input
                         type="text"
                         className="form-control"
-                        id="formGroupExampleInput13"
+                        id="address"
+                        name="address"
+                        placeholder="Address"
+                        value={userInfo.address}
+                        onChange={handleInputChange}
                     />
                 </div>
             </div>
-            {/* End .col */}
-
-            {/* Reason for cancellation */}
             <div className="col-xl-12">
                 <div className="my_profile_setting_input form-group">
-                    <label htmlFor="cancellationReason">Reason for cancellation</label>
+                    <label htmlFor="cancellationReason">Reason for Cancellation</label>
                     <select
                         className="form-control"
                         id="cancellationReason"
-                        value={cancellationReason}
-                        onChange={handleCancellationReasonChange}
+                        name="cancellationReason"
+                        value={userInfo.cancellationReason}
+                        onChange={handleInputChange}
                     >
                         <option value="Change of Plans">Change of Plans</option>
                         <option value="Health issues">Health issues</option>
@@ -147,12 +148,26 @@ const ProfileInfo = () => {
                         <option value="Traffic or Aviation Issues">Traffic or Aviation Issues</option>
                         <option value="Others">Others</option>
                     </select>
-                    {/* Show input field only if "Others" is selected */}
-
                 </div>
             </div>
-            {/* End Reason for cancellation */}
 
+            {/* Conditional rendering for the 'OtherReason' input field */}
+            {userInfo.cancellationReason === 'Others' && (
+                <div className="col-xl-12">
+                    <div className="my_profile_setting_input form-group">
+                        <label htmlFor="otherReason">Other Reason</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="otherReason"
+                            name="otherReason"
+                            placeholder="Please specify"
+                            value={userInfo.otherReason}
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

@@ -2,20 +2,28 @@ import { Modal, Button } from 'react-bootstrap';
 import { useState } from 'react';
 import properties from "../../../data/properties";
 import { useNavigate } from 'react-router-dom';
-
+import { useProperties } from '../my-cancel/PropertiesContext';
 const TableData = () => {
-
+  const { setSelectedProperty } = useProperties();
   const [show, setShow] = useState(false);
+  const [currentProperty, setCurrentProperty] = useState(null); // Thêm state này
   const navigate = useNavigate();
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (property) => {
+    setCurrentProperty(property); // Lưu trữ property tạm thời
+    setShow(true);
+  };
   const handleConfirm = () => {
-    navigate('/my-cancel');
+    if (currentProperty) {
+      setSelectedProperty(currentProperty); // Set selectedProperty trước khi điều hướng
+      navigate('/my-cancel');
+    }
   };
   let theadConent = [
     "Listing Title",
-    "Date",
+    "Start Day",
+    "End Day",
     "Type",
     "Status",
 
@@ -57,7 +65,8 @@ const TableData = () => {
       </td>
       {/* End td */}
 
-      <td>30 December, 2020</td>
+      <td>5 March, 2024</td>
+      <td>12 March, 2024</td>
       {/* End td */}
       <td>Rent </td>
 
