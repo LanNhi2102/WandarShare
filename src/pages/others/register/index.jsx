@@ -7,12 +7,12 @@ const metadata = {
   title: 'SignUp || WandarShare',
   description:
     'WandarShare - Timeshare',
-}
+
 
 const RegisterPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <SignUp />
     </>
   );

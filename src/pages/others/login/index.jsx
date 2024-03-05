@@ -12,7 +12,7 @@ const metadata = {
 const LoginPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Login />
     </>
   );

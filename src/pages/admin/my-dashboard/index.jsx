@@ -4,16 +4,16 @@ import MyDashboard from "@/components/dashboard/my-dashboard";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Dashboard || FindHouse - Real Estate React Template',
+  title: 'Dashboard || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 
 const MyDashboardPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <MyDashboard />
     </>
   );

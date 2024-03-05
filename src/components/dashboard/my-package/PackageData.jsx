@@ -4,32 +4,31 @@ const SearchData = () => {
       <thead className="thead-light">
         <tr>
           <th scope="col">Current Package</th>
-          <th scope="col">Properties remaining</th>
-          <th scope="col">Featured remaining</th>
-          <th scope="col">Renewal remaining</th>
-          <th scope="col">Storage Space</th>
-          <th scope="col">Expiry Date</th>
+          <th scope="col">Price</th>
+          <th scope="col">Start day</th>
+          <th scope="col">End date</th>
+
         </tr>
       </thead>
       {/* End thead */}
 
       <tbody>
         <tr>
-          <th scope="row">Free</th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
+          <th scope="row">Prenium Plan</th>
+
+          <td>300,000 VND</td>
+          <td>December 31, 2020</td>
+
           <td>December 31, 2020</td>
         </tr>
         {/* End tr */}
 
         <tr>
-          <th scope="row">Free</th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
+          <th scope="row">Prenium Plan</th>
+
+          <td>300,000 VND</td>
+          <td>December 31, 2020</td>
+
           <td>December 31, 2020</td>
         </tr>
         {/* End tr */}
@@ -38,50 +37,50 @@ const SearchData = () => {
           <th className="active" scope="row">
             Free
           </th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
+
+          <td> 0 VND</td>
+          <td>December 31, 2020</td>
+
+          <td>December 31, 2020</td>
+        </tr>
+        {/* End tr */}
+
+        <tr>
+          <th scope="row">Prenium Plan</th>
+
+          <td>300,000 VND</td>
+          <td>December 31, 2020</td>
+
+          <td>December 31, 2020</td>
+        </tr>
+        {/* End tr */}
+
+        <tr>
+          <th scope="row">Prenium Plan</th>
+
+          <td>300,000 VND</td>
+          <td>December 31, 2020</td>
+
+          <td>December 31, 2020</td>
+        </tr>
+        {/* End tr */}
+
+        <tr>
+          <th scope="row">Prenium Plan</th>
+
+          <td>300,000 VND</td>
+          <td>December 31, 2020</td>
+
           <td>December 31, 2020</td>
         </tr>
         {/* End tr */}
 
         <tr>
           <th scope="row">Free</th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
-          <td>December 31, 2020</td>
-        </tr>
-        {/* End tr */}
 
-        <tr>
-          <th scope="row">Free</th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
+          <td>0 VND</td>
           <td>December 31, 2020</td>
-        </tr>
-        {/* End tr */}
 
-        <tr>
-          <th scope="row">Free</th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
-          <td>December 31, 2020</td>
-        </tr>
-        {/* End tr */}
-
-        <tr>
-          <th scope="row">Free</th>
-          <td>0</td>
-          <td>3</td>
-          <td>8</td>
-          <td>2 MB / 20 MB</td>
           <td>December 31, 2020</td>
         </tr>
         {/* End tr */}

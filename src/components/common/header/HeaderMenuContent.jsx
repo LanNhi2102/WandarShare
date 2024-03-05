@@ -39,6 +39,20 @@ const HeaderMenuContent = ({ float = "" }) => {
           name: "Hoi An",
           routerPath: "/my-package",
         },
+
+        {
+          name: "My Wallet",
+          routerPath: "/my-wallet",
+        },
+        {
+          name: "Add Property",
+          routerPath: "/create-listing",
+        },
+        {
+          name: "Cancel",
+          routerPath: "/my-cancel",
+        }
+
       ],
     },
     {

@@ -184,13 +184,17 @@ const property = [
         routerPath: "/my-package",
       },
       {
-        name: "My Saved Search",
-        routerPath: "/my-saved-search",
+        name: "My Wallet",
+        routerPath: "/my-wallet",
       },
       {
         name: "Add Property",
         routerPath: "/create-listing",
       },
+      {
+        name: "Cancel",
+        routerPath: "/my-cancel"
+      }
     ],
   },
   {
@@ -280,7 +284,7 @@ const MobileMenuContent = () => {
             src="/assets/images/header-logo2.png"
             alt="header-logo.png"
           />
-          <span className="brand-text">FindHouse</span>
+          <span className="brand-text">WandarShare</span>
         </Link>
         {/* End .logo */}
 

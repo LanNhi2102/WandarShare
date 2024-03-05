@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { addPrice } from "../../features/properties/propertiesSlice";
 
 const RangeSlider = () => {
-  const [price, setPrice] = useState({ value: { min: 0, max: 20000 } });
+  const [price, setPrice] = useState({ value: { min: 0, max: 2000000 } });
   const dispath = useDispatch();
 
   const handleOnChange = (value) => {

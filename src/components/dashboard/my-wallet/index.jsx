@@ -1,10 +1,14 @@
 import Header from "../../common/header/dashboard/Header";
 import SidebarMenu from "../../common/header/dashboard/SidebarMenu";
 import MobileMenu from "../../common/header/MobileMenu";
-import SearchData from "../my-saved-search/SearchData";
+import SearchData from "./SearchData";
 import SearchBox from "./SearchBox";
-
+import { useNavigate } from 'react-router-dom';
 const index = () => {
+  const navigate = useNavigate();
+  const handleShow = () => {
+    navigate('./momo');
+  };
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -31,7 +35,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12 maxw100flex-992">
               <div className="row">
-                {/* Start Dashboard Navigation */}
+                {/* Start Menu */}
                 <div className="col-lg-12">
                   <div className="dashboard_navigationbar dn db-1024">
                     <div className="dropdown">
@@ -41,19 +45,19 @@ const index = () => {
                         data-bs-target="#DashboardOffcanvasMenu"
                         aria-controls="DashboardOffcanvasMenu"
                       >
-                        <i className="fa fa-bars pr10"></i> Dashboard Navigation
+                        <i className="fa fa-bars pr10"></i> Menu
                       </button>
                     </div>
                   </div>
                 </div>
-                {/* End Dashboard Navigation */}
+                {/* End Menu */}
               </div>
               {/* End .row */}
 
               <div className="row align-items-center">
                 <div className="col-md-8 col-lg-8 col-xl-9 mb20">
                   <div className="breadcrumb_content style2 mb30-991">
-                    <h2 className="breadcrumb_title">My Saved Search</h2>
+                    <h2 className="breadcrumb_title">My Wallet</h2>
                     <p>We are glad to see you again!</p>
                   </div>
                 </div>
@@ -84,7 +88,15 @@ const index = () => {
                 </div>
               </div>
               {/* End .row */}
-
+              {/* <div className="pck_chng_btn text-end">
+                <button className="btn btn-lg btn-thm">
+                  Deposit
+                </button>
+                <button className="btn btn-lg btn-thm">
+                  Withdraw
+                </button>
+              </div> */}
+              <button type="submit" class="btn btn-danger" onClick={handleShow}>Top up your wallet with MOMO</button>
               <div className="row mt50">
                 <div className="col-lg-12">
                   <div className="copyright-widget text-center">

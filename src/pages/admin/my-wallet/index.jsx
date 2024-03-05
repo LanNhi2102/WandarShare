@@ -1,18 +1,18 @@
 
-import MySavedSearch from "@/components/dashboard/my-saved-search";
+import MySavedSearch from "@/components/dashboard/my-wallet";
 
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'My Saved Search || FindHouse - Real Estate React Template',
+  title: 'My Wallet || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const MySavedSearchPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <MySavedSearch />
     </>
   );

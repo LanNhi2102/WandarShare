@@ -118,6 +118,7 @@ const GlobalFilter = ({ className = "" }) => {
                   </div>
                 </div>
                 {/* End .row */}
+
               </div>
               {/* End .dropdown-menu */}
             </div>
@@ -125,18 +126,22 @@ const GlobalFilter = ({ className = "" }) => {
         </li>
         {/* End li */}
 
-        <li className="list-inline-item">
-          <div className="search_option_button">
-            <button
-              onClick={submitBook}
-              type="submit"
-              className="btn btn-thm"
-            >
-              Search
-            </button>
-          </div>
-        </li>
-        {/* End li */}
+          <li className="list-inline-item">
+            <div className="search_option_button">
+              <button
+                onClick={submitHandler}
+                type="submit"
+                className="btn btn-thm"
+              >
+                Search
+              </button>
+            </div>
+          </li>
+          {/* End li */}
+        </div>
+
+
+
       </ul>
     </div>
   );

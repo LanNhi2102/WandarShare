@@ -4,15 +4,15 @@ import Gallery from "@/components/gallery";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Gallery || FindHouse - Real Estate React Template',
+  title: 'Gallery || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const PageGallery = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Gallery />
     </>
   );

@@ -7,12 +7,11 @@ const metadata = {
   title: 'Terms & Conditions || WandarShare',
   description:
   'WandarShare - Timeshare',
-}
 
 const TermsPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Terms />
     </>
   );

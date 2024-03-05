@@ -9,23 +9,23 @@ import Footer from "@/components/common/footer/Footer";
 import Header from "@/components/common/header/DefaultHeader";
 import MobileMenu from "@/components/common/header/MobileMenu";
 import PopupSignInUp from "@/components/common/PopupSignInUp";
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Agency Details || FindHouse - Real Estate React Template',
+  title: 'Agency Details || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 
 const AgencyDetailsDynamic = () => {
   let params = useParams();
- 
-    const id = params.id;
-    const agency = agenceis.find((item) => item.id == id) || agenceis[0]
 
-  
+  const id = params.id;
+  const agency = agenceis.find((item) => item.id == id) || agenceis[0]
+
+
 
   return (
     <>
@@ -54,7 +54,7 @@ const AgencyDetailsDynamic = () => {
                   <div className="feat_property list agency">
                     <div className="thumb">
                       <img
-                   
+
                         className="img-whp"
                         src={agency?.img}
                         alt={agency?.img}

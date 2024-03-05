@@ -9,13 +9,14 @@ import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title: '404 Not Found || WandarShare',
   description:
+
   'WandarShare - Timeshare',
-}
+
 
 const NotFoundPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <NotFound />
     </>
   );

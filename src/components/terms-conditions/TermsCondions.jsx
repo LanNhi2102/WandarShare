@@ -6,10 +6,9 @@ const TermsCondions = () => {
       id: 1,
       title: "Privacy Policy",
       text1: `Briefly describe what the privacy policy covers and the type of information the platform collects from users.`,
-      text2: `Information Collection and Use
-
-      Detail the types of personal information collected (e.g., name, email address, property details) and how it's used (e.g., facilitating exchanges, communication between users).
-      Data Sharing and Disclosure
+      text2: `Information Collection and Use',
+      'Detail the types of personal information collected (e.g., name, email address, property details) and how it's used (e.g., facilitating exchanges, communication between users).
+      Data Sharing and Disclosure',
       
       Explain circumstances under which user data might be shared with third parties (e.g., legal requirements, service providers) and how users' privacy is protected in such cases.
       Cookies and Tracking Technologies

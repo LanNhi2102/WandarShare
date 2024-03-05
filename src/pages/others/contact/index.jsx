@@ -6,13 +6,14 @@ import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title: 'Contact || WandarShare',
   description:
+
   'WandarShare - Timeshare',
-}
+
 
 const ContactPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Contact />
     </>
   );

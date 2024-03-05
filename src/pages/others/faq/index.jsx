@@ -8,10 +8,11 @@ const metadata = {
   description:
     'WandarShare - Timeshare',}
 
+
 const FaqPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Faq />
     </>
   );
