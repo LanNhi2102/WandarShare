@@ -4,9 +4,9 @@ import SignUp from "@/components/register";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'SignUp || FindHouse - Real Estate React Template',
+  title: 'SignUp || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare - Timeshare',
 }
 
 const RegisterPage = () => {

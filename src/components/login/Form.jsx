@@ -211,7 +211,7 @@ const Form = () => {
           Remember me
         </label>
 
-        <a className="btn-fpswd float-end" href="#">
+        <a className="btn-fpswd float-end" href="/forgot-password">
           Forgot password?
         </a>
       </div>

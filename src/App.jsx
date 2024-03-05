@@ -5,11 +5,9 @@ import "../public/assets/scss/index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages";
-
 import ScrollTopBehaviour from "./components/common/ScrollTopBehaviour";
 import ListingGridPage1 from "./pages/listings/listing-grid-v1";
 import ListingExchange from "./pages/listings/listing-exchange";
-
 import CreateListingPage from "./pages/admin/create-listing";
 import MyDashboardPage from "./pages/admin/my-dashboard";
 import MyFavouritePage from "./pages/admin/my-favourites";
@@ -28,6 +26,8 @@ import ContactPage from "./pages/others/contact";
 import FaqPage from "./pages/others/faq";
 import PageGallery from "./pages/others/gallery";
 import LoginPage from "./pages/others/login";
+import Forgot from "./components/forgot-password/index";
+import ResetPassPage from "./components/reset-password/index";
 import MembershipPage from "./pages/others/membership";
 import RegisterPage from "./pages/others/register";
 import ServicePage from "./pages/others/service";
@@ -43,7 +43,6 @@ import ListingDynamicDetailsV1 from "./pages/listing-details/listing-details-v1"
 import ListingDynamicDetailsV2 from "./pages/listing-details/listing-details-v2";
 import ListingDetailsPage3 from "./pages/listing-details/listing-details-v3";
 import ListingDetailsPage4 from "./pages/listing-details/listing-details-v4";
-// import ListingPage1 from "./pages/listings/listing-list-v1";
 
 if (typeof window !== "undefined") {
   import("bootstrap");
@@ -100,6 +99,8 @@ function App() {
               <Route path="faq" element={<FaqPage />} />
               <Route path="gallery" element={<PageGallery />} />
               <Route path="login" element={<LoginPage />} />
+              <Route path="forgot-password" element={<Forgot />} />
+              <Route path="reset-password" element={< ResetPassPage/>}/>
               <Route path="membership" element={<MembershipPage />} />
               <Route path="register" element={<RegisterPage />} />
               <Route path="service" element={<ServicePage />} />

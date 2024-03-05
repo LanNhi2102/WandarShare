@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import {
   addKeyword,
@@ -26,6 +26,7 @@ const ExchangeFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Enter Timeshare or Location"
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>

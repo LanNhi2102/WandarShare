@@ -4,10 +4,9 @@ import Faq from "@/components/faq";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Faq || FindHouse - Real Estate React Template',
+  title: 'Faq || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
-}
+    'WandarShare - Timeshare',}
 
 const FaqPage = () => {
   return (

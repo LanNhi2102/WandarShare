@@ -7,9 +7,9 @@ import NotFound from "@/components/404";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: '404 Not Found || FindHouse - Real Estate React Template',
+  title: '404 Not Found || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+  'WandarShare - Timeshare',
 }
 
 const NotFoundPage = () => {

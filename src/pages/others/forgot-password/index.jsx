@@ -1,21 +1,20 @@
 
-import Login from "@/components/login";
-
+import Forgot from "@/components/forgot-password/index";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Login || WandarShare',
+  title: 'Forgot Password || WandarShare',
   description:
     'WandarShare',
 }
 
-const LoginPage = () => {
+const forgotPasswordPage = () => {
   return (
     <>
     <MetaComponent meta={metadata} />
-      <Login />
+      <Forgot />
     </>
   );
 };
 
-export default LoginPage
+export default forgotPasswordPage
