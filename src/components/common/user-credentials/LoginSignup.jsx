@@ -1,5 +1,6 @@
-
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Form1 from "@/components/login/Form";
+import Form2 from "@/components/register/Form";
 
 const LoginSignup = () => {
   return (
@@ -63,7 +64,6 @@ const LoginSignup = () => {
             <div className="col-lg-6 col-xl-6">
               <div className="login_thumb">
                 <img
-                
                   className="img-fluid w100 h-100 cover"
                   src="/assets/images/resource/login.jpg"
                   alt="login.jpg"
@@ -74,92 +74,11 @@ const LoginSignup = () => {
 
             <div className="col-lg-6 col-xl-6">
               <div className="login_form">
-                <form action="#">
-                  <div className="heading">
-                    <h4>Login</h4>
-                  </div>
-                  {/* End heading */}
-
-                  <div className="row mt25">
-                    <div className="col-lg-12">
-                      <button type="submit" className="btn btn-fb w-100">
-                        <i className="fa fa-facebook float-start mt5"></i> Login
-                        with Facebook
-                      </button>
-                    </div>
-                    <div className="col-lg-12">
-                      <button type="submit" className="btn btn-googl w-100">
-                        <i className="fa fa-google float-start mt5"></i> Login
-                        with Google
-                      </button>
-                    </div>
-                  </div>
-                  {/* End .row */}
-
-                  <hr />
-
-                  <div className="input-group mb-2 mr-sm-2">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="inlineFormInputGroupUsername2"
-                      placeholder="User Name Or Email"
-                    />
-                    <div className="input-group-prepend">
-                      <div className="input-group-text">
-                        <i className="flaticon-user"></i>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End input-group */}
-
-                  <div className="input-group form-group">
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Password"
-                    />
-                    <div className="input-group-prepend">
-                      <div className="input-group-text">
-                        <i className="flaticon-password"></i>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End input-group */}
-
-                  <div className="form-group form-check custom-checkbox mb-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      
-                    />
-                    <label
-                      className="form-check-label form-check-label"
-                      
-                    >
-                      Remember me
-                    </label>
-
-                    <a className="btn-fpswd float-end" href="#">
-                      Lost your password?
-                    </a>
-                  </div>
-                  {/* End remember me checkbox */}
-
-                  <button type="submit" className="btn btn-log w-100 btn-thm">
-                    Log In
-                  </button>
-                  {/* End submit button */}
-
-                  <p className="text-center">
-                    Dont have an account?{" "}
-                    <a className="text-thm" href="#">
-                      Register
-                    </a>
-                  </p>
-                </form>
+                <div className="heading">
+                  <h4>Login</h4>
+                </div>
+                {/* End heading */}
+                <Form1 />
               </div>
               {/* End .col .login_form */}
             </div>
@@ -175,7 +94,6 @@ const LoginSignup = () => {
             <div className="col-lg-6 col-xl-6">
               <div className="regstr_thumb">
                 <img
-               
                   className="img-fluid w100 h-100 cover"
                   src="/assets/images/resource/regstr.jpg"
                   alt="regstr.jpg"
@@ -190,127 +108,7 @@ const LoginSignup = () => {
                   <h4>Register</h4>
                 </div>
                 {/* End .heading */}
-
-                <form action="#">
-                  <div className="row ">
-                    <div className="col-lg-12">
-                      <button type="submit" className="btn btn-fb w-100">
-                        <i className="fa fa-facebook float-start mt5"></i> Login
-                        with Facebook
-                      </button>
-                    </div>
-                    <div className="col-lg-12">
-                      <button type="submit" className="btn btn-googl w-100">
-                        <i className="fa fa-google float-start mt5"></i> Login
-                        with Google
-                      </button>
-                    </div>
-                  </div>
-                  {/* End .row */}
-
-                  <hr />
-
-                  <div className="form-group input-group mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="exampleInputName"
-                      placeholder="User Name"
-                    />
-                    <div className="input-group-prepend">
-                      <div className="input-group-text">
-                        <i className="flaticon-user"></i>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .row */}
-
-                  <div className="form-group input-group  mb-3">
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail2"
-                      placeholder="Email"
-                    />
-                    <div className="input-group-prepend">
-                      <div className="input-group-text">
-                        <i className="fa fa-envelope-o"></i>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .row */}
-
-                  <div className="form-group input-group  mb-3">
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="exampleInputPassword2"
-                      placeholder="Password"
-                    />
-                    <div className="input-group-prepend">
-                      <div className="input-group-text">
-                        <i className="flaticon-password"></i>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .row */}
-
-                  <div className="form-group input-group  mb-3">
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="exampleInputPassword3"
-                      placeholder="Re-enter password"
-                    />
-                    <div className="input-group-prepend">
-                      <div className="input-group-text">
-                        <i className="flaticon-password"></i>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .row */}
-
-                  <div className="form-group ui_kit_select_search mb-3">
-                    <select
-                      className="form-select"
-                      data-live-search="true"
-                      data-width="100%"
-                    >
-                      <option data-tokens="SelectRole">Single User</option>
-                      <option data-tokens="Agent/Agency">Agent</option>
-                      <option data-tokens="SingleUser">Multi User</option>
-                    </select>
-                  </div>
-                  {/* End from-group */}
-
-                  <div className="form-group form-check custom-checkbox mb-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-         
-                    />
-                    <label
-                      className="form-check-label form-check-label"
-                     
-                    >
-                      I have accept the Terms and Privacy Policy.
-                    </label>
-                  </div>
-                  {/* End from-group */}
-
-                  <button type="submit" className="btn btn-log w-100 btn-thm">
-                    Sign Up
-                  </button>
-                  {/* End btn */}
-
-                  <p className="text-center">
-                    Already have an account?{" "}
-                    <a className="text-thm" href="#">
-                      Log In
-                    </a>
-                  </p>
-                </form>
+                  <Form2/>
                 {/* End .form */}
               </div>
             </div>

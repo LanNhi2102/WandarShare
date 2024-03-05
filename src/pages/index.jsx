@@ -4,10 +4,11 @@ import MetaComponent from "@/components/common/MetaComponent";
 
 
 const metadata = {
-  title: 'Home-1 || WandarShare',
+
+  title: 'Homepage || WandarShare',
   description:
-    'WandarShare',
-}
+    'WandarShare - Timeshare',
+
 
 export default function Home() {
   return (

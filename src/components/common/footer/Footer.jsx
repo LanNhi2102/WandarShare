@@ -21,19 +21,13 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul className="list-unstyled">
             <li>
-              <Link to="/">About Us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/">Terms & Conditions</Link>
+              <Link to="/service">Service</Link>
             </li>
             <li>
-              <Link to="/">User’s Guide</Link>
-            </li>
-            <li>
-              <Link to="/">Support Center</Link>
-            </li>
-            <li>
-              <Link to="/">Press Info</Link>
+              <Link to="/faq">Support Center</Link>
             </li>
           </ul>
         </div>

@@ -4,9 +4,11 @@ import HomeMain from "@/components/home";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'WandarShare',
+
+  title: 'Homepage || WandarShare',
   description:
-    'WandarShare',
+    'WandarShare - Timeshare',
+
 }
 
 const HomePage1 = () => {

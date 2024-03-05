@@ -22,8 +22,8 @@ const ListingGallery = () => {
                 <div className="single_property_social_share position-static transform-none">
                   <div className="price float-start fn-400">
                     <h2>
-                      ${singleItem.price}
-                      <small>/week</small>
+                      
+                      <small>Exchane</small>
                     </h2>
                   </div>
 

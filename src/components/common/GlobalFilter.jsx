@@ -1,5 +1,3 @@
-
-
 import {
   addKeyword,
   addLocation,
@@ -9,11 +7,12 @@ import CheckBoxFilter from "./CheckBoxFilter";
 import GlobalSelectBox from "./GlobalSelectBox";
 
 import { useNavigate } from 'react-router-dom';
+// eslint-disable-next-line react/prop-types
 const GlobalFilter = ({ className = "" }) => {
   const navigate = useNavigate();
 
   // submit handler
-  const submitHandler = () => {
+  const submitBook = () => {
     navigate("/listing-grid-v1");
   };
 
@@ -26,6 +25,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Enter keyword "
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>
@@ -55,6 +55,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Location"
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addLocation(e.target.value))}
             />
             <label>
@@ -124,19 +125,7 @@ const GlobalFilter = ({ className = "" }) => {
           </div>
         </li>
         {/* End li */}
-        <div class="row">
-          <div class="col-lg-4 col-xl-4">
-            <div class="my_profile_setting_input form-group">
-              <label for="startDay">Start Day</label>
-              <input type="date" class="form-control" id="startDay" />
-            </div>
-          </div>
-          <div class="col-lg-4 col-xl-4">
-            <div class="my_profile_setting_input form-group">
-              <label for="endDay">End Day</label>
-              <input type="date" class="form-control" id="endDay" />
-            </div>
-          </div>
+
           <li className="list-inline-item">
             <div className="search_option_button">
               <button
