@@ -20,7 +20,7 @@ const Sidebar = () => {
       {/* End .sidebar_listing_list */}
 
       <div className="terms_condition_widget">
-        <h4 className="title">Featureds Properties</h4>
+        <h4 className="title">Featured Properties</h4>
         <div className="sidebar_feature_property_slider">
           <FeatureProperties />
         </div>

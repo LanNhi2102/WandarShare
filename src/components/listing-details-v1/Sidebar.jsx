@@ -3,18 +3,18 @@ import Categorie from "../common/listing/Categorie";
 import ListingCreator from "../common/listing/ListingCreator";
 import FeaturedListings from "../common/listing/FeaturedListings";
 import FeatureProperties from "../common/listing/FeatureProperties";
-import link from "../common/listing-details/link";
+
 const Sidebar = () => {
   return (
     <>
       <div className="sidebar_listing_list">
         <div className="sidebar_advanced_search_widget">
           <div className="sl_creator">
-            <h4 className="mb25">Books</h4>
+            <h4 className="mb25">Listed By</h4>
+            <ListingCreator />
           </div>
           {/* End .sl_creator */}
           <ContactWithAgent />
-          <link />
         </div>
       </div>
       {/* End .sidebar_listing_list */}

@@ -40,7 +40,7 @@ const DetailsContent = () => {
       <div className="additional_details">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className="mb15">Additional details</h4>  
+            <h4 className="mb15">Additional details</h4>
           </div>
           <AdditionalDetails />
         </div>
@@ -71,7 +71,7 @@ const DetailsContent = () => {
         <h4 className="mb30">
           Location{" "}
           <small className="float-end">
-          425/2 Nguyễn Cừ P10 Q1 TPHCM
+            1421 San Pedro St, Los Angeles, CA 90015
           </small>
         </h4>
         <div className="property_video p0">
