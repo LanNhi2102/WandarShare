@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Payment() {
+function Information() {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -8,7 +8,7 @@ function Payment() {
     address: '',
     city: '',
     country: '',
-    zip: ''
+    
   });
 
   const handleChange = (e) => {
@@ -58,11 +58,11 @@ function Payment() {
       </label>
       <br />
       <label>
-        Zip:
-        <input type="text" name="zip" value={formData.zip} onChange={handleChange} />
+        Request:
+        <input type="text" name="request" value={formData.zip} onChange={handleChange} />
       </label>
     </form>
   );
 }
 
-export default Payment;
+export default Information;
