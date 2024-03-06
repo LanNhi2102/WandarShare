@@ -7,8 +7,8 @@ const metadata = {
   title: 'Service || WandarShare',
   description:
 
-  'WandarShare - Timeshare',
-
+    'WandarShare - Timeshare',
+}
 
 const ServicePage = () => {
   return (

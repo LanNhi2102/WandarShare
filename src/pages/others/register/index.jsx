@@ -7,7 +7,7 @@ const metadata = {
   title: 'SignUp || WandarShare',
   description:
     'WandarShare - Timeshare',
-
+}
 
 const RegisterPage = () => {
   return (

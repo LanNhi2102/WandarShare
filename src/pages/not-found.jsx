@@ -11,12 +11,12 @@ const metadata = {
   description:
 
     'WandarShare - Timeshare',
-
+}
 
 const NotFoundPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <NotFound />
     </>
   );

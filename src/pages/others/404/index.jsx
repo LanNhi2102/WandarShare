@@ -10,9 +10,9 @@ const metadata = {
   title: '404 Not Found || WandarShare',
   description:
 
-  'WandarShare - Timeshare',
+    'WandarShare - Timeshare',
 
-
+}
 const NotFoundPage = () => {
   return (
     <>

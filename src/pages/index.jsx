@@ -8,7 +8,7 @@ const metadata = {
   title: 'Homepage || WandarShare',
   description:
     'WandarShare - Timeshare',
-
+}
 
 export default function Home() {
   return (

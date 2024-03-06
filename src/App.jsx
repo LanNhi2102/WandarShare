@@ -36,9 +36,7 @@ import MembershipPage from "./pages/others/membership";
 import RegisterPage from "./pages/others/register";
 import ServicePage from "./pages/others/service";
 import TermsPage from "./pages/others/terms";
-import AgencyV1Page from "./pages/agency/agency-v1";
-import AgencyV2Page from "./pages/agency/agency-v2";
-import AgencyDetailsDynamic from "./pages/agency/agency-details";
+
 import AgentV1Page from "./pages/agent/agent-v1";
 import Agentv2Page from "./pages/agent/agent-v2";
 import AgentDetailsDynamic from "./pages/agent/agent-details";
@@ -47,7 +45,7 @@ import ListingDynamicDetailsV1 from "./pages/listing-details/listing-details-v1"
 import ListingDynamicDetailsV2 from "./pages/listing-details/listing-details-v2";
 import ListingDetailsPage3 from "./pages/listing-details/listing-details-v3";
 import ListingDetailsPage4 from "./pages/listing-details/listing-details-v4";
-import ListingPage1 from "./pages/listings/listing-list-v1";
+
 import MyCancelPage from "./pages/admin/my-cancel";
 
 
@@ -62,12 +60,12 @@ function App() {
       <BrowserRouter>
         <Provider store={store}>
           <PropertiesProvider>
-          <Routes>
-            <Route path="/">
-              <Route index element={<Home />} />
+            <Routes>
+              <Route path="/">
+                <Route index element={<Home />} />
 
-              <Route path="listing-grid-v1" element={<ListingGridPage1 />} />
-              <Route path="listing-exchange" element={<ListingExchange />} />
+                <Route path="listing-grid-v1" element={<ListingGridPage1 />} />
+                <Route path="listing-exchange" element={<ListingExchange />} />
 
                 <Route
                   path="listing-details-v1/:id"
@@ -109,19 +107,19 @@ function App() {
                 <Route path="blog-list-3" element={<Blog3Page />} />
                 <Route path="blog-details/:id" element={<BlogDetails />} />
 
-              <Route path="404" element={<NotFoundPage />} />
-              <Route path="about-us" element={<AboutUsPage />} />
-              <Route path="compare" element={<ComparePage />} />
-              <Route path="contact" element={<ContactPage />} />
-              <Route path="faq" element={<FaqPage />} />
-              <Route path="gallery" element={<PageGallery />} />
-              <Route path="login" element={<LoginPage />} />
-              <Route path="forgot-password" element={<Forgot />} />
-              <Route path="reset-password" element={< ResetPassPage/>}/>
-              <Route path="membership" element={<MembershipPage />} />
-              <Route path="register" element={<RegisterPage />} />
-              <Route path="service" element={<ServicePage />} />
-              <Route path="terms" element={<TermsPage />} />
+                <Route path="404" element={<NotFoundPage />} />
+                <Route path="about-us" element={<AboutUsPage />} />
+                <Route path="compare" element={<ComparePage />} />
+                <Route path="contact" element={<ContactPage />} />
+                <Route path="faq" element={<FaqPage />} />
+                <Route path="gallery" element={<PageGallery />} />
+                <Route path="login" element={<LoginPage />} />
+                <Route path="forgot-password" element={<Forgot />} />
+                <Route path="reset-password" element={< ResetPassPage />} />
+                <Route path="membership" element={<MembershipPage />} />
+                <Route path="register" element={<RegisterPage />} />
+                <Route path="service" element={<ServicePage />} />
+                <Route path="terms" element={<TermsPage />} />
 
 
                 <Route path="agent-v1" element={<AgentV1Page />} />

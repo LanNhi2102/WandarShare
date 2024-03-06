@@ -7,8 +7,8 @@ const metadata = {
   title: 'About Us || WandarShare',
   description:
 
-  'WandarShare - Timeshare',
-
+    'WandarShare - Timeshare',
+}
 const AboutUsPage = () => {
   return (
     <>

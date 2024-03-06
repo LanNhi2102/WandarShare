@@ -6,8 +6,8 @@ import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title: 'Terms & Conditions || WandarShare',
   description:
-  'WandarShare - Timeshare',
-
+    'WandarShare - Timeshare',
+}
 const TermsPage = () => {
   return (
     <>
