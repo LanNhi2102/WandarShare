@@ -1,5 +1,4 @@
-import AdditionalDetails from "../common/listing-details/AdditionalDetails";
-import PropertyDescriptions from "../common/listing-details/PropertyDescriptions";
+import Discount from "../common/listing-details/Discount";
 import Payment from "../common/listing-details/Payment";
 import Information from "../common/listing-details/Information";
 
@@ -31,7 +30,7 @@ const DetailsContent = () => {
           <div className="col-lg-12">
             <h4 className="mb15">Discount</h4>
           </div>
-          <AdditionalDetails />
+          <Discount/>
         </div>
       </div>
       {/* End .additional_details */}
