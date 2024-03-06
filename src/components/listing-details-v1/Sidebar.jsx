@@ -3,7 +3,7 @@ import Categorie from "../common/listing/Categorie";
 import ListingCreator from "../common/listing/ListingCreator";
 import FeaturedListings from "../common/listing/FeaturedListings";
 import FeatureProperties from "../common/listing/FeatureProperties";
-
+import link from "../common/listing-details/link";
 const Sidebar = () => {
   return (
     <>
@@ -14,6 +14,7 @@ const Sidebar = () => {
           </div>
           {/* End .sl_creator */}
           <ContactWithAgent />
+          <link />
         </div>
       </div>
       {/* End .sidebar_listing_list */}
