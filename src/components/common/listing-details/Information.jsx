@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Information.css'; 
 
 function Information() {
   const [formData, setFormData] = useState({
@@ -38,12 +39,17 @@ function Information() {
       </label>
       <br />
       <label>
-        Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        Phone 
+        <input type="phone" name="Phone" value={formData.lastName} onChange={handleChange} />
       </label>
       <br />
       <label>
-        Address:
+        Email
+        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+      </label>
+      <br />
+      <label> 
+        Address
         <input type="text" name="address" value={formData.address} onChange={handleChange} />
       </label>
       <br />
