@@ -41,9 +41,9 @@ const isEmailValid = (email) => {
 
 const Form = () => {
   const [formValue, setFormValue] = useState(initFormValue);
-  const [setFormError] = useState({});
+  const [formError, setFormError] = useState({});
   const [rememberMe, setRememberMe] = useState(false);
-  const [setLoginFail] = useState(false);
+  const [loginFail, setLoginFail] = useState(false);
   // xử lí remember me
   useEffect(() => {
     const savedUser = localStorage.getItem("user");
@@ -126,7 +126,7 @@ const Form = () => {
     if (isEmptyValue(formValue.password)) {
       errors.password = "Password is required";
     }
-    setFormError(errors);
+    setFormError(errors); // Update formError state
     return Object.keys(errors).length === 0;
   };
   //xu li dang nhap
