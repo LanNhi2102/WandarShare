@@ -1,58 +1,47 @@
-const ContactWithAgent = () => {
+import { Calendar } from "react-check-in-out-calendar";
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const   ContactWithAgent = () => {
   return (
     <form action="#">
       <ul className="sasw_list mb0">
-        <li className="search_area">
-          <div className="form-group mb-3">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-        </li>
         {/* End li */}
         <li className="search_area">
           <div className="form-group mb-3">
-            <input
-              type="number"
-              className="form-control"
-              placeholder="Phone"
-              required
-            />
           </div>
+          
+<div className="col-lg-8 col-xl-8">
+        <div className="my_profile_setting_input form-group">
+          <input
+            type="date"
+            className="form-control"
+            id="startDay"
+          />
+          <p>Check in</p>
+        </div>
+      </div>
+
+      <div className="col-lg-8 col-xl-8">
+        <div className="my_profile_setting_input form-group">
+          <input
+            type="date"
+            className="form-control"
+            id="endDay"
+          />
+          <p>Check out</p>
+        </div>
+      </div>
         </li>{" "}
         {/* End li */}
-        <li className="search_area">
-          <div className="form-group mb-3">
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Email"
-              required
-            />
-          </div>
-        </li>{" "}
-        {/* End li */}
-        <li className="search_area">
-          <div className="form-group mb-3">
-            <textarea
-              id="form_message"
-              name="form_message"
-              className="form-control "
-              rows="5"
-              required
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-        </li>{" "}
-        {/* End li */}
+       
         <li>
           <div className="search_option_button">
+           <Link to="/listing-details-v3">
             <button type="submit" className="btn btn-block btn-thm w-100">
-              Search
+              Book
             </button>
+            </Link>
           </div>
         </li>{" "}
         {/* End li */}
@@ -60,5 +49,8 @@ const ContactWithAgent = () => {
     </form>
   );
 };
+
+
+
 
 export default ContactWithAgent;
