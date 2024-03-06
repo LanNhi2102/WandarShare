@@ -50,9 +50,7 @@ function Payment() {
       {sandboxResponse && (
         <p>Payment successful! Transaction ID: {sandboxResponse.transactionId}</p>
       )}
-      {sandboxError && (
-        <p>Payment failed: {sandboxError}</p>
-      )}
+      
     </div>
   );
 }
