@@ -1,7 +1,7 @@
 import AdditionalDetails from "../common/listing-details/AdditionalDetails";
 import PropertyDescriptions from "../common/listing-details/PropertyDescriptions";
-import PropertyDetails from "../common/listing-details/PropertyDetails";
-
+import Payment from "../common/listing-details/Payment";
+import Information from "../common/listing-details/Information";
 
 const DetailsContent = () => {
   return (
@@ -12,16 +12,16 @@ const DetailsContent = () => {
         {/* End .lsd_list */}
 
         <h4 className="mb30">Your Infomation</h4>
-        <PropertyDescriptions />
+        <Information/>
       </div>
       {/* End .listing_single_description */}
 
-      <div className="additional_details">
+      <div className="additional_details">  
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12"> 
             <h4 className="mb15">Payment</h4>
           </div>
-          <PropertyDetails />
+          <Payment />
         </div>
       </div>
       {/* End .additional_details */}
