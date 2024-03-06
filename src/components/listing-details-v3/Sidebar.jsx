@@ -1,6 +1,6 @@
-import ContactWithAgent from "../common/agent-view/ContactWithAgent";
+import Bill from "../common/listing-details/Bill";
 
-import ListingCreator from "../common/listing/ListingCreator";
+
 
 const Sidebar = () => {
   return (
@@ -11,7 +11,7 @@ const Sidebar = () => {
             <h4 className="mb25">Your Bill</h4>
           </div>
           {/* End .sl_creator */}
-          <ContactWithAgent />
+          <Bill />
         </div>
       </div>
       {/* End .sidebar_listing_list */}
