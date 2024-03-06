@@ -31,6 +31,7 @@ const CreateList = () => {
           >
             <option data-tokens="type1">Exchange</option>
             <option data-tokens="Type2">Rent</option>
+            <option data-tokens="Type3">Rent & Exchange</option>
 
           </select>
         </div>
@@ -53,33 +54,10 @@ const CreateList = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExamplePrice">Price</label>
-          <input
-            type="number"
-            className="form-control"
-            id="formGroupExamplePrice"
-          />
-        </div>
-      </div>
-      {/* End .col */}
-
-      <div className="col-lg-4 col-xl-4">
-        <div className="my_profile_setting_input form-group">
-          <label htmlFor="formGroupExampleArea">Area</label>
-          <input
-            type="text"
-            className="form-control"
-            id="formGroupExampleArea"
-          />
-        </div>
-      </div>
-      {/* End .col */}
 
       <div className="col-lg-4 col-xl-4">
         <div className="my_profile_setting_input ui_kit_select_search form-group">
-          <label>Rooms</label>
+          <label>Unit Size</label>
           <select
             className="selectpicker form-select"
             data-live-search="true"
@@ -95,13 +73,51 @@ const CreateList = () => {
         </div>
       </div>
       {/* End .col */}
+      <div className="row">
+        <div className="col-lg-4 col-xl-4">
+          <div className="my_profile_setting_input form-group">
+            <label htmlFor="startDay">Start Day</label>
+            <input
+              type="date"
+              className="form-control"
+              id="startDay"
+            />
+            <p>For Exchange, please make sure the total days are less than 7</p>
+          </div>
+        </div>
 
-      <div className="col-xl-12">
-        <div className="my_profile_setting_input">
-          <button className="btn btn1 float-start">Back</button>
-          <button className="btn btn2 float-end">Next</button>
+        <div className="col-lg-4 col-xl-4">
+          <div className="my_profile_setting_input form-group">
+            <label htmlFor="endDay">End Day</label>
+            <input
+              type="date"
+              className="form-control"
+              id="endDay"
+            />
+            <p>For Exchange, please make sure the total days are less than 7</p>
+          </div>
+        </div>
+
+        <div className="col-lg-4 col-xl-4">
+          <div className="my_profile_setting_input form-group">
+            <label htmlFor="formGroupExamplePrice">Price for rent (VND)</label>
+            <input
+              type="number"
+              className="form-control"
+              id="formGroupExamplePrice"
+            />
+          </div>
         </div>
       </div>
+
+      {/* End .col */}
+
+
+      {/* End .col */}
+
+      <button className="btn admore_btn mb30">Add More Days And Price</button>
+
+
     </>
   );
 };

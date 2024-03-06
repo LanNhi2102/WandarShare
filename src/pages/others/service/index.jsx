@@ -4,15 +4,16 @@ import Service from "@/components/service";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Service || FindHouse - Real Estate React Template',
+  title: 'Service || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
-}
+
+  'WandarShare - Timeshare',
+
 
 const ServicePage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Service />
     </>
   );

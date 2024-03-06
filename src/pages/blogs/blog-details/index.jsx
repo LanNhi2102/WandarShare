@@ -14,26 +14,26 @@ import Header from "@/components/common/header/DefaultHeader";
 import MobileMenu from "@/components/common/header/MobileMenu";
 import PopupSignInUp from "@/components/common/PopupSignInUp";
 import blogs from "@/data/blogs";
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Blog Details || FindHouse - Real Estate React Template',
+  title: 'Blog Details || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const BlogDetailsDynamic = () => {
   let params = useParams();
-  
+
   const id = params.id;
-  const blog = blogs.find((item) => item.id == id) ||  blogs[0]
+  const blog = blogs.find((item) => item.id == id) || blogs[0]
 
 
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
 
       {/* <!-- Main Header Nav --> */}
       <Header />
@@ -66,7 +66,7 @@ const BlogDetailsDynamic = () => {
                     <li className="list-inline-item">
                       <a href="#">
                         <img
-                        
+
                           className="img-fluid"
                           src="/assets/images/property/pposter1.png"
                           alt="pposter1.png"
@@ -97,7 +97,7 @@ const BlogDetailsDynamic = () => {
                   </ul>
                   <div className="thumb">
                     <img
-                    
+
                       className="w-100 h-100 cover"
                       src={blog?.img}
                       alt={blog?.img}

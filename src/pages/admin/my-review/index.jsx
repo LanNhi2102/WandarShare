@@ -4,15 +4,15 @@ import MyReview from "@/components/dashboard/my-review";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'My Review || FindHouse - Real Estate React Template',
+  title: 'My Review || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const MyReviewPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <MyReview />
     </>
   );

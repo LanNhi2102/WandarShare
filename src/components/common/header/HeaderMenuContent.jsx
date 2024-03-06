@@ -1,229 +1,93 @@
-
 import { Link, useLocation } from "react-router-dom";
+import MyAccount from "./dashboard/MyAccount";
 
-
-
+// eslint-disable-next-line react/prop-types
 const HeaderMenuContent = ({ float = "" }) => {
   const { pathname } = useLocation()
+  const token = localStorage.getItem('access_token');
 
-  const home = [
+  const destination = [
     {
       id: 1,
-      name: "Home 1",
-      routerPath: "/",
-    },
-
-  ];
-
-  const listing = [
-    {
-      id: 1,
-      title: "Listing Grid",
+      title: "City",
       items: [
         {
-          name: "Grid v1",
-          routerPath: "/listing-grid-v1",
+          name: "Ha Noi",
+          routerPath: "/blog-list-1",
         },
         {
-          name: "Grid v2",
-          routerPath: "/listing-grid-v2",
+          name: "TP Ho Chi Minh",
+          routerPath: "/blog-list-2",
         },
         {
-          name: "Grid v3",
-          routerPath: "/listing-grid-v3",
+          name: "Da Nang",
+          routerPath: "/blog-list-3",
         },
         {
-          name: "Grid v4",
-          routerPath: "/listing-grid-v4",
-        },
-        {
-          name: "Grid v5",
-          routerPath: "/listing-grid-v5",
-        },
-        {
-          name: "Grid v6",
-          routerPath: "/listing-grid-v6",
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: "Listing List",
-      items: [
-        {
-          name: "List V1",
-          routerPath: "/listing-list-v1",
-        },
-      ],
-    },
-    {
-      id: 3,
-      title: "Listing Style",
-      items: [
-        {
-          name: "Parallax Style",
-          routerPath: "/parallax-style",
-        },
-        {
-          name: "Slider Style",
-          routerPath: "/slider-style",
-        },
-        {
-          name: "Map Header",
-          routerPath: "/map-header",
-        },
-      ],
-    },
-    {
-      id: 4,
-      title: "Listing Half",
-      items: [
-        {
-          name: "Map V1",
-          routerPath: "/listing-map-v1",
-        },
-        {
-          name: "Map V2",
-          routerPath: "/listing-map-v2",
-        },
-        {
-          name: "Map V3",
-          routerPath: "/listing-map-v3",
-        },
-        {
-          name: "Map V4",
-          routerPath: "/listing-map-v4",
-        },
-      ],
-    },
-    {
-      id: 5,
-      title: "Agent View",
-      items: [
-        {
-          name: "Agent V1",
-          routerPath: "/agent-v1",
-        },
-        {
-          name: "Agent V2",
-          routerPath: "/agent-v2",
-        },
-        {
-          name: "Agent Details",
-          routerPath: "/agent-details/3",
-        },
-      ],
-    },
-    {
-      id: 6,
-      title: "Agencies View",
-      items: [
-        {
-          name: "Agencies V1",
-          routerPath: "/agency-v1",
-        },
-        {
-          name: "Agencies V2",
-          routerPath: "/agency-v2",
-        },
-        {
-          name: "Agencies Details",
-          routerPath: "/agency-details/1",
-        },
-      ],
-    },
-  ];
-
-  const property = [
-    {
-      id: 1,
-      title: "User Admin",
-      items: [
-        {
-          name: "Dashboard",
-          routerPath: "/my-dashboard",
-        },
-        {
-          name: "My Properties",
-          routerPath: "/my-properties",
-        },
-        {
-          name: "My Message",
-          routerPath: "/my-message",
-        },
-        {
-          name: "My Review",
+          name: "Nha Trang",
           routerPath: "/my-review",
         },
         {
-          name: "My Favourites",
+          name: "Da Lat",
           routerPath: "/my-favourites",
         },
         {
-          name: "My Profile",
+          name: "Sa Pa",
           routerPath: "/my-profile",
         },
         {
-          name: "My Package",
+          name: "Hoi An",
           routerPath: "/my-package",
         },
+
         {
-          name: "My Saved Search",
-          routerPath: "/my-saved-search",
+          name: "My Wallet",
+          routerPath: "/my-wallet",
         },
         {
           name: "Add Property",
           routerPath: "/create-listing",
         },
+        {
+          name: "Cancel",
+          routerPath: "/my-cancel",
+        }
+
       ],
     },
     {
       id: 2,
-      title: "Listing Single",
+      title: "Resort",
       items: [
         {
-          name: "Single V1",
+          name: "Ocean Bay Phu Quoc Resort and Spa",
           routerPath: "/listing-details-v1/3",
         },
         {
-          name: "Single V2",
+          name: "Zest Resort & Spa Hoi An",
           routerPath: "/listing-details-v2/2",
         },
         {
-          name: "Single V3",
+          name: "Palm Bay Resort Phu Quoc",
           routerPath: "/listing-details-v3",
         },
         {
-          name: "Single V4",
+          name: "Fairy Mountain Retreat",
           routerPath: "/listing-details-v4",
         },
       ],
     },
   ];
 
-  const blog = [
-    { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-    { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
-    { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
+  const timeshareInfo = [
     {
-      id: 4,
-      name: "Blog Details",
-      routerPath: "/blog-details/2",
+      id: 1,
+      name: "Exchange",
+      routerPath: "/",
     },
-  ];
-
-  const pages = [
-    { id: 1, name: "About Us", routerPath: "/about-us" },
-    { id: 2, name: "Gallery", routerPath: "/gallery" },
-    { id: 3, name: "Faq", routerPath: "/faq" },
-    { id: 4, name: "LogIn", routerPath: "/login" },
-    { id: 5, name: "Compare", routerPath: "/compare" },
-    { id: 6, name: "Membership", routerPath: "/membership" },
-
-    { id: 7, name: "Register", routerPath: "/register" },
-    { id: 8, name: "Service", routerPath: "/service" },
-    { id: 9, name: "404 Page", routerPath: "/404" },
-    { id: 10, name: "Terms & Conditions", routerPath: "/terms" },
+    { id: 2, 
+      name: "Book", 
+      routerPath: "/" },
   ];
 
   return (
@@ -233,26 +97,34 @@ const HeaderMenuContent = ({ float = "" }) => {
       data-menu-style="horizontal"
     >
       <li className="dropitem">
+        <Link
+          to="/"
+          className={pathname === "/" ? "ui-active" : undefined}
+        >
+          Home
+        </Link>
+      </li>
+      {/* End .dropitem */}
+
+      <li className="dropitem">
         <a
           href="#"
           className={
-            home.some((page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1])
-              ? "ui-active"
-              : undefined
+            timeshareInfo.some((page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1])
           }
         >
-          <span className="title">Home</span>
+          <span className="title">Timeshare Information</span>
           <span className="arrow"></span>
         </a>
         {/* <!-- Level Two--> */}
 
         <ul className="sub-menu ">
-          {home.map((item) => (
+          {timeshareInfo.map((item) => (
             <li key={item.id}>
               <Link
                 to={item.routerPath}
                 className={
-                  pathname?.split('/')[1] === item.routerPath?.split('/')[1] ? "ui-active" : undefined
+                  pathname?.split('/')[1] === item.routerPath?.split('/')[1]
                 }
               >
                 {item.name}
@@ -267,6 +139,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         <a
           href="#"
           className={
+
             listing.some((parent) => {
               return parent.items.some(
                 (page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1]
@@ -331,11 +204,11 @@ const HeaderMenuContent = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Property</span>{" "}
+          <span className="title">Destination</span>{" "}
           <span className="arrow"></span>
         </a>
         <ul className="sub-menu ">
-          {property.map((item) => (
+          {destination.map((item) => (
             <li className="dropitem arrow" key={item.id}>
               <a
                 href="#"
@@ -374,69 +247,24 @@ const HeaderMenuContent = ({ float = "" }) => {
         </ul>
       </li>
       {/* End .dropitem */}
-
-      <li className="dropitem">
-        <a
-          href="#"
-          className={
-            pages.some((page) => page.routerPath?.split('/')[1] === pathname?.split('/')[1])
-              ? "ui-active"
-              : undefined
-          }
+      
+      <li className="last">
+        <Link
+          to="/about-us"
+          className={pathname === "/about-us" ? "ui-active" : undefined}
         >
-          <span className="title">Pages</span>
-          <span className="arrow"></span>
-        </a>
-        <ul className="sub-menu ">
-          {pages.map((item) => (
-            <li key={item.id}>
-              <Link
-                to={item.routerPath}
-                className={
-                  pathname?.split('/')[1] === item.routerPath?.split('/')[1] ? "ui-active" : undefined
-                }
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+          About Us
+        </Link>
       </li>
       {/* End .dropitem */}
 
-      <li className="dropitem">
-        <a
-          href="#"
-          className={
-            blog.some(
-              (page) =>
-                page.routerPath?.split('/')[1] === pathname?.split('/')[1]
-              // page.routerPath?.split('/')[1] + "/[id]" === pathname?.split('/')[1]
-            )
-              ? "ui-active"
-              : undefined
-          }
+      <li className="last">
+        <Link
+          to="/faq"
+          className={pathname === "/faq" ? "ui-active" : undefined}
         >
-          <span className="title">Blog</span>
-          <span className="arrow"></span>
-        </a>
-        <ul className="sub-menu ">
-          {blog.map((item) => (
-            <li key={item.id}>
-              <Link
-                to={item.routerPath}
-                className={
-                  pathname?.split('/')[1] === item.routerPath?.split('/')[1]
-                    // item.routerPath + "/[id]" === pathname?.split('/')[1]
-                    ? "ui-active"
-                    : undefined
-                }
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+          Faq
+        </Link>
       </li>
       {/* End .dropitem */}
 
@@ -450,7 +278,25 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-      <li className={`list-inline-item list_s ${float}`}>
+      <li className={"dropitem"}>
+        {token ? (
+          <li className="user_setting">
+          <div className="dropdown">
+            <a className="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <img
+  
+                className="rounded-circle"
+                src="/assets/images/team/e1.png"
+                alt="e1.png"
+              />
+              <span className="dn-1199 ms-1">Du Tran Vinh Hung</span>
+            </a>
+            <div className="dropdown-menu">
+              <MyAccount />
+            </div>
+          </div>
+        </li>
+        ) : (
         <a
           href="#"
           className="btn flaticon-user"
@@ -459,6 +305,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         >
           <span className="dn-lg">Login/Register</span>
         </a>
+        )}
       </li>
       {/* End .dropitem */}
 

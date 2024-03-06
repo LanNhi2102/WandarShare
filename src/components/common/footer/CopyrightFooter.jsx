@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 const CopyrightFooter = () => {
   const menuItems = [
     { id: 1, name: "Home", routeLink: "/" },
-    { id: 2, name: "Listing", routeLink: "/listing-grid-v3" },
-    { id: 3, name: "Property", routeLink: "/listing-grid-v4" },
-    { id: 4, name: "About Us", routeLink: "/about-us" },
-    { id: 5, name: "Blog", routeLink: "/blog-list-3" },
-    { id: 6, name: "Contact", routeLink: "/contact" },
+    { id: 2, name: "Destinaton", routeLink: "/blog-list-1" },
+    { id: 3, name: "About Us", routeLink: "/about-us" },
+    { id: 4, name: "Faq", routeLink: "/faq" },
+    { id: 5, name: "Contact", routeLink: "/contact" },
   ];
 
   return (
@@ -29,12 +28,8 @@ const CopyrightFooter = () => {
         <div className="copyright-widget text-end">
           <p>
             &copy; {new Date().getFullYear()} by{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ib-themes
+            <a>
+              WandarShare
             </a>
             . All rights reserved.
           </p>

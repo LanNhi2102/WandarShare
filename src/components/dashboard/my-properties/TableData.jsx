@@ -6,7 +6,7 @@ const TableData = () => {
     "Listing Title",
     "Date published",
     "Status",
-    "View",
+    "Classify",
     "Action",
   ];
   let tbodyContent = properties?.slice(0, 4)?.map((item) => (
@@ -53,7 +53,7 @@ const TableData = () => {
       </td>
       {/* End td */}
 
-      <td>2,345</td>
+      <td>Rent</td>
       {/* End td */}
 
       <td>

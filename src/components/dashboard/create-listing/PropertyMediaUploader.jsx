@@ -33,28 +33,28 @@ const PropertyMediaUploader = () => {
         <ul className="mb-0">
           {propertySelectedImgs.length > 0
             ? propertySelectedImgs?.map((item, index) => (
-                <li key={index} className="list-inline-item">
-                  <div className="portfolio_item">
-                    <img
-                  
-                      className="img-fluid cover"
-                      src={URL.createObjectURL(item)}
-                      alt="fp1.jpg"
-                    />
-                    <div
-                      className="edu_stats_list"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Delete"
-                      data-original-title="Delete"
-                    >
-                      <a onClick={() => deleteImage(item.name)}>
-                        <span className="flaticon-garbage"></span>
-                      </a>
-                    </div>
+              <li key={index} className="list-inline-item">
+                <div className="portfolio_item">
+                  <img
+
+                    className="img-fluid cover"
+                    src={URL.createObjectURL(item)}
+                    alt="fp1.jpg"
+                  />
+                  <div
+                    className="edu_stats_list"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Delete"
+                    data-original-title="Delete"
+                  >
+                    <a onClick={() => deleteImage(item.name)}>
+                      <span className="flaticon-garbage"></span>
+                    </a>
                   </div>
-                </li>
-              ))
+                </div>
+              </li>
+            ))
             : undefined}
 
           {/* End li */}
@@ -92,13 +92,7 @@ const PropertyMediaUploader = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-xl-12">
-        <div className="my_profile_setting_input">
-          <button className="btn btn1 float-start">Back</button>
-          <button className="btn btn2 float-end">Next</button>
-        </div>
-      </div>
-      {/* End .col */}
+
     </div>
   );
 };

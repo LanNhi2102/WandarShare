@@ -7,12 +7,12 @@ const Pagination = () => {
           <span className="flaticon-left-arrow"></span>
         </a>
       </li>
-      <li className="page-item">
+      <li className="page-item active" aria-current="page">
         <a className="page-link" href="#">
           1
         </a>
       </li>
-      <li className="page-item active" aria-current="page">
+      {/* <li className="page-item">
         <a className="page-link" href="#">
           2 <span className="sr-only">(current)</span>
         </a>
@@ -31,7 +31,7 @@ const Pagination = () => {
         <a className="page-link" href="#">
           29
         </a>
-      </li>
+      </li> */}
       <li className="page-item">
         <a className="page-link" href="#">
           <span className="flaticon-right-arrow"></span>

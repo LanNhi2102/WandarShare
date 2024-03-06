@@ -4,15 +4,15 @@ import BlogV1 from "@/components/blog-list-1";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Blog List 1 || FindHouse - Real Estate React Template',
+  title: 'Blog List 1 || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const Blog1Page = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <BlogV1 />
     </>
   );

@@ -4,15 +4,15 @@ import Login from "@/components/login";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: 'Login || FindHouse - Real Estate React Template',
+  title: 'Login || WandarShare',
   description:
-    'FindHouse - Real Estate React Template',
+    'WandarShare',
 }
 
 const LoginPage = () => {
   return (
     <>
-    <MetaComponent meta={metadata} />
+      <MetaComponent meta={metadata} />
       <Login />
     </>
   );

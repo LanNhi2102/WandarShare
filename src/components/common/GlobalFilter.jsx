@@ -1,5 +1,3 @@
-
-
 import {
   addKeyword,
   addLocation,
@@ -9,11 +7,12 @@ import CheckBoxFilter from "./CheckBoxFilter";
 import GlobalSelectBox from "./GlobalSelectBox";
 
 import { useNavigate } from 'react-router-dom';
+// eslint-disable-next-line react/prop-types
 const GlobalFilter = ({ className = "" }) => {
   const navigate = useNavigate();
 
   // submit handler
-  const submitHandler = () => {
+  const submitBook = () => {
     navigate("/listing-grid-v1");
   };
 
@@ -26,6 +25,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Enter keyword "
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addKeyword(e.target.value))}
             />
           </div>
@@ -55,6 +55,7 @@ const GlobalFilter = ({ className = "" }) => {
               type="text"
               className="form-control"
               placeholder="Location"
+              // eslint-disable-next-line no-undef
               onChange={(e) => dispatch(addLocation(e.target.value))}
             />
             <label>
@@ -117,6 +118,7 @@ const GlobalFilter = ({ className = "" }) => {
                   </div>
                 </div>
                 {/* End .row */}
+
               </div>
               {/* End .dropdown-menu */}
             </div>
@@ -124,18 +126,22 @@ const GlobalFilter = ({ className = "" }) => {
         </li>
         {/* End li */}
 
-        <li className="list-inline-item">
-          <div className="search_option_button">
-            <button
-              onClick={submitHandler}
-              type="submit"
-              className="btn btn-thm"
-            >
-              Search
-            </button>
-          </div>
-        </li>
-        {/* End li */}
+          <li className="list-inline-item">
+            <div className="search_option_button">
+              <button
+                onClick={submitHandler}
+                type="submit"
+                className="btn btn-thm"
+              >
+                Search
+              </button>
+            </div>
+          </li>
+          {/* End li */}
+        </div>
+
+
+
       </ul>
     </div>
   );

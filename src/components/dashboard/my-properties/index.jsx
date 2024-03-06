@@ -33,7 +33,7 @@ const index = () => {
           <div className="row">
             <div className="col-lg-12 maxw100flex-992">
               <div className="row">
-                {/* Start Dashboard Navigation */}
+                {/* Start Menu */}
                 <div className="col-lg-12">
                   <div className="dashboard_navigationbar dn db-1024">
                     <div className="dropdown">
@@ -43,16 +43,16 @@ const index = () => {
                         data-bs-target="#DashboardOffcanvasMenu"
                         aria-controls="DashboardOffcanvasMenu"
                       >
-                        <i className="fa fa-bars pr10"></i> Dashboard Navigation
+                        <i className="fa fa-bars pr10"></i> Menu
                       </button>
                     </div>
                   </div>
                 </div>
-                {/* End Dashboard Navigation */}
+                {/* End Menu */}
 
                 <div className="col-lg-4 col-xl-4 mb10">
                   <div className="breadcrumb_content style2 mb30-991">
-                    <h2 className="breadcrumb_title">My Favorites</h2>
+                    <h2 className="breadcrumb_title">List TimeShares</h2>
                     <p>We are glad to see you again!</p>
                   </div>
                 </div>
