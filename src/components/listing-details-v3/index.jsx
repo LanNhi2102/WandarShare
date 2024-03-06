@@ -23,54 +23,9 @@ const index = () => {
       <section className="listing-title-area mt85 pb0 md-mt0">
         <div className="container pb50">
           <div className="row">
-            <div className="col-lg-7 col-xl-8">
+            <div className="col-lg-7 col-xl-8 d-flex justify-content-center align-items-center">
               <div className="single_property_title ">
-                <h2>Luxury Family Home</h2>
-                <p>1421 San Pedro St, Los Angeles, CA 90015</p>
-              </div>
-            </div>
-            <div className="col-lg-5 col-xl-4">
-              <div className=" mt20">
-                <div className="spss float-start fn-400 mb20">
-                  <ul className="mb0">
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-transfer-1"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-heart"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-share"></span>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <span className="flaticon-printer"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="price text-end tal-400">
-                  <h2>
-                    $13,000<small>/mo</small>
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End .container */}
-
-        <div className="container-fluid p0">
-          <div className="row">
-            <div className="col-lg-12 p0">
-              <div className="listing_single_property_slider arrow-style-2 arrow-white">
-                <SliderGallery />
+                <h10>Booking details</h10>
               </div>
             </div>
           </div>

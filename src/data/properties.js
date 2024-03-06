@@ -2,32 +2,34 @@ const properties = [
   {
     id: 1,
     img: "/assets/images/property/fp1.jpg",
-    price: "1,300,000",
+    price: "1300000",
     lat: 40.7279707552121,
     long: -74.07152705896405,
     type: "Apartment",
-    title: "Luxury Family Home",
-    location: `1421 San Pedro
-St, Los Angeles, CA 900015`,
-    saleTag: ["Featured", "Exchange"],
+
+    title: "Luxury Family Home ",  
+    location: `425/2 Nguyễn Cừ P10 Q1 TPHCM`,
+    saleTag: ["Featured", "For Exchange"],
+
+
     garages: "yes",
     itemDetails: [
       {
         name: "Beds",
-        number: "1",
+        number: "8",
       },
       {
         name: "Baths",
-        number: "1",
+        number: "4",
       },
       {
-        name: "SqFt",
-        number: "8280",
+        name: "Room",
+        number: "4",
       },
     ],
     posterAvatar: "/assets/images/property/pposter1.png",
-    posterName: "Ali Tufan",
-    postedYear: "1 year ago",
+    posterName: "8 People",
+    postedYear: "",
     imgList: [
       "/assets/images/property/2.jpg",
       "/assets/images/property/3.jpg",
@@ -46,15 +48,15 @@ St, Los Angeles, CA 900015`,
     amenities: "air-conditioning",
     featured: "sale",
     created_at: 1667181268893,
+    locationIcon: "/assets/icons/location.png",
   },
   {
     id: 2,
     img: "/assets/images/property/fp2.jpg",
-    price: "1,400,000",
+    price: "140000",
     type: "Bungalow",
     title: "Renovated Apartment",
-    location: `1421 San Pedro
-St, Los Angeles, CA 900015`,
+    location: `123 Phạm Ngũ Lão P5 Q1 TPHCM`,
     lat: 34.1738017565271,
     long: -118.34227408812067,
     saleTag: ["Featured", "For Book"],
@@ -62,20 +64,20 @@ St, Los Angeles, CA 900015`,
     itemDetails: [
       {
         name: "Beds",
-        number: "2",
+        number: "4",
       },
       {
         name: "Baths",
         number: "2",
       },
       {
-        name: "SqFt",
-        number: "5280",
+        name: "Room",
+        number: "2",
       },
     ],
     posterAvatar: "/assets/images/property/pposter2.png",
-    posterName: "Ali Tufan",
-    postedYear: "1 year ago",
+    posterName: "4 People",
+    postedYear: "",
     imgList: [
       "/assets/images/property/2.jpg",
       "/assets/images/property/3.jpg",
@@ -98,7 +100,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 3,
     img: "/assets/images/property/fp3.jpg",
-    price: "1,300,000",
+    price: "130000",
     type: "Bungalow",
     title: "Single Family Home",
     location: `1421 San Pedro
@@ -110,20 +112,20 @@ St, Los Angeles, CA 900015`,
     itemDetails: [
       {
         name: "Beds",
-        number: "3",
+        number: "6",
       },
       {
         name: "Baths",
-        number: "2",
+        number: "3",
       },
       {
-        name: "SqFt",
-        number: "3280",
+        name: "Room",
+        number: "3",
       },
     ],
     posterAvatar: "/assets/images/property/pposter3.png",
-    posterName: "Ali Tufan",
-    postedYear: "1 year ago",
+    posterName: "6 people",
+    postedYear: "",
     imgList: [
       "/assets/images/property/2.jpg",
       "/assets/images/property/3.jpg",
@@ -146,8 +148,9 @@ St, Los Angeles, CA 900015`,
   {
     id: 4,
     img: "/assets/images/property/fp15.jpg",
-    price: "1,100,000",
-    date: "21 Jan, 2024 - 21 Oct, 2024" ,
+
+    price: "110000",
+
     type: "House",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
@@ -195,7 +198,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 5,
     img: "/assets/images/property/fp16.jpg",
-    price: "1,700,000",
+    price: "170000",
     type: "Land",
     title: "Renovated Apartment",
     lat: 39.62158564223682,
@@ -242,7 +245,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 6,
     img: "/assets/images/property/fp17.jpg",
-    price: "1,600,000",
+    price: "160000",
     type: "Single Family Home",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
@@ -334,7 +337,7 @@ St, Los Angeles, CA 900015`,
   {
     id: 8,
     img: "/assets/images/property/fp19.jpg",
-    price: "1,200,000",
+    price: "120000",
     type: "Condo",
     title: "Gorgeous Villa Bay View",
     location: `1421 San Pedro
@@ -400,8 +403,8 @@ St, Los Angeles, CA 900015`,
       },
     ],
     posterAvatar: "/assets/images/property/pposter1.png",
-    posterName: "Ali Tufan",
-    postedYear: "1 year ago",
+    posterName: "4 people",
+    postedYear: "",
     imgList: [
       "/assets/images/property/2.jpg",
       "/assets/images/property/3.jpg",
