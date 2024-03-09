@@ -7,8 +7,8 @@ import Header from "@/components/common/header/DefaultHeader";
 import MobileMenu from "@/components/common/header/MobileMenu";
 import PopupSignInUp from "@/components/common/PopupSignInUp";
 import properties from "@/data/properties";
-import DetailsContent from "@/components/listing-details-v1/DetailsContent";
-import Sidebar from "@/components/listing-details-v1/Sidebar";
+import DetailsContent from "@/components/book-details/DetailsContent";
+import Sidebar from "@/components/book-details/Sidebar";
 import ListingOne from "@/components/listing-single/ListingOne";
 import {useParams} from 'react-router-dom'
 import MetaComponent from "@/components/common/MetaComponent";
