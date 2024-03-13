@@ -3,7 +3,7 @@ import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBanner from "./BreadCrumbBanner";
-import Membership from "./Membership";
+import Postpackage from "./Postpackage";
 
 const index = () => {
   return (
@@ -26,14 +26,14 @@ const index = () => {
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2 className="mt0">Membership</h2>
+                <h2 className="mt0">Post Package</h2>
               </div>
             </div>
           </div>
           {/* End .row */}
 
           <div className="row">
-            <Membership />
+            <Postpackage />
           </div>
           {/* End .row */}
 
