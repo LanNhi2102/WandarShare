@@ -43,9 +43,7 @@ function Payment() {
       <h2>Select Payment Method</h2>
       <select value={selectedMethod} onChange={handleSelectChange}>
         <option value="">-- Select Payment Method --</option>
-        <option value="credit_card">Credit Card</option>
-        <option value="paypal">PayPal</option>
-        <option value="bank_transfer">Bank Transfer</option>
+        <option value="credit_card">VNPay</option>
       </select>
       {sandboxResponse && (
         <p>Payment successful! Transaction ID: {sandboxResponse.transactionId}</p>
