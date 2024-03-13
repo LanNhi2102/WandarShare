@@ -13,7 +13,7 @@ const Sidebar = () => {
           {/* End .sl_creator */}
           <Bill />
         </div>
-      </div>
+      </div>  
       {/* End .sidebar_listing_list */}
 
  
