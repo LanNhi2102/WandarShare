@@ -5,7 +5,7 @@ const PropertyDetails = () => {
         <ul className="list-inline-item">
           <li>
             <p>
-              Property ID : <span>HCM210</span>
+              Property ID : <span>HCM001</span>
             </p>
           </li>
           <li>
