@@ -1,0 +1,41 @@
+.Postpackage-comparison {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .Postpackage-option {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .Postpackage-option h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .Postpackage-option p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .Postpackage-option button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .Postpackage-option button:hover {
+    background-color: #45a049;
+  }
+  
