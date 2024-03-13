@@ -47,13 +47,6 @@ const DetailsContent = () => {
       </div>
       {/* End .additional_details */}
 
-      <div className="property_attachment_area">
-        <h4 className="mb30">Property Attachments</h4>
-        <div className="iba_container style2">
-          <Attachments />
-        </div>
-      </div>
-      {/* End .property_attachment_area */}
 
       <div className="application_statics mt30">
         <div className="row">
@@ -79,19 +72,6 @@ const DetailsContent = () => {
         </div>
       </div>
       {/* End .location_area */}
-
-      <div className="application_statics mt30">
-        <h4 className="mb30">Floor plans</h4>
-        <div className="faq_according style2">
-          <FloorPlans />
-        </div>
-      </div>
-      {/* End .floor_plane */}
-
-      <div className="shop_single_tab_content style2 mt30">
-        <PropertyVideo />
-      </div>
-      {/* End property-video  */}
 
       <div className="walkscore_area mt30">
         <WalkScore />
